@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes — Average & Active</title>
+  <meta name="description" content="Simple, macro-friendly recipes for busy parents. Breakfast, lunch, dinner, and snacks that fuel your day without overcomplicating it.">
+  <link rel="canonical" href="https://averageandactive.com/recipes">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Recipes — Average & Active">
+  <meta property="og:description" content="Simple, macro-friendly recipes for busy parents. Real food, real easy.">
+  <meta property="og:url" content="https://averageandactive.com/recipes">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Average & Active Recipes",
+    "description": "Simple, macro-friendly recipes for busy parents.",
+    "url": "https://averageandactive.com/recipes"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="logo">Average <span>&</span> Active</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="recipes.html" class="active">Recipes</a></li>
+      <li><a href="index.html#community">Community</a></li>
+      <li><a href="index.html#videos">Videos</a></li>
+      <li><a href="index.html#join" class="nav-cta">Join the Journey</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="section-label">Recipes</div>
+    <h1>Fuel that fits <em>real life.</em></h1>
+    <p>Simple, macro-friendly recipes the whole family will eat. No exotic ingredients, no two-hour prep times. Just good food done right.</p>
+  </section>
+
+  <!-- RECIPE SECTION -->
+  <section class="recipe-section">
+    <div class="section-inner">
+
+      <!-- Filters -->
+      <div class="recipe-filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Breakfast</button>
+        <button class="filter-btn">Lunch</button>
+        <button class="filter-btn">Dinner</button>
+        <button class="filter-btn">Snacks</button>
+        <button class="filter-btn">Smoothies</button>
+        <button class="filter-btn">High Protein</button>
+        <button class="filter-btn">Meal Prep</button>
+      </div>
+
+      <!-- Recipe Grid -->
+      <div class="recipe-grid">
+
+        <!-- Recipe 1 -->
+        <div class="recipe-card fade-in">
+          <div class="recipe-card-img breakfast">
+            <span>🍳</span>
+            <div class="recipe-macros">
+              <span class="macro-tag">420 cal</span>
+              <span class="macro-tag">35g protein</span>
+              <span class="macro-tag">28g carbs</span>
+            </div>
+          </div>
+          <div class="recipe-card-body">
+            <span class="recipe-meal-type">Breakfast</span>
+            <h3>Loaded Egg & Veggie Scramble</h3>
+            <p>Three eggs, spinach, peppers, and feta with whole wheat toast. The weekday morning staple.</p>
+            <div class="recipe-details">
+              <span>⏱ 10 min</span>
+              <span>👤 1 serving</span>
+              <span>📊 Easy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recipe 2 -->
+        <div class="recipe-card fade-in">
+          <div class="recipe-card-img lunch">
+            <span>🥗</span>
+            <div class="recipe-macros">
+              <span class="macro-tag">480 cal</span>
+              <span class="macro-tag">42g protein</span>
+              <span class="macro-tag">35g carbs</span>
+            </div>
+          </div>
+          <div class="recipe-card-body">
+            <span class="recipe-meal-type">Lunch</span>
+            <h3>Chicken & Rice Power Bowl</h3>
+            <p>Grilled chicken, brown rice, black beans, avocado, and salsa. Meal prep king — makes 4 at once.</p>
+            <div class="recipe-details">
+              <span>⏱ 25 min</span>
+              <span>👤 4 servings</span>
+              <span>📊 Easy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recipe 3 -->
+        <div class="recipe-card fade-in">
+          <div class="recipe-card-img dinner">
+            <span>🍗</span>
+            <div class="recipe-macros">
+              <span class="macro-tag">520 cal</span>
+              <span class="macro-tag">45g protein</span>
+              <span class="macro-tag">40g carbs</span>
+            </div>
+          </div>
+          <div class="recipe-card-body">
+            <span class="recipe-meal-type">Dinner</span>
+            <h3>Sheet Pan Chicken & Veggies</h3>
+            <p>Everything on one pan. Chicken thighs, sweet potatoes, broccoli, olive oil. Minimal dishes, maximum flavor.</p>
+            <div class="recipe-details">
+              <span>⏱ 35 min</span>
+              <span>👤 4 servings</span>
+              <span>📊 Easy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recipe 4 -->
+        <div class="recipe-card fade-in">
+          <div class="recipe-card-img smoothie">
+            <span>🥤</span>
+            <div class="recipe-macros">
+              <span class="macro-tag">340 cal</span>
+              <span class="macro-tag">30g protein</span>
+              <span class="macro-tag">42g carbs</span>
+            </div>
+          </div>
+          <div class="recipe-card-body">
+            <span class="recipe-meal-type">Smoothie</span>
+            <h3>PB & Banana Protein Shake</h3>
+            <p>Banana, peanut butter, protein powder, milk, and ice. Takes 3 minutes. Tastes like dessert. Post-workout go-to.</p>
+            <div class="recipe-details">
+              <span>⏱ 3 min</span>
+              <span>👤 1 serving</span>
+              <span>📊 Easy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recipe 5 -->
+        <div class="recipe-card fade-in">
+          <div class="recipe-card-img lunch">
+            <span>🌯</span>
+            <div class="recipe-macros">
+              <span class="macro-tag">510 cal</span>
+              <span class="macro-tag">38g protein</span>
+              <span class="macro-tag">45g carbs</span>
+            </div>
+          </div>
+          <div class="recipe-card-body">
+            <span class="recipe-meal-type">Lunch</span>
+            <h3>Turkey & Hummus Wrap</h3>
+            <p>Whole wheat wrap, sliced turkey, hummus, spinach, cucumber, and a little feta. Packs well for work.</p>
+            <div class="recipe-details">
+              <span>⏱ 5 min</span>
+              <span>👤 1 serving</span>
+              <span>📊 Easy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recipe 6 -->
+        <div class="recipe-card fade-in">
+          <div class="recipe-card-img dinner">
+            <span>🍝</span>
+            <div class="recipe-macros">
+              <span class="macro-tag">550 cal</span>
+              <span class="macro-tag">40g protein</span>
+              <span class="macro-tag">55g carbs</span>
+            </div>
+          </div>
+          <div class="recipe-card-body">
+            <span class="recipe-meal-type">Dinner</span>
+            <h3>Turkey Bolognese</h3>
+            <p>Ground turkey, crushed tomatoes, garlic, and whole wheat pasta. A family favorite that hits the macros right.</p>
+            <div class="recipe-details">
+              <span>⏱ 30 min</span>
+              <span>👤 4 servings</span>
+              <span>📊 Easy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recipe 7 -->
+        <div class="recipe-card fade-in">
+          <div class="recipe-card-img snack">
+            <span>🍎</span>
+            <div class="recipe-macros">
+              <span class="macro-tag">220 cal</span>
+              <span class="macro-tag">14g protein</span>
+              <span class="macro-tag">25g carbs</span>
+            </div>
+          </div>
+          <div class="recipe-card-body">
+            <span class="recipe-meal-type">Snack</span>
+            <h3>Apple Slices & Almond Butter</h3>
+            <p>Simple, satisfying, and portable. Two tablespoons of almond butter with a sliced apple. The 3PM savior.</p>
+            <div class="recipe-details">
+              <span>⏱ 2 min</span>
+              <span>👤 1 serving</span>
+              <span>📊 Easy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recipe 8 -->
+        <div class="recipe-card fade-in">
+          <div class="recipe-card-img breakfast">
+            <span>🥞</span>
+            <div class="recipe-macros">
+              <span class="macro-tag">380 cal</span>
+              <span class="macro-tag">28g protein</span>
+              <span class="macro-tag">40g carbs</span>
+            </div>
+          </div>
+          <div class="recipe-card-body">
+            <span class="recipe-meal-type">Breakfast</span>
+            <h3>Protein Pancakes</h3>
+            <p>Oats, banana, egg whites, and protein powder. The kids love these too — weekend breakfast that doesn't derail you.</p>
+            <div class="recipe-details">
+              <span>⏱ 15 min</span>
+              <span>👤 2 servings</span>
+              <span>📊 Easy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recipe 9 -->
+        <div class="recipe-card fade-in">
+          <div class="recipe-card-img dinner">
+            <span>🐟</span>
+            <div class="recipe-macros">
+              <span class="macro-tag">440 cal</span>
+              <span class="macro-tag">38g protein</span>
+              <span class="macro-tag">32g carbs</span>
+            </div>
+          </div>
+          <div class="recipe-card-body">
+            <span class="recipe-meal-type">Dinner</span>
+            <h3>Lemon Herb Salmon & Asparagus</h3>
+            <p>Salmon fillet with lemon, garlic, herbs, and roasted asparagus. Fancy-looking but dead simple to make.</p>
+            <div class="recipe-details">
+              <span>⏱ 20 min</span>
+              <span>👤 2 servings</span>
+              <span>📊 Easy</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TIP SECTION -->
+  <section class="manifesto">
+    <div class="manifesto-inner">
+      <div class="section-label" style="color: var(--rust-light); justify-content: center;">
+        <span style="display: inline-block; width: 24px; height: 2px; background: var(--rust-light);"></span>
+        Nutrition Philosophy
+      </div>
+      <h2>
+        We don't do <em>diet culture.</em> We track, we learn, and we eat
+        real food that <em>real families</em> actually enjoy.
+      </h2>
+      <p>
+        Every recipe here is something our family eats. The macros are tracked but the meals are
+        flexible. Swap ingredients, adjust portions, and make it work for your life.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="join">
+    <div class="cta-box">
+      <div class="section-label" style="justify-content: center;">
+        <span style="display: inline-block; width: 24px; height: 2px; background: var(--olive);"></span>
+        Get New Recipes
+      </div>
+      <h2>Fresh recipes, every week.</h2>
+      <p>New family-friendly, macro-tracked recipes delivered to your inbox. No spam — just food.</p>
+      <form class="email-form" id="emailForm">
+        <input type="email" placeholder="Your email address" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="cta-note">No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">Average <span>&</span> Active</div>
+        <p>Real fitness for real people. We're just parents trying to stay healthy, active, and present for the long haul.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="index.html#videos">Videos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Content</h4>
+        <ul>
+          <li><a href="blog.html">Fitness</a></li>
+          <li><a href="blog.html">Nutrition</a></li>
+          <li><a href="blog.html">Family Life</a></li>
+          <li><a href="blog.html">Longevity</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://instagram.com/averageandactive" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://youtube.com/@averageandactive" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://tiktok.com/@averageandactive" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="index.html#join">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Average & Active. Just getting started.</p>
+      <div class="footer-socials">
+        <a href="https://instagram.com/averageandactive" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="https://youtube.com/@averageandactive" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
+            <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
+          </svg>
+        </a>
+        <a href="https://tiktok.com/@averageandactive" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.75a8.18 8.18 0 004.76 1.52V6.84a4.84 4.84 0 01-1-.15z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('open');
+        navLinks.classList.remove('open');
+      });
+    });
+
+    // Scroll-triggered animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Recipe filter tabs
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+
+    // Email form
+    document.getElementById('emailForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      this.innerHTML = '<p style="padding: 1rem; color: var(--olive); font-weight: 600;">You\'re subscribed! New recipes incoming. 🙌</p>';
+    });
+  </script>
+</body>
+</html>
