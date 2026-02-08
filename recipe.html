@@ -10,210 +10,44 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
-    .recipe-detail {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 8rem 2rem 6rem;
-    }
-    .recipe-back {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: var(--slate);
-      text-decoration: none;
-      margin-bottom: 2.5rem;
-      transition: color 0.3s;
-    }
+    .recipe-detail { max-width: 760px; margin: 0 auto; padding: 8rem 2rem 6rem; }
+    .recipe-back { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; font-weight: 500; color: var(--slate); text-decoration: none; margin-bottom: 2.5rem; transition: color 0.3s; }
     .recipe-back:hover { color: var(--rust); }
-    .recipe-detail-header {
-      margin-bottom: 2.5rem;
-    }
-    .recipe-detail-header h1 {
-      font-family: 'DM Serif Display', serif;
-      font-size: clamp(2rem, 4vw, 2.8rem);
-      line-height: 1.15;
-      letter-spacing: -0.02em;
-      margin: 0.75rem 0 1rem;
-    }
-    .recipe-detail-header p.recipe-desc {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      color: var(--slate);
-      font-weight: 300;
-      margin-bottom: 1.5rem;
-    }
-    .recipe-quick-info {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-      font-size: 0.9rem;
-      color: var(--warm-gray);
-      margin-bottom: 1.5rem;
-    }
-    .recipe-quick-info span {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-    .macro-bar {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-bottom: 2rem;
-    }
-    .macro-pill {
-      background: var(--off-white);
-      border: 1px solid var(--sand);
-      border-radius: 10px;
-      padding: 0.75rem 1.25rem;
-      text-align: center;
-      flex: 1;
-      min-width: 100px;
-    }
-    .macro-pill strong {
-      display: block;
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: var(--rust);
-      margin-bottom: 0.2rem;
-    }
-    .macro-pill span {
-      font-size: 0.75rem;
-      color: var(--warm-gray);
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
-    .recipe-section-title {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.35rem;
-      margin: 2.5rem 0 1rem;
-      letter-spacing: -0.01em;
-    }
-    .ingredient-list {
-      list-style: none;
-      padding: 0;
-    }
-    .ingredient-list li {
-      font-size: 1rem;
-      line-height: 1.7;
-      color: var(--slate);
-      font-weight: 300;
-      padding: 0.5rem 0;
-      border-bottom: 1px solid rgba(26, 24, 20, 0.06);
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-    .ingredient-list li::before {
-      content: '';
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--rust);
-      opacity: 0.4;
-      flex-shrink: 0;
-    }
-    .steps-list {
-      list-style: none;
-      padding: 0;
-      counter-reset: step;
-    }
-    .steps-list li {
-      font-size: 1.02rem;
-      line-height: 1.8;
-      color: var(--slate);
-      font-weight: 300;
-      padding: 1rem 0;
-      border-bottom: 1px solid rgba(26, 24, 20, 0.06);
-      display: flex;
-      gap: 1rem;
-      counter-increment: step;
-    }
-    .steps-list li::before {
-      content: counter(step);
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.3rem;
-      color: var(--rust);
-      opacity: 0.5;
-      flex-shrink: 0;
-      width: 2rem;
-      text-align: center;
-      line-height: 1.8;
-    }
-    .recipe-tags {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-      margin-top: 2.5rem;
-    }
-    .recipe-tag-pill {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      padding: 0.35rem 0.9rem;
-      border-radius: 100px;
-      background: var(--sand);
-      color: var(--slate);
-    }
-    .recipe-divider {
-      border: none;
-      border-top: 1px solid var(--sand);
-      margin: 3rem 0;
-    }
-    .recipe-footer-cta {
-      background: var(--off-white);
-      border-radius: 16px;
-      padding: 2.5rem;
-      text-align: center;
-    }
-    .recipe-footer-cta h3 {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.4rem;
-      margin-bottom: 0.75rem;
-    }
-    .recipe-footer-cta p {
-      font-size: 0.95rem;
-      color: var(--warm-gray);
-      font-weight: 300;
-      margin-bottom: 1.5rem;
-    }
+    .recipe-detail-header { margin-bottom: 2.5rem; }
+    .recipe-detail-header h1 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1.15; letter-spacing: -0.02em; margin: 0.75rem 0 1rem; }
+    .recipe-detail-header p.recipe-desc { font-size: 1.1rem; line-height: 1.7; color: var(--slate); font-weight: 300; margin-bottom: 1.5rem; }
+    .recipe-quick-info { display: flex; gap: 2rem; flex-wrap: wrap; font-size: 0.9rem; color: var(--warm-gray); margin-bottom: 1.5rem; }
+    .recipe-quick-info span { display: flex; align-items: center; gap: 0.4rem; }
+    .macro-bar { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
+    .macro-pill { background: var(--off-white); border: 1px solid var(--sand); border-radius: 10px; padding: 0.75rem 1.25rem; text-align: center; flex: 1; min-width: 100px; }
+    .macro-pill strong { display: block; font-size: 1.3rem; font-weight: 700; color: var(--rust); margin-bottom: 0.2rem; }
+    .macro-pill span { font-size: 0.75rem; color: var(--warm-gray); text-transform: uppercase; letter-spacing: 0.06em; }
+    .recipe-section-title { font-family: 'DM Serif Display', serif; font-size: 1.35rem; margin: 2.5rem 0 1rem; letter-spacing: -0.01em; }
+    .ingredient-list { list-style: none; padding: 0; }
+    .ingredient-list li { font-size: 1rem; line-height: 1.7; color: var(--slate); font-weight: 300; padding: 0.5rem 0; border-bottom: 1px solid rgba(26,24,20,0.06); display: flex; align-items: center; gap: 0.75rem; }
+    .ingredient-list li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--rust); opacity: 0.4; flex-shrink: 0; }
+    .steps-list { list-style: none; padding: 0; counter-reset: step; }
+    .steps-list li { font-size: 1.02rem; line-height: 1.8; color: var(--slate); font-weight: 300; padding: 1rem 0; border-bottom: 1px solid rgba(26,24,20,0.06); display: flex; gap: 1rem; counter-increment: step; }
+    .steps-list li::before { content: counter(step); font-family: 'DM Serif Display', serif; font-size: 1.3rem; color: var(--rust); opacity: 0.5; flex-shrink: 0; width: 2rem; text-align: center; line-height: 1.8; }
+    .recipe-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 2.5rem; }
+    .recipe-tag-pill { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.35rem 0.9rem; border-radius: 100px; background: var(--sand); color: var(--slate); }
+    .recipe-divider { border: none; border-top: 1px solid var(--sand); margin: 3rem 0; }
+    .recipe-footer-cta { background: var(--off-white); border-radius: 16px; padding: 2.5rem; text-align: center; }
+    .recipe-footer-cta h3 { font-family: 'DM Serif Display', serif; font-size: 1.4rem; margin-bottom: 0.75rem; }
+    .recipe-footer-cta p { font-size: 0.95rem; color: var(--warm-gray); font-weight: 300; margin-bottom: 1.5rem; }
   </style>
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <a href="index.html" class="logo">Average <span>&</span> Active</a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="about.html">About</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="recipes.html" class="active">Recipes</a></li>
-      <li><a href="index.html#community">Community</a></li>
-      <li><a href="index.html#videos">Videos</a></li>
-      <li><a href="index.html#join" class="nav-cta">Join the Journey</a></li>
-    </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </nav>
+  <div id="site-nav"></div>
 
   <div class="recipe-detail">
     <a href="recipes.html" class="recipe-back">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       Back to Recipes
     </a>
-
-    <div id="recipeContent">
-      <p style="color: var(--warm-gray);">Loading recipe...</p>
-    </div>
-
+    <div id="recipeContent"><p style="color: var(--warm-gray);">Loading recipe...</p></div>
     <hr class="recipe-divider">
-
     <div class="recipe-footer-cta">
       <h3>Want more recipes like this?</h3>
       <p>New macro-friendly, family-tested recipes every week. Straight to your inbox.</p>
@@ -224,147 +58,54 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="logo">Average <span>&</span> Active</div>
-        <p>Real fitness for real people. We're just parents trying to stay healthy, active, and present for the long haul.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="recipes.html">Recipes</a></li>
-          <li><a href="index.html#videos">Videos</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Content</h4>
-        <ul>
-          <li><a href="blog.html">Fitness</a></li>
-          <li><a href="blog.html">Nutrition</a></li>
-          <li><a href="blog.html">Family Life</a></li>
-          <li><a href="blog.html">Longevity</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Connect</h4>
-        <ul>
-          <li><a href="https://instagram.com/averageandactive" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://youtube.com/@averageandactive" target="_blank" rel="noopener">YouTube</a></li>
-          <li><a href="https://tiktok.com/@averageandactive" target="_blank" rel="noopener">TikTok</a></li>
-          <li><a href="index.html#join">Newsletter</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Average & Active. Just getting started.</p>
-      <div class="footer-socials">
-        <a href="https://instagram.com/averageandactive" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
-          </svg>
-        </a>
-        <a href="https://youtube.com/@averageandactive" target="_blank" rel="noopener" aria-label="YouTube">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
-            <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
-          </svg>
-        </a>
-        <a href="https://tiktok.com/@averageandactive" target="_blank" rel="noopener" aria-label="TikTok">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.75a8.18 8.18 0 004.76 1.52V6.84a4.84 4.84 0 01-1-.15z"/>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
 
+  <script src="site.js"></script>
   <script>
-    const recipeId = new URLSearchParams(window.location.search).get('id');
+    Site.init('recipes');
 
-    fetch('data/recipes.json')
-      .then(r => r.json())
-      .then(recipes => {
-        const recipe = recipes.find(r => r.id === recipeId);
-        if (!recipe) {
-          document.getElementById('recipeContent').innerHTML = '<h1 style="font-family: DM Serif Display, serif;">Recipe not found</h1><p>This recipe doesn\'t exist. <a href="recipes.html">Back to recipes</a>.</p>';
-          return;
-        }
+    const recipeId = Site.getParam('id');
 
-        document.getElementById('pageTitle').textContent = recipe.title + ' — Average & Active';
-        document.getElementById('pageMeta').setAttribute('content', recipe.description);
+    if (!recipeId) {
+      Site.setHTML('recipeContent', '<h1 style="font-family:DM Serif Display,serif;">Recipe not found</h1><p>Invalid or missing recipe ID. <a href="recipes.html">Back to recipes</a>.</p>');
+    } else {
+      Site.fetchJSON('data/recipes.json')
+        .then(recipes => {
+          const r = recipes.find(x => x.id === recipeId);
+          if (!r || !Site.isValidRecipe(r)) {
+            Site.setHTML('recipeContent', '<h1 style="font-family:DM Serif Display,serif;">Recipe not found</h1><p>This recipe doesn\'t exist. <a href="recipes.html">Back to recipes</a>.</p>');
+            return;
+          }
 
-        document.getElementById('recipeContent').innerHTML = `
-          <div class="recipe-detail-header">
-            <span class="recipe-meal-type">${recipe.mealType}</span>
-            <h1>${recipe.emoji} ${recipe.title}</h1>
-            <p class="recipe-desc">${recipe.description}</p>
-            <div class="recipe-quick-info">
-              <span>⏱ ${recipe.prepTime}</span>
-              <span>👤 ${recipe.servings} serving${recipe.servings > 1 ? 's' : ''}</span>
-              <span>📊 ${recipe.difficulty}</span>
+          const e = Site.esc;
+          document.getElementById('pageTitle').textContent = r.title + ' — Average & Active';
+          document.getElementById('pageMeta').setAttribute('content', r.description);
+
+          Site.setHTML('recipeContent', `
+            <div class="recipe-detail-header">
+              <span class="recipe-meal-type">${e(r.mealType)}</span>
+              <h1>${e(r.emoji)} ${e(r.title)}</h1>
+              <p class="recipe-desc">${e(r.description)}</p>
+              <div class="recipe-quick-info">
+                <span>⏱ ${e(r.prepTime)}</span>
+                <span>👤 ${e(r.servings)} serving${r.servings > 1 ? 's' : ''}</span>
+                <span>📊 ${e(r.difficulty)}</span>
+              </div>
             </div>
-          </div>
-
-          <div class="macro-bar">
-            <div class="macro-pill">
-              <strong>${recipe.calories}</strong>
-              <span>Calories</span>
+            <div class="macro-bar">
+              <div class="macro-pill"><strong>${e(r.calories)}</strong><span>Calories</span></div>
+              <div class="macro-pill"><strong>${e(r.protein)}g</strong><span>Protein</span></div>
+              <div class="macro-pill"><strong>${e(r.carbs)}g</strong><span>Carbs</span></div>
+              <div class="macro-pill"><strong>${e(r.fat)}g</strong><span>Fat</span></div>
             </div>
-            <div class="macro-pill">
-              <strong>${recipe.protein}g</strong>
-              <span>Protein</span>
-            </div>
-            <div class="macro-pill">
-              <strong>${recipe.carbs}g</strong>
-              <span>Carbs</span>
-            </div>
-            <div class="macro-pill">
-              <strong>${recipe.fat}g</strong>
-              <span>Fat</span>
-            </div>
-          </div>
-
-          <h2 class="recipe-section-title">Ingredients</h2>
-          <ul class="ingredient-list">
-            ${recipe.ingredients.map(i => `<li>${i}</li>`).join('')}
-          </ul>
-
-          <h2 class="recipe-section-title">Instructions</h2>
-          <ol class="steps-list">
-            ${recipe.steps.map(s => `<li>${s}</li>`).join('')}
-          </ol>
-
-          ${recipe.tags.length ? `
-            <div class="recipe-tags">
-              ${recipe.tags.map(t => `<span class="recipe-tag-pill">${t}</span>`).join('')}
-            </div>
-          ` : ''}
-        `;
-      });
-
-    // Mobile nav
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    navToggle.addEventListener('click', () => {
-      navToggle.classList.toggle('open');
-      navLinks.classList.toggle('open');
-    });
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navToggle.classList.remove('open');
-        navLinks.classList.remove('open');
-      });
-    });
-
-    // Email form
-    document.getElementById('emailForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      this.innerHTML = '<p style="padding: 1rem; color: var(--olive); font-weight: 600;">You\'re subscribed! New recipes incoming. 🙌</p>';
-    });
+            <h2 class="recipe-section-title">Ingredients</h2>
+            <ul class="ingredient-list">${r.ingredients.map(i => `<li>${e(i)}</li>`).join('')}</ul>
+            <h2 class="recipe-section-title">Instructions</h2>
+            <ol class="steps-list">${r.steps.map(s => `<li>${e(s)}</li>`).join('')}</ol>
+            ${Array.isArray(r.tags) && r.tags.length ? `<div class="recipe-tags">${r.tags.map(t => `<span class="recipe-tag-pill">${e(t)}</span>`).join('')}</div>` : ''}`);
+        })
+        .catch(err => Site.showError('recipeContent', err.message));
+    }
   </script>
 </body>
 </html>
