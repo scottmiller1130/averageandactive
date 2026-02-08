@@ -18,7 +18,6 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -56,228 +55,25 @@
     <p>Simple, macro-friendly recipes the whole family will eat. No exotic ingredients, no two-hour prep times. Just good food done right.</p>
   </section>
 
-  <!-- RECIPE SECTION -->
+  <!-- RECIPE SECTION — rendered from data/recipes.json -->
   <section class="recipe-section">
     <div class="section-inner">
-
       <!-- Filters -->
-      <div class="recipe-filters">
-        <button class="filter-btn active">All</button>
-        <button class="filter-btn">Breakfast</button>
-        <button class="filter-btn">Lunch</button>
-        <button class="filter-btn">Dinner</button>
-        <button class="filter-btn">Snacks</button>
-        <button class="filter-btn">Smoothies</button>
-        <button class="filter-btn">High Protein</button>
-        <button class="filter-btn">Meal Prep</button>
+      <div class="recipe-filters" id="recipeFilters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+        <button class="filter-btn" data-filter="lunch">Lunch</button>
+        <button class="filter-btn" data-filter="dinner">Dinner</button>
+        <button class="filter-btn" data-filter="snack">Snacks</button>
+        <button class="filter-btn" data-filter="smoothie">Smoothies</button>
       </div>
 
-      <!-- Recipe Grid -->
-      <div class="recipe-grid">
-
-        <!-- Recipe 1 -->
-        <div class="recipe-card fade-in">
-          <div class="recipe-card-img breakfast">
-            <span>🍳</span>
-            <div class="recipe-macros">
-              <span class="macro-tag">420 cal</span>
-              <span class="macro-tag">35g protein</span>
-              <span class="macro-tag">28g carbs</span>
-            </div>
-          </div>
-          <div class="recipe-card-body">
-            <span class="recipe-meal-type">Breakfast</span>
-            <h3>Loaded Egg & Veggie Scramble</h3>
-            <p>Three eggs, spinach, peppers, and feta with whole wheat toast. The weekday morning staple.</p>
-            <div class="recipe-details">
-              <span>⏱ 10 min</span>
-              <span>👤 1 serving</span>
-              <span>📊 Easy</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Recipe 2 -->
-        <div class="recipe-card fade-in">
-          <div class="recipe-card-img lunch">
-            <span>🥗</span>
-            <div class="recipe-macros">
-              <span class="macro-tag">480 cal</span>
-              <span class="macro-tag">42g protein</span>
-              <span class="macro-tag">35g carbs</span>
-            </div>
-          </div>
-          <div class="recipe-card-body">
-            <span class="recipe-meal-type">Lunch</span>
-            <h3>Chicken & Rice Power Bowl</h3>
-            <p>Grilled chicken, brown rice, black beans, avocado, and salsa. Meal prep king — makes 4 at once.</p>
-            <div class="recipe-details">
-              <span>⏱ 25 min</span>
-              <span>👤 4 servings</span>
-              <span>📊 Easy</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Recipe 3 -->
-        <div class="recipe-card fade-in">
-          <div class="recipe-card-img dinner">
-            <span>🍗</span>
-            <div class="recipe-macros">
-              <span class="macro-tag">520 cal</span>
-              <span class="macro-tag">45g protein</span>
-              <span class="macro-tag">40g carbs</span>
-            </div>
-          </div>
-          <div class="recipe-card-body">
-            <span class="recipe-meal-type">Dinner</span>
-            <h3>Sheet Pan Chicken & Veggies</h3>
-            <p>Everything on one pan. Chicken thighs, sweet potatoes, broccoli, olive oil. Minimal dishes, maximum flavor.</p>
-            <div class="recipe-details">
-              <span>⏱ 35 min</span>
-              <span>👤 4 servings</span>
-              <span>📊 Easy</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Recipe 4 -->
-        <div class="recipe-card fade-in">
-          <div class="recipe-card-img smoothie">
-            <span>🥤</span>
-            <div class="recipe-macros">
-              <span class="macro-tag">340 cal</span>
-              <span class="macro-tag">30g protein</span>
-              <span class="macro-tag">42g carbs</span>
-            </div>
-          </div>
-          <div class="recipe-card-body">
-            <span class="recipe-meal-type">Smoothie</span>
-            <h3>PB & Banana Protein Shake</h3>
-            <p>Banana, peanut butter, protein powder, milk, and ice. Takes 3 minutes. Tastes like dessert. Post-workout go-to.</p>
-            <div class="recipe-details">
-              <span>⏱ 3 min</span>
-              <span>👤 1 serving</span>
-              <span>📊 Easy</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Recipe 5 -->
-        <div class="recipe-card fade-in">
-          <div class="recipe-card-img lunch">
-            <span>🌯</span>
-            <div class="recipe-macros">
-              <span class="macro-tag">510 cal</span>
-              <span class="macro-tag">38g protein</span>
-              <span class="macro-tag">45g carbs</span>
-            </div>
-          </div>
-          <div class="recipe-card-body">
-            <span class="recipe-meal-type">Lunch</span>
-            <h3>Turkey & Hummus Wrap</h3>
-            <p>Whole wheat wrap, sliced turkey, hummus, spinach, cucumber, and a little feta. Packs well for work.</p>
-            <div class="recipe-details">
-              <span>⏱ 5 min</span>
-              <span>👤 1 serving</span>
-              <span>📊 Easy</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Recipe 6 -->
-        <div class="recipe-card fade-in">
-          <div class="recipe-card-img dinner">
-            <span>🍝</span>
-            <div class="recipe-macros">
-              <span class="macro-tag">550 cal</span>
-              <span class="macro-tag">40g protein</span>
-              <span class="macro-tag">55g carbs</span>
-            </div>
-          </div>
-          <div class="recipe-card-body">
-            <span class="recipe-meal-type">Dinner</span>
-            <h3>Turkey Bolognese</h3>
-            <p>Ground turkey, crushed tomatoes, garlic, and whole wheat pasta. A family favorite that hits the macros right.</p>
-            <div class="recipe-details">
-              <span>⏱ 30 min</span>
-              <span>👤 4 servings</span>
-              <span>📊 Easy</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Recipe 7 -->
-        <div class="recipe-card fade-in">
-          <div class="recipe-card-img snack">
-            <span>🍎</span>
-            <div class="recipe-macros">
-              <span class="macro-tag">220 cal</span>
-              <span class="macro-tag">14g protein</span>
-              <span class="macro-tag">25g carbs</span>
-            </div>
-          </div>
-          <div class="recipe-card-body">
-            <span class="recipe-meal-type">Snack</span>
-            <h3>Apple Slices & Almond Butter</h3>
-            <p>Simple, satisfying, and portable. Two tablespoons of almond butter with a sliced apple. The 3PM savior.</p>
-            <div class="recipe-details">
-              <span>⏱ 2 min</span>
-              <span>👤 1 serving</span>
-              <span>📊 Easy</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Recipe 8 -->
-        <div class="recipe-card fade-in">
-          <div class="recipe-card-img breakfast">
-            <span>🥞</span>
-            <div class="recipe-macros">
-              <span class="macro-tag">380 cal</span>
-              <span class="macro-tag">28g protein</span>
-              <span class="macro-tag">40g carbs</span>
-            </div>
-          </div>
-          <div class="recipe-card-body">
-            <span class="recipe-meal-type">Breakfast</span>
-            <h3>Protein Pancakes</h3>
-            <p>Oats, banana, egg whites, and protein powder. The kids love these too — weekend breakfast that doesn't derail you.</p>
-            <div class="recipe-details">
-              <span>⏱ 15 min</span>
-              <span>👤 2 servings</span>
-              <span>📊 Easy</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Recipe 9 -->
-        <div class="recipe-card fade-in">
-          <div class="recipe-card-img dinner">
-            <span>🐟</span>
-            <div class="recipe-macros">
-              <span class="macro-tag">440 cal</span>
-              <span class="macro-tag">38g protein</span>
-              <span class="macro-tag">32g carbs</span>
-            </div>
-          </div>
-          <div class="recipe-card-body">
-            <span class="recipe-meal-type">Dinner</span>
-            <h3>Lemon Herb Salmon & Asparagus</h3>
-            <p>Salmon fillet with lemon, garlic, herbs, and roasted asparagus. Fancy-looking but dead simple to make.</p>
-            <div class="recipe-details">
-              <span>⏱ 20 min</span>
-              <span>👤 2 servings</span>
-              <span>📊 Easy</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
+      <!-- Recipe Grid — cards render here -->
+      <div class="recipe-grid" id="recipeGrid"></div>
     </div>
   </section>
 
-  <!-- TIP SECTION -->
+  <!-- NUTRITION PHILOSOPHY -->
   <section class="manifesto">
     <div class="manifesto-inner">
       <div class="section-label" style="color: var(--rust-light); justify-content: center;">
@@ -371,7 +167,60 @@
   </footer>
 
   <script>
-    // Mobile nav toggle
+    const BG_CLASSES = {
+      breakfast: 'breakfast', lunch: 'lunch', dinner: 'dinner',
+      snack: 'snack', smoothie: 'smoothie'
+    };
+
+    function renderRecipeCard(recipe) {
+      const bgClass = BG_CLASSES[recipe.mealType] || '';
+      return `
+        <a href="recipe.html?id=${recipe.id}" class="recipe-card fade-in" data-meal="${recipe.mealType}" style="text-decoration:none; color:inherit;">
+          <div class="recipe-card-img ${bgClass}">
+            <span>${recipe.emoji}</span>
+            <div class="recipe-macros">
+              <span class="macro-tag">${recipe.calories} cal</span>
+              <span class="macro-tag">${recipe.protein}g protein</span>
+              <span class="macro-tag">${recipe.carbs}g carbs</span>
+            </div>
+          </div>
+          <div class="recipe-card-body">
+            <span class="recipe-meal-type">${recipe.mealType}</span>
+            <h3>${recipe.title}</h3>
+            <p>${recipe.description}</p>
+            <div class="recipe-details">
+              <span>⏱ ${recipe.prepTime}</span>
+              <span>👤 ${recipe.servings} serving${recipe.servings > 1 ? 's' : ''}</span>
+              <span>📊 ${recipe.difficulty}</span>
+            </div>
+          </div>
+        </a>`;
+    }
+
+    fetch('data/recipes.json')
+      .then(r => r.json())
+      .then(recipes => {
+        document.getElementById('recipeGrid').innerHTML = recipes.map(renderRecipeCard).join('');
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+      });
+
+    // Filtering
+    document.getElementById('recipeFilters').addEventListener('click', (e) => {
+      if (!e.target.classList.contains('filter-btn')) return;
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+
+      const filter = e.target.dataset.filter;
+      document.querySelectorAll('.recipe-card').forEach(card => {
+        if (filter === 'all' || card.dataset.meal === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+
+    // Mobile nav
     const navToggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
     navToggle.addEventListener('click', () => {
@@ -392,14 +241,6 @@
       });
     }, { threshold: 0.1 });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-    // Recipe filter tabs
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-      });
-    });
 
     // Email form
     document.getElementById('emailForm').addEventListener('submit', function(e) {

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">Blog Post — Average & Active</title>
+  <meta name="description" id="pageMeta" content="Read this article on Average & Active.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .post-article {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+    .post-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--slate);
+      text-decoration: none;
+      margin-bottom: 2.5rem;
+      transition: color 0.3s;
+    }
+    .post-back:hover { color: var(--rust); }
+    .post-header { margin-bottom: 3rem; }
+    .post-header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin: 1rem 0 1.25rem;
+    }
+    .post-header-meta {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.88rem;
+      color: var(--warm-gray);
+    }
+    .post-body h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.5rem;
+      margin: 2.5rem 0 1rem;
+      letter-spacing: -0.01em;
+    }
+    .post-body p {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--slate);
+      font-weight: 300;
+      margin-bottom: 1.25rem;
+    }
+    .post-body ul {
+      margin: 0.5rem 0 1.5rem 1.5rem;
+      list-style: disc;
+    }
+    .post-body li {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--slate);
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+    }
+    .post-divider {
+      border: none;
+      border-top: 1px solid var(--sand);
+      margin: 3rem 0;
+    }
+    .post-footer-cta {
+      background: var(--off-white);
+      border-radius: 16px;
+      padding: 2.5rem;
+      text-align: center;
+    }
+    .post-footer-cta h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+    .post-footer-cta p {
+      font-size: 0.95rem;
+      color: var(--warm-gray);
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="logo">Average <span>&</span> Active</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="index.html#community">Community</a></li>
+      <li><a href="index.html#videos">Videos</a></li>
+      <li><a href="index.html#join" class="nav-cta">Join the Journey</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- POST CONTENT — rendered from data/posts.json -->
+  <article class="post-article" style="padding-top: 8rem;">
+    <a href="blog.html" class="post-back">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Back to Blog
+    </a>
+
+    <div id="postContent">
+      <p style="color: var(--warm-gray);">Loading article...</p>
+    </div>
+
+    <hr class="post-divider">
+
+    <div class="post-footer-cta">
+      <h3>Enjoyed this? There's more where it came from.</h3>
+      <p>Get new articles delivered to your inbox every week. No spam.</p>
+      <form class="email-form" id="emailForm">
+        <input type="email" placeholder="Your email address" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </article>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">Average <span>&</span> Active</div>
+        <p>Real fitness for real people. We're just parents trying to stay healthy, active, and present for the long haul.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="index.html#videos">Videos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Content</h4>
+        <ul>
+          <li><a href="blog.html">Fitness</a></li>
+          <li><a href="blog.html">Nutrition</a></li>
+          <li><a href="blog.html">Family Life</a></li>
+          <li><a href="blog.html">Longevity</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://instagram.com/averageandactive" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://youtube.com/@averageandactive" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://tiktok.com/@averageandactive" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="index.html#join">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Average & Active. Just getting started.</p>
+      <div class="footer-socials">
+        <a href="https://instagram.com/averageandactive" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="https://youtube.com/@averageandactive" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
+            <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
+          </svg>
+        </a>
+        <a href="https://tiktok.com/@averageandactive" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.75a8.18 8.18 0 004.76 1.52V6.84a4.84 4.84 0 01-1-.15z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const CATEGORY_MAP = {
+      fitness: 'Fitness', nutrition: 'Nutrition', family: 'Family Life',
+      longevity: 'Longevity', mindset: 'Mindset'
+    };
+    const CAT_CLASS = {
+      fitness: 'cat-fitness', nutrition: 'cat-nutrition', family: 'cat-family',
+      longevity: 'cat-longevity', mindset: 'cat-mindset'
+    };
+
+    function formatDate(dateStr) {
+      const d = new Date(dateStr + 'T00:00:00');
+      return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    }
+
+    function renderBody(body) {
+      return body.map(block => {
+        if (block.type === 'heading') return `<h2>${block.text}</h2>`;
+        if (block.type === 'paragraph') return `<p>${block.text}</p>`;
+        if (block.type === 'list') return `<ul>${block.items.map(i => `<li>${i}</li>`).join('')}</ul>`;
+        return '';
+      }).join('');
+    }
+
+    const postId = new URLSearchParams(window.location.search).get('id');
+
+    fetch('data/posts.json')
+      .then(r => r.json())
+      .then(posts => {
+        const post = posts.find(p => p.id === postId);
+        if (!post) {
+          document.getElementById('postContent').innerHTML = '<h1 style="font-family: DM Serif Display, serif;">Post not found</h1><p>This article doesn\'t exist. <a href="blog.html">Back to blog</a>.</p>';
+          return;
+        }
+
+        document.getElementById('pageTitle').textContent = post.title + ' — Average & Active';
+        document.getElementById('pageMeta').setAttribute('content', post.excerpt);
+
+        document.getElementById('postContent').innerHTML = `
+          <div class="post-header">
+            <span class="blog-category ${CAT_CLASS[post.category] || ''}">${CATEGORY_MAP[post.category] || post.category}</span>
+            <h1>${post.title}</h1>
+            <div class="post-header-meta">
+              <span>${formatDate(post.date)}</span>
+              <span>${post.readTime} read</span>
+            </div>
+          </div>
+          <div class="post-body">${renderBody(post.body)}</div>`;
+      });
+
+    // Mobile nav
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('open');
+        navLinks.classList.remove('open');
+      });
+    });
+
+    // Email form
+    document.getElementById('emailForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      this.innerHTML = '<p style="padding: 1rem; color: var(--olive); font-weight: 600;">You\'re subscribed! Welcome aboard. 🙌</p>';
+    });
+  </script>
+</body>
+</html>

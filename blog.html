@@ -45,110 +45,24 @@
     <p>No clickbait, no fluff. Just real articles about fitness, nutrition, family, and figuring it all out as we go.</p>
   </section>
 
-  <!-- FEATURED POST -->
+  <!-- BLOG CONTENT — rendered from data/posts.json -->
   <section class="blog-section">
     <div class="section-inner">
-      <div class="blog-featured fade-in">
-        <div class="blog-featured-img">🏃‍♂️</div>
-        <div class="blog-featured-content">
-          <span class="blog-category cat-fitness">Fitness</span>
-          <h2>The 5AM Garage Gym: How I Built a Routine That Actually Sticks</h2>
-          <p>Everyone talks about morning routines. Here's what mine actually looks like — the good, the bad, and the days I hit snooze three times. How I went from zero consistency to never missing a weekday workout.</p>
-          <div class="blog-meta">
-            <span>January 15, 2026</span>
-            <span>8 min read</span>
-          </div>
-          <div style="margin-top: 1.5rem;">
-            <a href="#" class="btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">Read Article</a>
-          </div>
-        </div>
-      </div>
+      <!-- Featured post renders here -->
+      <div id="featuredPost"></div>
 
       <!-- Filters -->
-      <div class="blog-filters">
-        <button class="filter-btn active">All</button>
-        <button class="filter-btn">Fitness</button>
-        <button class="filter-btn">Nutrition</button>
-        <button class="filter-btn">Family Life</button>
-        <button class="filter-btn">Longevity</button>
-        <button class="filter-btn">Mindset</button>
+      <div class="blog-filters" id="blogFilters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="fitness">Fitness</button>
+        <button class="filter-btn" data-filter="nutrition">Nutrition</button>
+        <button class="filter-btn" data-filter="family">Family Life</button>
+        <button class="filter-btn" data-filter="longevity">Longevity</button>
+        <button class="filter-btn" data-filter="mindset">Mindset</button>
       </div>
 
-      <!-- Blog Grid -->
-      <div class="blog-grid">
-        <a href="#" class="blog-card fade-in">
-          <div class="blog-card-img">🥗</div>
-          <div class="blog-card-body">
-            <span class="blog-category cat-nutrition">Nutrition</span>
-            <h3>Macro Tracking for People Who Hate Counting</h3>
-            <p>A lazy person's guide to getting your protein, carbs, and fats roughly right without losing your mind or your enjoyment of food.</p>
-            <div class="blog-meta">
-              <span>Jan 28, 2026</span>
-              <span>6 min</span>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="blog-card fade-in">
-          <div class="blog-card-img">👨‍👧</div>
-          <div class="blog-card-body">
-            <span class="blog-category cat-family">Family Life</span>
-            <h3>Working Out With a Toddler in the Room</h3>
-            <p>Yes, it's chaos. Yes, you'll get interrupted. Here's how to get a solid workout in anyway — tiny humans included.</p>
-            <div class="blog-meta">
-              <span>Jan 22, 2026</span>
-              <span>5 min</span>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="blog-card fade-in">
-          <div class="blog-card-img">⏳</div>
-          <div class="blog-card-body">
-            <span class="blog-category cat-longevity">Longevity</span>
-            <h3>Zone 2 Cardio: The Boring Workout That Adds Years</h3>
-            <p>It doesn't look impressive. It won't get you likes. But zone 2 cardio might be the single best thing you can do for your health.</p>
-            <div class="blog-meta">
-              <span>Jan 18, 2026</span>
-              <span>7 min</span>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="blog-card fade-in">
-          <div class="blog-card-img">💭</div>
-          <div class="blog-card-body">
-            <span class="blog-category cat-mindset">Mindset</span>
-            <h3>Why "Good Enough" Is the Goal</h3>
-            <p>Perfectionism is the enemy of consistency. Here's why I stopped chasing optimal and started chasing sustainable — and got better results.</p>
-            <div class="blog-meta">
-              <span>Jan 12, 2026</span>
-              <span>5 min</span>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="blog-card fade-in">
-          <div class="blog-card-img">🏋️</div>
-          <div class="blog-card-body">
-            <span class="blog-category cat-fitness">Fitness</span>
-            <h3>The Only 5 Exercises You Actually Need</h3>
-            <p>Forget the complicated routines. If you can do these five movements consistently, you're ahead of 90% of the population.</p>
-            <div class="blog-meta">
-              <span>Jan 8, 2026</span>
-              <span>6 min</span>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="blog-card fade-in">
-          <div class="blog-card-img">🥑</div>
-          <div class="blog-card-body">
-            <span class="blog-category cat-nutrition">Nutrition</span>
-            <h3>Meal Prep Sunday: A Real Parent's Version</h3>
-            <p>I've got about 90 minutes on Sunday afternoon. Here's how I prep meals for the week that the whole family will actually eat.</p>
-            <div class="blog-meta">
-              <span>Jan 4, 2026</span>
-              <span>8 min</span>
-            </div>
-          </div>
-        </a>
-      </div>
+      <!-- Blog Grid — cards render here -->
+      <div class="blog-grid" id="blogGrid"></div>
     </div>
   </section>
 
@@ -228,6 +142,94 @@
   </footer>
 
   <script>
+    const CATEGORY_MAP = {
+      fitness: { label: 'Fitness', class: 'cat-fitness' },
+      nutrition: { label: 'Nutrition', class: 'cat-nutrition' },
+      family: { label: 'Family Life', class: 'cat-family' },
+      longevity: { label: 'Longevity', class: 'cat-longevity' },
+      mindset: { label: 'Mindset', class: 'cat-mindset' }
+    };
+
+    function formatDate(dateStr) {
+      const d = new Date(dateStr + 'T00:00:00');
+      return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    }
+
+    function formatDateShort(dateStr) {
+      const d = new Date(dateStr + 'T00:00:00');
+      return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+    }
+
+    function renderFeatured(post) {
+      const cat = CATEGORY_MAP[post.category] || { label: post.category, class: '' };
+      return `
+        <div class="blog-featured fade-in">
+          <div class="blog-featured-img">${post.emoji}</div>
+          <div class="blog-featured-content">
+            <span class="blog-category ${cat.class}">${cat.label}</span>
+            <h2>${post.title}</h2>
+            <p>${post.excerpt}</p>
+            <div class="blog-meta">
+              <span>${formatDate(post.date)}</span>
+              <span>${post.readTime} read</span>
+            </div>
+            <div style="margin-top: 1.5rem;">
+              <a href="post.html?id=${post.id}" class="btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">Read Article</a>
+            </div>
+          </div>
+        </div>`;
+    }
+
+    function renderCard(post) {
+      const cat = CATEGORY_MAP[post.category] || { label: post.category, class: '' };
+      return `
+        <a href="post.html?id=${post.id}" class="blog-card fade-in" data-category="${post.category}">
+          <div class="blog-card-img">${post.emoji}</div>
+          <div class="blog-card-body">
+            <span class="blog-category ${cat.class}">${cat.label}</span>
+            <h3>${post.title}</h3>
+            <p>${post.excerpt}</p>
+            <div class="blog-meta">
+              <span>${formatDateShort(post.date)}</span>
+              <span>${post.readTime}</span>
+            </div>
+          </div>
+        </a>`;
+    }
+
+    let allPosts = [];
+
+    fetch('data/posts.json')
+      .then(r => r.json())
+      .then(posts => {
+        allPosts = posts;
+        const sorted = [...posts].sort((a, b) => new Date(b.date) - new Date(a.date));
+        const featured = sorted.find(p => p.featured) || sorted[0];
+        const rest = sorted.filter(p => p.id !== featured.id);
+
+        document.getElementById('featuredPost').innerHTML = renderFeatured(featured);
+        document.getElementById('blogGrid').innerHTML = rest.map(renderCard).join('');
+
+        // Observe new fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+      });
+
+    // Filtering
+    document.getElementById('blogFilters').addEventListener('click', (e) => {
+      if (!e.target.classList.contains('filter-btn')) return;
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+
+      const filter = e.target.dataset.filter;
+      document.querySelectorAll('.blog-card').forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+
     // Mobile nav toggle
     const navToggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
@@ -249,14 +251,6 @@
       });
     }, { threshold: 0.1 });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-    // Blog filter tabs
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-      });
-    });
 
     // Email form
     document.getElementById('emailForm').addEventListener('submit', function(e) {
