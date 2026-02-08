@@ -6,7 +6,7 @@ excerpt: "A lazy person's guide to getting your protein, carbs, and fats roughly
 date: "2026-01-28"
 readTime: "6 min"
 featured: false
-status: published
+status: draft
 ---
 
 I tried strict macro tracking for about three weeks before I wanted to throw my phone into a lake. Weighing every almond? Scanning every barcode? That's not sustainable when you're also packing lunches and negotiating with a 4-year-old about eating vegetables.

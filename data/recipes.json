@@ -26,7 +26,7 @@
       "Serve with almond butter for dipping.",
       "Optional: sprinkle cinnamon on top or drizzle with a tiny bit of honey."
     ],
-    "status": "published",
+    "status": "draft",
     "id": "apple-slices-almond-butter"
   },
   {
@@ -65,7 +65,7 @@
       "Top each with chicken, black beans, sliced avocado, and salsa.",
       "Squeeze lime over each bowl. Refrigerate meal prep portions for up to 4 days."
     ],
-    "status": "published",
+    "status": "draft",
     "id": "chicken-rice-power-bowl"
   },
   {
@@ -103,7 +103,7 @@
       "Bake for 12-15 minutes until salmon flakes easily and asparagus is tender.",
       "Serve with cooked quinoa if you want extra carbs."
     ],
-    "status": "published",
+    "status": "draft",
     "id": "lemon-herb-salmon-asparagus"
   },
   {
@@ -140,7 +140,7 @@
       "Top with crumbled feta, salt, and pepper.",
       "Serve with whole wheat toast."
     ],
-    "status": "published",
+    "status": "draft",
     "id": "loaded-egg-veggie-scramble"
   },
   {
@@ -174,7 +174,7 @@
       "Blend on high for 30-45 seconds until smooth.",
       "Add honey if you want extra sweetness. Serve immediately."
     ],
-    "status": "published",
+    "status": "draft",
     "id": "pb-banana-protein-shake"
   },
   {
@@ -212,7 +212,7 @@
       "Cook another 1-2 minutes until golden.",
       "Serve with berries, a drizzle of maple syrup, or a tablespoon of peanut butter."
     ],
-    "status": "published",
+    "status": "draft",
     "id": "protein-pancakes"
   },
   {
@@ -250,7 +250,7 @@
       "Add broccoli florets to the pan, drizzle with remaining olive oil.",
       "Roast for another 12-15 minutes until chicken reaches 165°F and vegetables are tender."
     ],
-    "status": "published",
+    "status": "draft",
     "id": "sheet-pan-chicken-veggies"
   },
   {
@@ -291,7 +291,7 @@
       "Simmer on low for 10-15 minutes to let flavors develop.",
       "Serve over pasta and top with fresh basil."
     ],
-    "status": "published",
+    "status": "draft",
     "id": "turkey-bolognese"
   },
   {
@@ -326,7 +326,7 @@
       "Fold in the sides, then roll tightly from the bottom.",
       "Cut in half diagonally. Wrap in foil for transport if meal prepping."
     ],
-    "status": "published",
+    "status": "draft",
     "id": "turkey-hummus-wrap"
   }
 ]

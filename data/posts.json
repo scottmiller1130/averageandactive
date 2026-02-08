@@ -8,7 +8,7 @@
     "date": "2026-01-28",
     "readTime": "6 min",
     "featured": false,
-    "status": "published",
+    "status": "draft",
     "body": [
       {
         "type": "paragraph",
@@ -75,7 +75,7 @@
     "date": "2026-01-22",
     "readTime": "5 min",
     "featured": false,
-    "status": "published",
+    "status": "draft",
     "body": [
       {
         "type": "paragraph",
@@ -126,7 +126,7 @@
     "date": "2026-01-18",
     "readTime": "7 min",
     "featured": false,
-    "status": "published",
+    "status": "draft",
     "body": [
       {
         "type": "paragraph",
@@ -184,7 +184,7 @@
     "date": "2026-01-15",
     "readTime": "8 min",
     "featured": true,
-    "status": "published",
+    "status": "draft",
     "body": [
       {
         "type": "paragraph",
@@ -266,7 +266,7 @@
     "date": "2026-01-12",
     "readTime": "5 min",
     "featured": false,
-    "status": "published",
+    "status": "draft",
     "body": [
       {
         "type": "paragraph",
@@ -319,7 +319,7 @@
     "date": "2026-01-08",
     "readTime": "6 min",
     "featured": false,
-    "status": "published",
+    "status": "draft",
     "body": [
       {
         "type": "paragraph",
@@ -384,7 +384,7 @@
     "date": "2026-01-04",
     "readTime": "8 min",
     "featured": false,
-    "status": "published",
+    "status": "draft",
     "body": [
       {
         "type": "paragraph",

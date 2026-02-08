@@ -6,7 +6,7 @@ excerpt: "Perfectionism is the enemy of consistency. Here's why I stopped chasin
 date: "2026-01-12"
 readTime: "5 min"
 featured: false
-status: published
+status: draft
 ---
 
 For years, I'd start a fitness plan, go all-in for two or three weeks, and then crash. The plan was always too perfect — 6 workouts a week, meal prep every Sunday, no cheat meals, sleep by 10 PM. Real life doesn't work like that.

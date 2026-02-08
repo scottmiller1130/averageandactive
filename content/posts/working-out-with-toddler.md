@@ -6,7 +6,7 @@ excerpt: "Yes, it's chaos. Yes, you'll get interrupted. Here's how to get a soli
 date: "2026-01-22"
 readTime: "5 min"
 featured: false
-status: published
+status: draft
 ---
 
 Let me paint you a picture: I'm mid-squat, barbell on my back, and my 3-year-old decides this is the perfect moment to show me her drawing. Of a cat. That needs a name. Right now.
