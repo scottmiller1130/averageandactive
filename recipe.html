@@ -70,8 +70,8 @@
       Site.setHTML('recipeContent', '<h1 style="font-family:DM Serif Display,serif;">Recipe not found</h1><p>Invalid or missing recipe ID. <a href="recipes.html">Back to recipes</a>.</p>');
     } else {
       Site.fetchJSON('data/recipes.json')
-        .then(data => {
-          const r = data.recipes.find(x => x.id === recipeId);
+        .then(recipes => {
+          const r = recipes.find(x => x.id === recipeId);
           if (!r || !Site.isValidRecipe(r)) {
             Site.setHTML('recipeContent', '<h1 style="font-family:DM Serif Display,serif;">Recipe not found</h1><p>This recipe doesn\'t exist. <a href="recipes.html">Back to recipes</a>.</p>');
             return;

@@ -1,36 +1,12 @@
 # Content Management Guide
 
-You have two ways to manage content: the **Admin Panel (Decap CMS)** or **editing JSON files directly**.
+All blog posts and recipes are stored as JSON data files. The website reads these files and renders the content automatically — no HTML editing needed.
 
 ---
 
-## Option 1: Admin Panel (Recommended)
+## Adding a New Blog Post
 
-Go to `/admin/` on your site (e.g., `https://yoursite.com/admin/`) to access the content manager.
-
-From the admin panel you can:
-- Create, edit, and delete blog posts using a rich markdown editor
-- Create, edit, and delete recipes with structured form fields
-- Preview content before publishing
-- All changes are saved as git commits automatically
-
-### Setup Requirements
-
-The admin panel uses **Decap CMS** with the `git-gateway` backend. To enable it:
-
-1. Deploy your site to **Netlify**
-2. Enable **Netlify Identity** (Site Settings > Identity > Enable)
-3. Enable **Git Gateway** (Site Settings > Identity > Services > Git Gateway > Enable)
-4. Invite yourself as a user via Netlify Identity
-5. Visit `/admin/` and log in
-
----
-
-## Option 2: Edit JSON Files Directly
-
-### Adding a New Blog Post
-
-Open `data/posts.json` and add a new object inside the `"posts"` array. Post bodies use **markdown**.
+Open `data/posts.json` and add a new object to the array:
 
 ```json
 {
@@ -42,11 +18,16 @@ Open `data/posts.json` and add a new object inside the `"posts"` array. Post bod
   "date": "2026-02-15",
   "readTime": "6 min",
   "featured": false,
-  "body": "Your opening paragraph here.\n\n## Section Heading\n\nMore content here.\n\n- Item one\n- Item two\n- Item three"
+  "body": [
+    { "type": "paragraph", "text": "Your opening paragraph here." },
+    { "type": "heading", "text": "Section Heading" },
+    { "type": "paragraph", "text": "More content here." },
+    { "type": "list", "items": ["Item one", "Item two", "Item three"] }
+  ]
 }
 ```
 
-#### Blog Post Fields
+### Blog Post Fields
 
 | Field | Required | Description |
 |-------|----------|-------------|
@@ -58,29 +39,19 @@ Open `data/posts.json` and add a new object inside the `"posts"` array. Post bod
 | `date` | Yes | Publish date in `YYYY-MM-DD` format. Posts sort by date (newest first) |
 | `readTime` | Yes | Estimated read time (e.g., `"6 min"`) |
 | `featured` | Yes | Set to `true` to make this the featured/hero post. Only one post should be `true` |
-| `body` | Yes | Markdown string (see below) |
+| `body` | Yes | Array of content blocks (see below) |
 
-#### Markdown Body Syntax
+### Body Content Blocks
 
-```
-This is a paragraph. Just write normally.
-
-## This Is a Heading
-
-Another paragraph here.
-
-- Bullet point one
-- Bullet point two
-- Bullet point three
-
-Use **bold** and *italic* for emphasis.
-```
+- **Paragraph:** `{ "type": "paragraph", "text": "Your text here." }`
+- **Heading:** `{ "type": "heading", "text": "Section Title" }`
+- **List:** `{ "type": "list", "items": ["Item 1", "Item 2"] }`
 
 ---
 
-### Adding a New Recipe
+## Adding a New Recipe
 
-Open `data/recipes.json` and add a new object inside the `"recipes"` array:
+Open `data/recipes.json` and add a new object to the array:
 
 ```json
 {
@@ -110,7 +81,7 @@ Open `data/recipes.json` and add a new object inside the `"recipes"` array:
 }
 ```
 
-#### Recipe Fields
+### Recipe Fields
 
 | Field | Required | Description |
 |-------|----------|-------------|
@@ -132,6 +103,23 @@ Open `data/recipes.json` and add a new object inside the `"recipes"` array:
 
 ---
 
+## Quick Checklist
+
+### New blog post:
+1. Open `data/posts.json`
+2. Add your new post object (copy an existing one as a template)
+3. Give it a unique `id`
+4. Set `featured: true` if you want it as the hero post (set the old featured to `false`)
+5. Save the file — done!
+
+### New recipe:
+1. Open `data/recipes.json`
+2. Add your new recipe object (copy an existing one as a template)
+3. Give it a unique `id`
+4. Save the file — done!
+
+---
+
 ## File Structure
 
 ```
@@ -143,10 +131,6 @@ averageandactive/
 ├── recipes.html        — Recipe listing (reads from data/recipes.json)
 ├── recipe.html         — Individual recipe page (reads from data/recipes.json)
 ├── styles.css          — Shared stylesheet
-├── site.js             — Shared JavaScript module
-├── admin/
-│   ├── index.html      — Decap CMS admin panel
-│   └── config.yml      — CMS configuration
 └── data/
     ├── posts.json      — All blog post content
     └── recipes.json    — All recipe content
@@ -158,4 +142,4 @@ averageandactive/
 - **Dates control sort order.** Newest posts appear first on the blog
 - **Only one featured post.** Set `featured: true` on the one you want highlighted at the top of the blog
 - **Categories and meal types control the filter buttons.** Stick to the values listed above so filtering works
-- **Using the admin panel is easiest.** It handles markdown editing, form validation, and git commits for you
+- **No HTML needed.** Just edit the JSON files and the pages update automatically

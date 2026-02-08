@@ -121,8 +121,8 @@
     }
 
     Site.fetchJSON('data/recipes.json')
-      .then(data => {
-        allRecipes = data.recipes.filter(Site.isValidRecipe);
+      .then(recipes => {
+        allRecipes = recipes.filter(Site.isValidRecipe);
         renderPage(1);
       })
       .catch(err => Site.showError('recipeGrid', err.message));
