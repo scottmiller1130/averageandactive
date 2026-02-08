@@ -1,0 +1,36 @@
+{
+  "title": "Loaded Egg & Veggie Scramble",
+  "mealType": "breakfast",
+  "emoji": "🍳",
+  "description": "Three eggs, spinach, peppers, and feta with whole wheat toast. The weekday morning staple.",
+  "prepTime": "10 min",
+  "servings": 1,
+  "difficulty": "Easy",
+  "calories": 420,
+  "protein": 35,
+  "carbs": 28,
+  "fat": 18,
+  "tags": [
+    "high-protein",
+    "quick"
+  ],
+  "ingredients": [
+    "3 large eggs",
+    "1 cup fresh spinach",
+    "1/4 bell pepper, diced",
+    "2 tbsp crumbled feta cheese",
+    "1 slice whole wheat toast",
+    "1 tsp olive oil",
+    "Salt and pepper to taste"
+  ],
+  "steps": [
+    "Heat olive oil in a non-stick pan over medium heat.",
+    "Add diced bell pepper and cook for 2 minutes until slightly softened.",
+    "Add spinach and stir until wilted, about 1 minute.",
+    "Crack eggs into the pan and scramble with the vegetables.",
+    "Cook until eggs are set but still slightly soft, about 2-3 minutes.",
+    "Top with crumbled feta, salt, and pepper.",
+    "Serve with whole wheat toast."
+  ],
+  "status": "published"
+}

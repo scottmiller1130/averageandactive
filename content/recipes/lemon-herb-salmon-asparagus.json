@@ -1,0 +1,37 @@
+{
+  "title": "Lemon Herb Salmon & Asparagus",
+  "mealType": "dinner",
+  "emoji": "🐟",
+  "description": "Salmon fillet with lemon, garlic, herbs, and roasted asparagus. Fancy-looking but dead simple to make.",
+  "prepTime": "20 min",
+  "servings": 2,
+  "difficulty": "Easy",
+  "calories": 440,
+  "protein": 38,
+  "carbs": 32,
+  "fat": 20,
+  "tags": [
+    "high-protein",
+    "quick"
+  ],
+  "ingredients": [
+    "2 salmon fillets (6 oz each)",
+    "1 bunch asparagus, trimmed",
+    "2 tbsp olive oil",
+    "2 cloves garlic, minced",
+    "1 lemon (half for juice, half for slices)",
+    "1 tsp dried oregano or Italian seasoning",
+    "Salt and pepper to taste",
+    "Optional: 1 cup cooked quinoa per serving"
+  ],
+  "steps": [
+    "Preheat oven to 400°F (200°C).",
+    "Place asparagus on a sheet pan, drizzle with 1 tbsp olive oil, salt, and pepper.",
+    "Season salmon with garlic, oregano, salt, pepper, and a squeeze of lemon juice.",
+    "Place salmon on the pan with the asparagus. Top with lemon slices.",
+    "Drizzle salmon with remaining olive oil.",
+    "Bake for 12-15 minutes until salmon flakes easily and asparagus is tender.",
+    "Serve with cooked quinoa if you want extra carbs."
+  ],
+  "status": "published"
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Apple Slices & Almond Butter",
+  "mealType": "snack",
+  "emoji": "🍎",
+  "description": "Simple, satisfying, and portable. Two tablespoons of almond butter with a sliced apple. The 3PM savior.",
+  "prepTime": "2 min",
+  "servings": 1,
+  "difficulty": "Easy",
+  "calories": 220,
+  "protein": 14,
+  "carbs": 25,
+  "fat": 8,
+  "tags": [
+    "quick",
+    "no-cook"
+  ],
+  "ingredients": [
+    "1 medium apple (Honeycrisp or Fuji work great)",
+    "2 tbsp almond butter",
+    "Optional: sprinkle of cinnamon",
+    "Optional: drizzle of honey"
+  ],
+  "steps": [
+    "Wash and slice apple into wedges.",
+    "Serve with almond butter for dipping.",
+    "Optional: sprinkle cinnamon on top or drizzle with a tiny bit of honey."
+  ],
+  "status": "published"
+}

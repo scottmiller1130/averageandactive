@@ -317,4 +317,28 @@ describe('Supporting files', () => {
   test('images directory exists', () => {
     expect(fs.existsSync(path.join(__dirname, '..', 'images'))).toBe(true);
   });
+
+  test('content/posts directory exists', () => {
+    expect(fs.existsSync(path.join(__dirname, '..', 'content', 'posts'))).toBe(true);
+  });
+
+  test('content/recipes directory exists', () => {
+    expect(fs.existsSync(path.join(__dirname, '..', 'content', 'recipes'))).toBe(true);
+  });
+
+  test('build script exists', () => {
+    expect(fs.existsSync(path.join(__dirname, '..', 'scripts', 'build.js'))).toBe(true);
+  });
+
+  test('content/posts has .md files matching posts.json count', () => {
+    const mdFiles = fs.readdirSync(path.join(__dirname, '..', 'content', 'posts')).filter(f => f.endsWith('.md'));
+    const posts = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'posts.json'), 'utf8'));
+    expect(mdFiles.length).toBe(posts.length);
+  });
+
+  test('content/recipes has .json files matching recipes.json count', () => {
+    const jsonFiles = fs.readdirSync(path.join(__dirname, '..', 'content', 'recipes')).filter(f => f.endsWith('.json'));
+    const recipes = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'recipes.json'), 'utf8'));
+    expect(jsonFiles.length).toBe(recipes.length);
+  });
 });

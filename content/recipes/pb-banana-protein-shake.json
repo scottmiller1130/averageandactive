@@ -1,0 +1,33 @@
+{
+  "title": "PB & Banana Protein Shake",
+  "mealType": "smoothie",
+  "emoji": "🥤",
+  "description": "Banana, peanut butter, protein powder, milk, and ice. Takes 3 minutes. Tastes like dessert. Post-workout go-to.",
+  "prepTime": "3 min",
+  "servings": 1,
+  "difficulty": "Easy",
+  "calories": 340,
+  "protein": 30,
+  "carbs": 42,
+  "fat": 10,
+  "tags": [
+    "high-protein",
+    "quick",
+    "post-workout"
+  ],
+  "ingredients": [
+    "1 scoop vanilla or chocolate protein powder",
+    "1 medium banana",
+    "1 tbsp natural peanut butter",
+    "1 cup milk (dairy or almond)",
+    "1/2 cup ice",
+    "Optional: 1 tsp honey"
+  ],
+  "steps": [
+    "Add milk and peanut butter to blender first.",
+    "Add banana (frozen works great), protein powder, and ice.",
+    "Blend on high for 30-45 seconds until smooth.",
+    "Add honey if you want extra sweetness. Serve immediately."
+  ],
+  "status": "published"
+}
