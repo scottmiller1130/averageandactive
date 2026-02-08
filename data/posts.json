@@ -9,22 +9,77 @@
     "readTime": "8 min",
     "featured": true,
     "body": [
-      { "type": "paragraph", "text": "I'm not going to pretend I wake up every morning fired up and ready to crush a workout. Some days, the alarm goes off at 4:55 AM and every part of me wants to stay in bed. But I get up anyway. And that's kind of the whole point." },
-      { "type": "heading", "text": "Why 5AM?" },
-      { "type": "paragraph", "text": "I didn't choose 5AM because I'm a morning person. I chose it because it's the only time that's truly mine. By 6:30, the kids are up. By 7:15, we're in full breakfast-backpack-bus-stop chaos. If I don't train before the house wakes up, it's not happening." },
-      { "type": "paragraph", "text": "The garage gym helps too. No commute to a gym means I roll out of bed, throw on shorts, and I'm already there. The barrier to entry is literally just standing up." },
-      { "type": "heading", "text": "The Actual Routine" },
-      { "type": "paragraph", "text": "I keep it simple. Four days a week, alternating between upper and lower body. Each session is 35-45 minutes. Here's what a typical week looks like:" },
-      { "type": "list", "items": ["Monday: Upper body (push focus) — bench press, overhead press, rows, curls", "Tuesday: Lower body — squats, Romanian deadlifts, lunges, calf raises", "Thursday: Upper body (pull focus) — pull-ups, dumbbell rows, face pulls, triceps", "Friday: Lower body + conditioning — deadlifts, leg press, kettlebell swings"] },
-      { "type": "paragraph", "text": "Wednesday is a rest day or a light walk. Weekends are for family hikes, backyard play, or just resting. No guilt." },
-      { "type": "heading", "text": "What Made It Stick" },
-      { "type": "paragraph", "text": "Three things changed everything for me:" },
-      { "type": "list", "items": ["I stopped chasing perfection. A 20-minute session beats a skipped one.", "I laid out my clothes the night before. Removes one more decision.", "I tracked consistency, not weight. My goal is 4 sessions per week, not a PR."] },
-      { "type": "paragraph", "text": "The first two weeks were brutal. But after that, it became automatic. Now it feels weird NOT to train in the morning." },
-      { "type": "heading", "text": "The Honest Truth" },
-      { "type": "paragraph", "text": "I still have bad days. Last week I slept through my alarm twice. The week before, my kid was sick and I was up all night. Life happens. The difference is I don't let one missed day turn into a missed week anymore." },
-      { "type": "paragraph", "text": "If you're thinking about starting a morning routine — start smaller than you think. Even 15 minutes. The habit of showing up matters more than the workout itself." }
-    ]
+      {
+        "type": "paragraph",
+        "text": "I'm not going to pretend I wake up every morning fired up and ready to crush a workout. Some days, the alarm goes off at 4:55 AM and every part of me wants to stay in bed. But I get up anyway. And that's kind of the whole point."
+      },
+      {
+        "type": "heading",
+        "text": "Why 5AM?"
+      },
+      {
+        "type": "paragraph",
+        "text": "I didn't choose 5AM because I'm a morning person. I chose it because it's the only time that's truly mine. By 6:30, the kids are up. By 7:15, we're in full breakfast-backpack-bus-stop chaos. If I don't train before the house wakes up, it's not happening."
+      },
+      {
+        "type": "paragraph",
+        "text": "The garage gym helps too. No commute to a gym means I roll out of bed, throw on shorts, and I'm already there. The barrier to entry is literally just standing up."
+      },
+      {
+        "type": "heading",
+        "text": "The Actual Routine"
+      },
+      {
+        "type": "paragraph",
+        "text": "I keep it simple. Four days a week, alternating between upper and lower body. Each session is 35-45 minutes. Here's what a typical week looks like:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Monday: Upper body (push focus) — bench press, overhead press, rows, curls",
+          "Tuesday: Lower body — squats, Romanian deadlifts, lunges, calf raises",
+          "Thursday: Upper body (pull focus) — pull-ups, dumbbell rows, face pulls, triceps",
+          "Friday: Lower body + conditioning — deadlifts, leg press, kettlebell swings"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Wednesday is a rest day or a light walk. Weekends are for family hikes, backyard play, or just resting. No guilt."
+      },
+      {
+        "type": "heading",
+        "text": "What Made It Stick"
+      },
+      {
+        "type": "paragraph",
+        "text": "Three things changed everything for me:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "I stopped chasing perfection. A 20-minute session beats a skipped one.",
+          "I laid out my clothes the night before. Removes one more decision.",
+          "I tracked consistency, not weight. My goal is 4 sessions per week, not a PR."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The first two weeks were brutal. But after that, it became automatic. Now it feels weird NOT to train in the morning."
+      },
+      {
+        "type": "heading",
+        "text": "The Honest Truth"
+      },
+      {
+        "type": "paragraph",
+        "text": "I still have bad days. Last week I slept through my alarm twice. The week before, my kid was sick and I was up all night. Life happens. The difference is I don't let one missed day turn into a missed week anymore."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you're thinking about starting a morning routine — start smaller than you think. Even 15 minutes. The habit of showing up matters more than the workout itself."
+      }
+    ],
+    "status": "published"
   },
   {
     "id": "macro-tracking-lazy-guide",
@@ -36,18 +91,62 @@
     "readTime": "6 min",
     "featured": false,
     "body": [
-      { "type": "paragraph", "text": "I tried strict macro tracking for about three weeks before I wanted to throw my phone into a lake. Weighing every almond? Scanning every barcode? That's not sustainable when you're also packing lunches and negotiating with a 4-year-old about eating vegetables." },
-      { "type": "heading", "text": "The 'Close Enough' Method" },
-      { "type": "paragraph", "text": "Here's what I actually do: I track roughly. I know what a palm-sized portion of protein looks like. I know a fist of carbs. A thumb of fat. Is it accurate to the gram? No. Is it accurate enough to make progress? Absolutely." },
-      { "type": "heading", "text": "My Daily Targets (Roughly)" },
-      { "type": "list", "items": ["Protein: 150-180g (I aim for 40g per meal, 4 times a day)", "Carbs: 200-250g (more on training days, less on rest days)", "Fats: 60-70g (this usually takes care of itself)", "Total: ~2,200 calories"] },
-      { "type": "heading", "text": "The Staples That Make It Easy" },
-      { "type": "paragraph", "text": "I eat roughly the same things during the week. Not because I'm boring — because decision fatigue is real when you have kids. Here are my go-tos:" },
-      { "type": "list", "items": ["Breakfast: Eggs + toast or protein shake + banana", "Lunch: Chicken + rice bowl or turkey wrap", "Dinner: Whatever the family eats (I just adjust my portion)", "Snacks: Greek yogurt, protein bar, apple + almond butter"] },
-      { "type": "paragraph", "text": "Weekends are more flexible. We eat out, we have pizza night, we live our lives. I don't track on weekends — I just make generally smart choices and enjoy the time with family." },
-      { "type": "heading", "text": "The One Non-Negotiable" },
-      { "type": "paragraph", "text": "If there's one thing I'd tell anyone to focus on, it's protein. Hit your protein target and everything else falls into place more easily. You're less hungry, you recover better, and you maintain muscle as you age. That's the whole game." }
-    ]
+      {
+        "type": "paragraph",
+        "text": "I tried strict macro tracking for about three weeks before I wanted to throw my phone into a lake. Weighing every almond? Scanning every barcode? That's not sustainable when you're also packing lunches and negotiating with a 4-year-old about eating vegetables."
+      },
+      {
+        "type": "heading",
+        "text": "The 'Close Enough' Method"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here's what I actually do: I track roughly. I know what a palm-sized portion of protein looks like. I know a fist of carbs. A thumb of fat. Is it accurate to the gram? No. Is it accurate enough to make progress? Absolutely."
+      },
+      {
+        "type": "heading",
+        "text": "My Daily Targets (Roughly)"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Protein: 150-180g (I aim for 40g per meal, 4 times a day)",
+          "Carbs: 200-250g (more on training days, less on rest days)",
+          "Fats: 60-70g (this usually takes care of itself)",
+          "Total: ~2,200 calories"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Staples That Make It Easy"
+      },
+      {
+        "type": "paragraph",
+        "text": "I eat roughly the same things during the week. Not because I'm boring — because decision fatigue is real when you have kids. Here are my go-tos:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Breakfast: Eggs + toast or protein shake + banana",
+          "Lunch: Chicken + rice bowl or turkey wrap",
+          "Dinner: Whatever the family eats (I just adjust my portion)",
+          "Snacks: Greek yogurt, protein bar, apple + almond butter"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Weekends are more flexible. We eat out, we have pizza night, we live our lives. I don't track on weekends — I just make generally smart choices and enjoy the time with family."
+      },
+      {
+        "type": "heading",
+        "text": "The One Non-Negotiable"
+      },
+      {
+        "type": "paragraph",
+        "text": "If there's one thing I'd tell anyone to focus on, it's protein. Hit your protein target and everything else falls into place more easily. You're less hungry, you recover better, and you maintain muscle as you age. That's the whole game."
+      }
+    ],
+    "status": "published"
   },
   {
     "id": "working-out-with-toddler",
@@ -59,15 +158,46 @@
     "readTime": "5 min",
     "featured": false,
     "body": [
-      { "type": "paragraph", "text": "Let me paint you a picture: I'm mid-squat, barbell on my back, and my 3-year-old decides this is the perfect moment to show me her drawing. Of a cat. That needs a name. Right now." },
-      { "type": "paragraph", "text": "If you're a parent who trains at home, you know exactly what I'm talking about. Here's how I've learned to make it work." },
-      { "type": "heading", "text": "Accept the Chaos" },
-      { "type": "paragraph", "text": "Step one: let go of the idea of an uninterrupted 45-minute session. It's not happening. Once I accepted that, I actually started enjoying the absurdity of it. My daughter does 'squats' next to me with a pool noodle. My son counts my reps (inaccurately). It's messy and kind of perfect." },
-      { "type": "heading", "text": "Strategies That Actually Help" },
-      { "type": "list", "items": ["Use rest periods for kid stuff — answer the question, fix the snack, find the toy", "Pick exercises that are safe to bail on (dumbbells > barbell when kids are around)", "Set up a 'kid station' nearby with coloring books, blocks, or a tablet", "Keep sessions short and intense — 25 minutes of focus beats 60 minutes of distraction", "Let them participate. Kid-sized dumbbells cost $10 and buy you infinite goodwill"] },
-      { "type": "heading", "text": "The Real Lesson" },
-      { "type": "paragraph", "text": "Working out with your kids around isn't a limitation — it's modeling behavior. They see you prioritizing your health. They see you pushing through something hard. They see you showing up even when it's not easy. That's a lesson no amount of talking can teach." }
-    ]
+      {
+        "type": "paragraph",
+        "text": "Let me paint you a picture: I'm mid-squat, barbell on my back, and my 3-year-old decides this is the perfect moment to show me her drawing. Of a cat. That needs a name. Right now."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you're a parent who trains at home, you know exactly what I'm talking about. Here's how I've learned to make it work."
+      },
+      {
+        "type": "heading",
+        "text": "Accept the Chaos"
+      },
+      {
+        "type": "paragraph",
+        "text": "Step one: let go of the idea of an uninterrupted 45-minute session. It's not happening. Once I accepted that, I actually started enjoying the absurdity of it. My daughter does 'squats' next to me with a pool noodle. My son counts my reps (inaccurately). It's messy and kind of perfect."
+      },
+      {
+        "type": "heading",
+        "text": "Strategies That Actually Help"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Use rest periods for kid stuff — answer the question, fix the snack, find the toy",
+          "Pick exercises that are safe to bail on (dumbbells > barbell when kids are around)",
+          "Set up a 'kid station' nearby with coloring books, blocks, or a tablet",
+          "Keep sessions short and intense — 25 minutes of focus beats 60 minutes of distraction",
+          "Let them participate. Kid-sized dumbbells cost $10 and buy you infinite goodwill"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Real Lesson"
+      },
+      {
+        "type": "paragraph",
+        "text": "Working out with your kids around isn't a limitation — it's modeling behavior. They see you prioritizing your health. They see you pushing through something hard. They see you showing up even when it's not easy. That's a lesson no amount of talking can teach."
+      }
+    ],
+    "status": "published"
   },
   {
     "id": "zone-2-cardio-longevity",
@@ -79,17 +209,53 @@
     "readTime": "7 min",
     "featured": false,
     "body": [
-      { "type": "paragraph", "text": "Zone 2 cardio is the most boring and most important type of exercise I do. It's not sexy. There's no before-and-after transformation. But the science behind it for longevity is overwhelming." },
-      { "type": "heading", "text": "What Is Zone 2?" },
-      { "type": "paragraph", "text": "Zone 2 is the intensity where you can hold a conversation but it's slightly uncomfortable. You're breathing harder but you're not gasping. For most people, that's a brisk walk, an easy jog, or a moderate bike ride. Heart rate roughly 60-70% of your max." },
-      { "type": "heading", "text": "Why It Matters" },
-      { "type": "paragraph", "text": "Zone 2 training improves your mitochondrial function — basically, how efficiently your cells produce energy. It improves insulin sensitivity, cardiovascular health, and fat metabolism. Dr. Peter Attia calls it 'the most important exercise for longevity,' and after digging into the research, I agree." },
-      { "type": "heading", "text": "How I Fit It In" },
-      { "type": "list", "items": ["3-4 times per week, 30-45 minutes each", "Usually a walk with the dog or a bike ride on the weekend", "Sometimes I just walk on an incline treadmill while watching a show", "I wear a cheap heart rate monitor to stay in the right zone"] },
-      { "type": "paragraph", "text": "The beauty of zone 2 is that it doesn't beat you up. You can do it every day without affecting your recovery. It's the opposite of 'no pain, no gain' — and it's arguably more important for your long-term health than any heavy lifting session." },
-      { "type": "heading", "text": "The Dad Walk" },
-      { "type": "paragraph", "text": "My favorite zone 2 session? Walking the neighborhood with my kids on their bikes. They ride, I walk fast, we all get outside. Exercise that doubles as family time? That's the sweet spot." }
-    ]
+      {
+        "type": "paragraph",
+        "text": "Zone 2 cardio is the most boring and most important type of exercise I do. It's not sexy. There's no before-and-after transformation. But the science behind it for longevity is overwhelming."
+      },
+      {
+        "type": "heading",
+        "text": "What Is Zone 2?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Zone 2 is the intensity where you can hold a conversation but it's slightly uncomfortable. You're breathing harder but you're not gasping. For most people, that's a brisk walk, an easy jog, or a moderate bike ride. Heart rate roughly 60-70% of your max."
+      },
+      {
+        "type": "heading",
+        "text": "Why It Matters"
+      },
+      {
+        "type": "paragraph",
+        "text": "Zone 2 training improves your mitochondrial function — basically, how efficiently your cells produce energy. It improves insulin sensitivity, cardiovascular health, and fat metabolism. Dr. Peter Attia calls it 'the most important exercise for longevity,' and after digging into the research, I agree."
+      },
+      {
+        "type": "heading",
+        "text": "How I Fit It In"
+      },
+      {
+        "type": "list",
+        "items": [
+          "3-4 times per week, 30-45 minutes each",
+          "Usually a walk with the dog or a bike ride on the weekend",
+          "Sometimes I just walk on an incline treadmill while watching a show",
+          "I wear a cheap heart rate monitor to stay in the right zone"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The beauty of zone 2 is that it doesn't beat you up. You can do it every day without affecting your recovery. It's the opposite of 'no pain, no gain' — and it's arguably more important for your long-term health than any heavy lifting session."
+      },
+      {
+        "type": "heading",
+        "text": "The Dad Walk"
+      },
+      {
+        "type": "paragraph",
+        "text": "My favorite zone 2 session? Walking the neighborhood with my kids on their bikes. They ride, I walk fast, we all get outside. Exercise that doubles as family time? That's the sweet spot."
+      }
+    ],
+    "status": "published"
   },
   {
     "id": "why-good-enough-is-the-goal",
@@ -101,16 +267,48 @@
     "readTime": "5 min",
     "featured": false,
     "body": [
-      { "type": "paragraph", "text": "For years, I'd start a fitness plan, go all-in for two or three weeks, and then crash. The plan was always too perfect — 6 workouts a week, meal prep every Sunday, no cheat meals, sleep by 10 PM. Real life doesn't work like that." },
-      { "type": "heading", "text": "The Shift" },
-      { "type": "paragraph", "text": "The turning point came when I lowered my standards. Not in a giving-up way — in a realistic way. Instead of 6 workouts, I aimed for 3. Instead of perfect nutrition, I aimed for 'mostly good.' Instead of no junk food, I aimed for 80/20." },
-      { "type": "paragraph", "text": "And something unexpected happened: I actually stuck with it. For the first time in years, I was consistent. And consistency beat intensity every single time." },
-      { "type": "heading", "text": "The Math of 'Good Enough'" },
-      { "type": "list", "items": ["Perfect plan followed for 3 weeks = 18 workouts, then 0", "Good enough plan followed for 12 months = 150+ workouts", "Guess which one gets better results?"] },
-      { "type": "heading", "text": "What 'Good Enough' Looks Like" },
-      { "type": "paragraph", "text": "For me, good enough means: train 3-4 times a week, eat mostly whole foods, get 7+ hours of sleep most nights, walk daily, and don't stress the rest. Some weeks are better than others. That's fine. The trend line is what matters, not any single day." },
-      { "type": "paragraph", "text": "Give yourself permission to be imperfect. It's the most productive thing you'll ever do for your health." }
-    ]
+      {
+        "type": "paragraph",
+        "text": "For years, I'd start a fitness plan, go all-in for two or three weeks, and then crash. The plan was always too perfect — 6 workouts a week, meal prep every Sunday, no cheat meals, sleep by 10 PM. Real life doesn't work like that."
+      },
+      {
+        "type": "heading",
+        "text": "The Shift"
+      },
+      {
+        "type": "paragraph",
+        "text": "The turning point came when I lowered my standards. Not in a giving-up way — in a realistic way. Instead of 6 workouts, I aimed for 3. Instead of perfect nutrition, I aimed for 'mostly good.' Instead of no junk food, I aimed for 80/20."
+      },
+      {
+        "type": "paragraph",
+        "text": "And something unexpected happened: I actually stuck with it. For the first time in years, I was consistent. And consistency beat intensity every single time."
+      },
+      {
+        "type": "heading",
+        "text": "The Math of 'Good Enough'"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Perfect plan followed for 3 weeks = 18 workouts, then 0",
+          "Good enough plan followed for 12 months = 150+ workouts",
+          "Guess which one gets better results?"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What 'Good Enough' Looks Like"
+      },
+      {
+        "type": "paragraph",
+        "text": "For me, good enough means: train 3-4 times a week, eat mostly whole foods, get 7+ hours of sleep most nights, walk daily, and don't stress the rest. Some weeks are better than others. That's fine. The trend line is what matters, not any single day."
+      },
+      {
+        "type": "paragraph",
+        "text": "Give yourself permission to be imperfect. It's the most productive thing you'll ever do for your health."
+      }
+    ],
+    "status": "published"
   },
   {
     "id": "only-5-exercises-you-need",
@@ -122,20 +320,60 @@
     "readTime": "6 min",
     "featured": false,
     "body": [
-      { "type": "paragraph", "text": "The fitness industry wants you to think you need 47 different exercises, a periodized program, and a PhD in kinesiology. You don't. If you're a parent just trying to stay healthy and functional, here are the only five movements that matter." },
-      { "type": "heading", "text": "1. Squat" },
-      { "type": "paragraph", "text": "Barbell, goblet, bodyweight — doesn't matter. Squatting keeps your legs strong, your knees healthy, and your ability to get off the floor intact as you age. I do goblet squats with a dumbbell 2x per week. Nothing fancy." },
-      { "type": "heading", "text": "2. Hinge (Deadlift)" },
-      { "type": "paragraph", "text": "Picking heavy stuff off the ground. This builds your back, glutes, and hamstrings — the muscles that protect your spine when you're lifting kids, groceries, or furniture. Romanian deadlifts with dumbbells are my go-to." },
-      { "type": "heading", "text": "3. Push (Bench Press / Push-Ups)" },
-      { "type": "paragraph", "text": "Upper body pushing. Bench press, push-ups, overhead press — pick one or rotate. This keeps your chest, shoulders, and arms strong for carrying kids, pushing strollers, and everyday life." },
-      { "type": "heading", "text": "4. Pull (Rows / Pull-Ups)" },
-      { "type": "paragraph", "text": "The counterbalance to all that pushing (and all that sitting at a desk). Rows and pull-ups build the back muscles that keep your posture solid. I do dumbbell rows every upper body day." },
-      { "type": "heading", "text": "5. Carry (Farmer's Walk)" },
-      { "type": "paragraph", "text": "Grab two heavy dumbbells and walk. That's it. This builds grip strength, core stability, and total body endurance. It's also the most 'real life' exercise there is — when was the last time you carried a sleeping child plus three bags of groceries up the stairs?" },
-      { "type": "heading", "text": "The Bottom Line" },
-      { "type": "paragraph", "text": "Master these five movements and you're set. You don't need fancy equipment, a gym membership, or a complicated program. Just these five, done consistently, with gradual progress. That's the whole recipe." }
-    ]
+      {
+        "type": "paragraph",
+        "text": "The fitness industry wants you to think you need 47 different exercises, a periodized program, and a PhD in kinesiology. You don't. If you're a parent just trying to stay healthy and functional, here are the only five movements that matter."
+      },
+      {
+        "type": "heading",
+        "text": "1. Squat"
+      },
+      {
+        "type": "paragraph",
+        "text": "Barbell, goblet, bodyweight — doesn't matter. Squatting keeps your legs strong, your knees healthy, and your ability to get off the floor intact as you age. I do goblet squats with a dumbbell 2x per week. Nothing fancy."
+      },
+      {
+        "type": "heading",
+        "text": "2. Hinge (Deadlift)"
+      },
+      {
+        "type": "paragraph",
+        "text": "Picking heavy stuff off the ground. This builds your back, glutes, and hamstrings — the muscles that protect your spine when you're lifting kids, groceries, or furniture. Romanian deadlifts with dumbbells are my go-to."
+      },
+      {
+        "type": "heading",
+        "text": "3. Push (Bench Press / Push-Ups)"
+      },
+      {
+        "type": "paragraph",
+        "text": "Upper body pushing. Bench press, push-ups, overhead press — pick one or rotate. This keeps your chest, shoulders, and arms strong for carrying kids, pushing strollers, and everyday life."
+      },
+      {
+        "type": "heading",
+        "text": "4. Pull (Rows / Pull-Ups)"
+      },
+      {
+        "type": "paragraph",
+        "text": "The counterbalance to all that pushing (and all that sitting at a desk). Rows and pull-ups build the back muscles that keep your posture solid. I do dumbbell rows every upper body day."
+      },
+      {
+        "type": "heading",
+        "text": "5. Carry (Farmer's Walk)"
+      },
+      {
+        "type": "paragraph",
+        "text": "Grab two heavy dumbbells and walk. That's it. This builds grip strength, core stability, and total body endurance. It's also the most 'real life' exercise there is — when was the last time you carried a sleeping child plus three bags of groceries up the stairs?"
+      },
+      {
+        "type": "heading",
+        "text": "The Bottom Line"
+      },
+      {
+        "type": "paragraph",
+        "text": "Master these five movements and you're set. You don't need fancy equipment, a gym membership, or a complicated program. Just these five, done consistently, with gradual progress. That's the whole recipe."
+      }
+    ],
+    "status": "published"
   },
   {
     "id": "meal-prep-sunday-real-parent",
@@ -147,16 +385,53 @@
     "readTime": "8 min",
     "featured": false,
     "body": [
-      { "type": "paragraph", "text": "Every meal prep guide I've seen assumes you have 4 hours, 30 containers, and zero children. Here's my version — the one that actually works when you've got a 90-minute window while the kids are doing quiet time." },
-      { "type": "heading", "text": "The 90-Minute Game Plan" },
-      { "type": "paragraph", "text": "I don't prep every meal for the week. I prep the things that, if I don't have ready, will lead me to order takeout. That means: protein, grains, and a few snacks." },
-      { "type": "heading", "text": "What I Actually Prep" },
-      { "type": "list", "items": ["2 lbs chicken breast — seasoned and baked (used in bowls, wraps, salads all week)", "A big pot of rice or quinoa", "Cut vegetables — peppers, cucumbers, cherry tomatoes", "Hard-boiled eggs (a dozen)", "Overnight oats for 3 mornings (oats, protein powder, milk, chia seeds in jars)"] },
-      { "type": "heading", "text": "The Family Crossover" },
-      { "type": "paragraph", "text": "Here's the trick: most of what I prep works for the whole family. The chicken goes into the kids' quesadillas. The rice goes with their dinner. I'm not making two separate meals — I'm making building blocks that everyone can use differently." },
-      { "type": "paragraph", "text": "Dinners are still cooked fresh most nights — usually something simple like sheet pan chicken and veggies, turkey tacos, or pasta. The prep just handles lunches and breakfasts so I'm not scrambling every morning." },
-      { "type": "heading", "text": "My Advice" },
-      { "type": "paragraph", "text": "Don't try to be a meal prep influencer. You don't need 15 matching containers and a color-coded menu. Just cook some protein, cook some carbs, and cut some vegetables. That's 80% of the battle right there." }
-    ]
+      {
+        "type": "paragraph",
+        "text": "Every meal prep guide I've seen assumes you have 4 hours, 30 containers, and zero children. Here's my version — the one that actually works when you've got a 90-minute window while the kids are doing quiet time."
+      },
+      {
+        "type": "heading",
+        "text": "The 90-Minute Game Plan"
+      },
+      {
+        "type": "paragraph",
+        "text": "I don't prep every meal for the week. I prep the things that, if I don't have ready, will lead me to order takeout. That means: protein, grains, and a few snacks."
+      },
+      {
+        "type": "heading",
+        "text": "What I Actually Prep"
+      },
+      {
+        "type": "list",
+        "items": [
+          "2 lbs chicken breast — seasoned and baked (used in bowls, wraps, salads all week)",
+          "A big pot of rice or quinoa",
+          "Cut vegetables — peppers, cucumbers, cherry tomatoes",
+          "Hard-boiled eggs (a dozen)",
+          "Overnight oats for 3 mornings (oats, protein powder, milk, chia seeds in jars)"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Family Crossover"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here's the trick: most of what I prep works for the whole family. The chicken goes into the kids' quesadillas. The rice goes with their dinner. I'm not making two separate meals — I'm making building blocks that everyone can use differently."
+      },
+      {
+        "type": "paragraph",
+        "text": "Dinners are still cooked fresh most nights — usually something simple like sheet pan chicken and veggies, turkey tacos, or pasta. The prep just handles lunches and breakfasts so I'm not scrambling every morning."
+      },
+      {
+        "type": "heading",
+        "text": "My Advice"
+      },
+      {
+        "type": "paragraph",
+        "text": "Don't try to be a meal prep influencer. You don't need 15 matching containers and a color-coded menu. Just cook some protein, cook some carbs, and cut some vegetables. That's 80% of the battle right there."
+      }
+    ],
+    "status": "published"
   }
 ]

@@ -12,7 +12,10 @@
     "protein": 35,
     "carbs": 28,
     "fat": 18,
-    "tags": ["high-protein", "quick"],
+    "tags": [
+      "high-protein",
+      "quick"
+    ],
     "ingredients": [
       "3 large eggs",
       "1 cup fresh spinach",
@@ -30,7 +33,8 @@
       "Cook until eggs are set but still slightly soft, about 2-3 minutes.",
       "Top with crumbled feta, salt, and pepper.",
       "Serve with whole wheat toast."
-    ]
+    ],
+    "status": "published"
   },
   {
     "id": "chicken-rice-power-bowl",
@@ -45,7 +49,10 @@
     "protein": 42,
     "carbs": 35,
     "fat": 16,
-    "tags": ["high-protein", "meal-prep"],
+    "tags": [
+      "high-protein",
+      "meal-prep"
+    ],
     "ingredients": [
       "1.5 lbs chicken breast",
       "2 cups brown rice (dry)",
@@ -65,7 +72,8 @@
       "Divide rice between 4 bowls or containers.",
       "Top each with chicken, black beans, sliced avocado, and salsa.",
       "Squeeze lime over each bowl. Refrigerate meal prep portions for up to 4 days."
-    ]
+    ],
+    "status": "published"
   },
   {
     "id": "sheet-pan-chicken-veggies",
@@ -80,7 +88,10 @@
     "protein": 45,
     "carbs": 40,
     "fat": 18,
-    "tags": ["meal-prep", "family-friendly"],
+    "tags": [
+      "meal-prep",
+      "family-friendly"
+    ],
     "ingredients": [
       "8 bone-in chicken thighs",
       "2 large sweet potatoes, cubed",
@@ -99,7 +110,8 @@
       "Roast for 20 minutes.",
       "Add broccoli florets to the pan, drizzle with remaining olive oil.",
       "Roast for another 12-15 minutes until chicken reaches 165°F and vegetables are tender."
-    ]
+    ],
+    "status": "published"
   },
   {
     "id": "pb-banana-protein-shake",
@@ -114,7 +126,11 @@
     "protein": 30,
     "carbs": 42,
     "fat": 10,
-    "tags": ["high-protein", "quick", "post-workout"],
+    "tags": [
+      "high-protein",
+      "quick",
+      "post-workout"
+    ],
     "ingredients": [
       "1 scoop vanilla or chocolate protein powder",
       "1 medium banana",
@@ -128,7 +144,8 @@
       "Add banana (frozen works great), protein powder, and ice.",
       "Blend on high for 30-45 seconds until smooth.",
       "Add honey if you want extra sweetness. Serve immediately."
-    ]
+    ],
+    "status": "published"
   },
   {
     "id": "turkey-hummus-wrap",
@@ -143,7 +160,10 @@
     "protein": 38,
     "carbs": 45,
     "fat": 18,
-    "tags": ["quick", "no-cook"],
+    "tags": [
+      "quick",
+      "no-cook"
+    ],
     "ingredients": [
       "1 large whole wheat tortilla wrap",
       "6 oz sliced turkey breast",
@@ -159,7 +179,8 @@
       "Add spinach, cucumber slices, and feta.",
       "Fold in the sides, then roll tightly from the bottom.",
       "Cut in half diagonally. Wrap in foil for transport if meal prepping."
-    ]
+    ],
+    "status": "published"
   },
   {
     "id": "turkey-bolognese",
@@ -174,7 +195,10 @@
     "protein": 40,
     "carbs": 55,
     "fat": 14,
-    "tags": ["family-friendly", "meal-prep"],
+    "tags": [
+      "family-friendly",
+      "meal-prep"
+    ],
     "ingredients": [
       "1.5 lbs ground turkey (93% lean)",
       "1 can (28 oz) crushed tomatoes",
@@ -196,7 +220,8 @@
       "Add crushed tomatoes, Italian seasoning, red pepper flakes, salt, and pepper.",
       "Simmer on low for 10-15 minutes to let flavors develop.",
       "Serve over pasta and top with fresh basil."
-    ]
+    ],
+    "status": "published"
   },
   {
     "id": "apple-slices-almond-butter",
@@ -211,7 +236,10 @@
     "protein": 14,
     "carbs": 25,
     "fat": 8,
-    "tags": ["quick", "no-cook"],
+    "tags": [
+      "quick",
+      "no-cook"
+    ],
     "ingredients": [
       "1 medium apple (Honeycrisp or Fuji work great)",
       "2 tbsp almond butter",
@@ -222,7 +250,8 @@
       "Wash and slice apple into wedges.",
       "Serve with almond butter for dipping.",
       "Optional: sprinkle cinnamon on top or drizzle with a tiny bit of honey."
-    ]
+    ],
+    "status": "published"
   },
   {
     "id": "protein-pancakes",
@@ -237,7 +266,10 @@
     "protein": 28,
     "carbs": 40,
     "fat": 10,
-    "tags": ["high-protein", "family-friendly"],
+    "tags": [
+      "high-protein",
+      "family-friendly"
+    ],
     "ingredients": [
       "1 cup rolled oats",
       "1 medium banana",
@@ -256,7 +288,8 @@
       "Cook until bubbles form on surface, about 2-3 minutes, then flip.",
       "Cook another 1-2 minutes until golden.",
       "Serve with berries, a drizzle of maple syrup, or a tablespoon of peanut butter."
-    ]
+    ],
+    "status": "published"
   },
   {
     "id": "lemon-herb-salmon-asparagus",
@@ -271,7 +304,10 @@
     "protein": 38,
     "carbs": 32,
     "fat": 20,
-    "tags": ["high-protein", "quick"],
+    "tags": [
+      "high-protein",
+      "quick"
+    ],
     "ingredients": [
       "2 salmon fillets (6 oz each)",
       "1 bunch asparagus, trimmed",
@@ -290,6 +326,7 @@
       "Drizzle salmon with remaining olive oil.",
       "Bake for 12-15 minutes until salmon flakes easily and asparagus is tender.",
       "Serve with cooked quinoa if you want extra carbs."
-    ]
+    ],
+    "status": "published"
   }
 ]
