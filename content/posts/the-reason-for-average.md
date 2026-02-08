@@ -6,7 +6,7 @@ excerpt: "Forget the complicated routines. If you can do these five movements co
 date: "2026-01-08"
 readTime: "6 min"
 featured: false
-status: published
+status: draft
 ---
 
 Today kicks off another social platform around fitness, health, family, food etc. 
