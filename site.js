@@ -55,7 +55,7 @@ const Site = (() => {
   function isValidPost(p) {
     return p && typeof p.id === 'string' && typeof p.title === 'string' &&
       typeof p.category === 'string' && typeof p.date === 'string' &&
-      typeof p.excerpt === 'string' && Array.isArray(p.body);
+      typeof p.excerpt === 'string' && typeof p.body === 'string';
   }
 
   // Basic structural validation for recipe objects
@@ -276,6 +276,62 @@ const Site = (() => {
     </footer>`;
   }
 
+  // ─── Lightweight Markdown renderer ─────────────────────
+  // Handles: ## headings, paragraphs, - lists, **bold**, *italic*
+  // All text is escaped before rendering for XSS safety
+  function renderMarkdown(md) {
+    if (typeof md !== 'string') return '';
+    const lines = md.split('\n');
+    let html = '';
+    let inList = false;
+    let paragraph = [];
+
+    function inline(text) {
+      text = esc(text);
+      text = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+      text = text.replace(/\*(.+?)\*/g, '<em>$1</em>');
+      return text;
+    }
+
+    function flushP() {
+      if (paragraph.length) {
+        html += '<p>' + inline(paragraph.join(' ')) + '</p>';
+        paragraph = [];
+      }
+    }
+
+    function closeList() {
+      if (inList) { html += '</ul>'; inList = false; }
+    }
+
+    for (const line of lines) {
+      const trimmed = line.trim();
+
+      if (trimmed === '') { flushP(); closeList(); continue; }
+
+      const hMatch = trimmed.match(/^(#{2,3})\s+(.+)$/);
+      if (hMatch) {
+        flushP(); closeList();
+        const lvl = hMatch[1].length;
+        html += `<h${lvl}>${inline(hMatch[2])}</h${lvl}>`;
+        continue;
+      }
+
+      if (trimmed.startsWith('- ')) {
+        flushP();
+        if (!inList) { html += '<ul>'; inList = true; }
+        html += `<li>${inline(trimmed.slice(2))}</li>`;
+        continue;
+      }
+
+      paragraph.push(trimmed);
+    }
+
+    flushP();
+    closeList();
+    return html;
+  }
+
   // ─── Page initialization ───────────────────────────────
   function init(activePage) {
     // Inject shared nav & footer
@@ -312,6 +368,7 @@ const Site = (() => {
     renderPagination,
     initFilters,
     renderNav,
+    renderMarkdown,
     renderFooter,
     init
   };

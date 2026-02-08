@@ -1,0 +1,62 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    file: "data/posts.json"
+    format: "json"
+    fields:
+      - name: "posts"
+        label: "Posts"
+        widget: "list"
+        summary: "{{fields.title}} — {{fields.date}}"
+        fields:
+          - { name: "id", label: "Slug (URL ID)", widget: "string", pattern: ['^[a-z0-9][a-z0-9-]{2,120}$', "Lowercase letters, numbers, and hyphens only"] }
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "category", label: "Category", widget: "select", options: ["fitness", "nutrition", "family", "longevity", "mindset"] }
+          - { name: "emoji", label: "Emoji", widget: "string" }
+          - { name: "excerpt", label: "Excerpt", widget: "text" }
+          - { name: "date", label: "Date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+          - { name: "readTime", label: "Read Time", widget: "string", default: "5 min" }
+          - { name: "featured", label: "Featured?", widget: "boolean", default: false }
+          - { name: "body", label: "Body", widget: "markdown" }
+
+  - name: "recipes"
+    label: "Recipes"
+    file: "data/recipes.json"
+    format: "json"
+    fields:
+      - name: "recipes"
+        label: "Recipes"
+        widget: "list"
+        summary: "{{fields.emoji}} {{fields.title}}"
+        fields:
+          - { name: "id", label: "Slug (URL ID)", widget: "string", pattern: ['^[a-z0-9][a-z0-9-]{2,120}$', "Lowercase letters, numbers, and hyphens only"] }
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "mealType", label: "Meal Type", widget: "select", options: ["breakfast", "lunch", "dinner", "snack", "smoothie"] }
+          - { name: "emoji", label: "Emoji", widget: "string" }
+          - { name: "description", label: "Description", widget: "text" }
+          - { name: "prepTime", label: "Prep Time", widget: "string", default: "15 min" }
+          - { name: "servings", label: "Servings", widget: "number", value_type: "int", min: 1, default: 1 }
+          - { name: "difficulty", label: "Difficulty", widget: "select", options: ["Easy", "Medium", "Hard"] }
+          - { name: "calories", label: "Calories", widget: "number", value_type: "int", min: 0 }
+          - { name: "protein", label: "Protein (g)", widget: "number", value_type: "int", min: 0 }
+          - { name: "carbs", label: "Carbs (g)", widget: "number", value_type: "int", min: 0 }
+          - { name: "fat", label: "Fat (g)", widget: "number", value_type: "int", min: 0 }
+          - name: "tags"
+            label: "Tags"
+            widget: "list"
+            field: { name: "tag", label: "Tag", widget: "string" }
+          - name: "ingredients"
+            label: "Ingredients"
+            widget: "list"
+            field: { name: "ingredient", label: "Ingredient", widget: "string" }
+          - name: "steps"
+            label: "Steps"
+            widget: "list"
+            field: { name: "step", label: "Step", widget: "text" }
