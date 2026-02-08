@@ -1456,6 +1456,59 @@ footer {
   flex-wrap: wrap;
 }
 
+/* ===== IMAGE SUPPORT (blog + recipe cards & detail pages) ===== */
+.blog-featured-img.has-image,
+.blog-card-img.has-image {
+  opacity: 1;
+  background: var(--sand);
+}
+
+.blog-featured-img.has-image img,
+.blog-card-img.has-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recipe-card-img.has-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.recipe-card-img.has-image span {
+  display: none;
+}
+
+.post-hero-image {
+  margin: 0 0 2.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.post-hero-image img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+}
+
+.recipe-hero-image {
+  margin: 0 0 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.recipe-hero-image img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+}
+
 /* ===== ABOUT PAGE STYLES ===== */
 .about-story {
   padding: 5rem 2rem;

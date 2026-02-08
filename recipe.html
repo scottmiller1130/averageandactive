@@ -81,6 +81,10 @@
           document.getElementById('pageTitle').textContent = r.title + ' — Average & Active';
           document.getElementById('pageMeta').setAttribute('content', r.description);
 
+          const heroImg = r.image
+            ? `<div class="recipe-hero-image"><img src="${e(r.image)}" alt="${e(r.title)}"></div>`
+            : '';
+
           Site.setHTML('recipeContent', `
             <div class="recipe-detail-header">
               <span class="recipe-meal-type">${e(r.mealType)}</span>
@@ -92,6 +96,7 @@
                 <span>📊 ${e(r.difficulty)}</span>
               </div>
             </div>
+            ${heroImg}
             <div class="macro-bar">
               <div class="macro-pill"><strong>${e(r.calories)}</strong><span>Calories</span></div>
               <div class="macro-pill"><strong>${e(r.protein)}g</strong><span>Protein</span></div>

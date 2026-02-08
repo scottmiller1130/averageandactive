@@ -1,0 +1,34 @@
+{
+  "title": "Turkey & Hummus Wrap",
+  "mealType": "lunch",
+  "emoji": "🌯",
+  "description": "Whole wheat wrap, sliced turkey, hummus, spinach, cucumber, and a little feta. Packs well for work.",
+  "prepTime": "5 min",
+  "servings": 1,
+  "difficulty": "Easy",
+  "calories": 510,
+  "protein": 38,
+  "carbs": 45,
+  "fat": 18,
+  "tags": [
+    "quick",
+    "no-cook"
+  ],
+  "ingredients": [
+    "1 large whole wheat tortilla wrap",
+    "6 oz sliced turkey breast",
+    "2 tbsp hummus",
+    "1 cup fresh spinach",
+    "1/4 cucumber, sliced thin",
+    "2 tbsp crumbled feta",
+    "Optional: pickled red onion"
+  ],
+  "steps": [
+    "Lay wrap flat and spread hummus evenly across the center.",
+    "Layer turkey slices over the hummus.",
+    "Add spinach, cucumber slices, and feta.",
+    "Fold in the sides, then roll tightly from the bottom.",
+    "Cut in half diagonally. Wrap in foil for transport if meal prepping."
+  ],
+  "status": "published"
+}

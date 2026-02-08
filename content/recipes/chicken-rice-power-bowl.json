@@ -1,0 +1,38 @@
+{
+  "title": "Chicken & Rice Power Bowl",
+  "mealType": "lunch",
+  "emoji": "🥗",
+  "description": "Grilled chicken, brown rice, black beans, avocado, and salsa. Meal prep king — makes 4 at once.",
+  "prepTime": "25 min",
+  "servings": 4,
+  "difficulty": "Easy",
+  "calories": 480,
+  "protein": 42,
+  "carbs": 35,
+  "fat": 16,
+  "tags": [
+    "high-protein",
+    "meal-prep"
+  ],
+  "ingredients": [
+    "1.5 lbs chicken breast",
+    "2 cups brown rice (dry)",
+    "1 can (15 oz) black beans, drained and rinsed",
+    "2 avocados, sliced",
+    "1 cup salsa",
+    "1 lime",
+    "1 tsp cumin",
+    "1 tsp garlic powder",
+    "Salt and pepper to taste"
+  ],
+  "steps": [
+    "Cook brown rice according to package directions.",
+    "Season chicken with cumin, garlic powder, salt, and pepper.",
+    "Grill or pan-sear chicken for 6-7 minutes per side until cooked through (165°F internal).",
+    "Let chicken rest 5 minutes, then slice into strips.",
+    "Divide rice between 4 bowls or containers.",
+    "Top each with chicken, black beans, sliced avocado, and salsa.",
+    "Squeeze lime over each bowl. Refrigerate meal prep portions for up to 4 days."
+  ],
+  "status": "published"
+}

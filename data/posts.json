@@ -1,5 +1,181 @@
 [
   {
+    "id": "macro-tracking-lazy-guide",
+    "title": "Macro Tracking for People Who Hate Counting",
+    "category": "nutrition",
+    "emoji": "🥗",
+    "excerpt": "A lazy person's guide to getting your protein, carbs, and fats roughly right without losing your mind or your enjoyment of food.",
+    "date": "2026-01-28",
+    "readTime": "6 min",
+    "featured": false,
+    "status": "published",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "I tried strict macro tracking for about three weeks before I wanted to throw my phone into a lake. Weighing every almond? Scanning every barcode? That's not sustainable when you're also packing lunches and negotiating with a 4-year-old about eating vegetables."
+      },
+      {
+        "type": "heading",
+        "text": "The 'Close Enough' Method"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here's what I actually do: I track roughly. I know what a palm-sized portion of protein looks like. I know a fist of carbs. A thumb of fat. Is it accurate to the gram? No. Is it accurate enough to make progress? Absolutely."
+      },
+      {
+        "type": "heading",
+        "text": "My Daily Targets (Roughly)"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Protein: 150-180g (I aim for 40g per meal, 4 times a day)",
+          "Carbs: 200-250g (more on training days, less on rest days)",
+          "Fats: 60-70g (this usually takes care of itself)",
+          "Total: ~2,200 calories"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Staples That Make It Easy"
+      },
+      {
+        "type": "paragraph",
+        "text": "I eat roughly the same things during the week. Not because I'm boring — because decision fatigue is real when you have kids. Here are my go-tos:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Breakfast: Eggs + toast or protein shake + banana",
+          "Lunch: Chicken + rice bowl or turkey wrap",
+          "Dinner: Whatever the family eats (I just adjust my portion)",
+          "Snacks: Greek yogurt, protein bar, apple + almond butter"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Weekends are more flexible. We eat out, we have pizza night, we live our lives. I don't track on weekends — I just make generally smart choices and enjoy the time with family."
+      },
+      {
+        "type": "heading",
+        "text": "The One Non-Negotiable"
+      },
+      {
+        "type": "paragraph",
+        "text": "If there's one thing I'd tell anyone to focus on, it's protein. Hit your protein target and everything else falls into place more easily. You're less hungry, you recover better, and you maintain muscle as you age. That's the whole game."
+      }
+    ]
+  },
+  {
+    "id": "working-out-with-toddler",
+    "title": "Working Out With a Toddler in the Room",
+    "category": "family",
+    "emoji": "👨‍👧",
+    "excerpt": "Yes, it's chaos. Yes, you'll get interrupted. Here's how to get a solid workout in anyway — tiny humans included.",
+    "date": "2026-01-22",
+    "readTime": "5 min",
+    "featured": false,
+    "status": "published",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Let me paint you a picture: I'm mid-squat, barbell on my back, and my 3-year-old decides this is the perfect moment to show me her drawing. Of a cat. That needs a name. Right now."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you're a parent who trains at home, you know exactly what I'm talking about. Here's how I've learned to make it work."
+      },
+      {
+        "type": "heading",
+        "text": "Accept the Chaos"
+      },
+      {
+        "type": "paragraph",
+        "text": "Step one: let go of the idea of an uninterrupted 45-minute session. It's not happening. Once I accepted that, I actually started enjoying the absurdity of it. My daughter does 'squats' next to me with a pool noodle. My son counts my reps (inaccurately). It's messy and kind of perfect."
+      },
+      {
+        "type": "heading",
+        "text": "Strategies That Actually Help"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Use rest periods for kid stuff — answer the question, fix the snack, find the toy",
+          "Pick exercises that are safe to bail on (dumbbells > barbell when kids are around)",
+          "Set up a 'kid station' nearby with coloring books, blocks, or a tablet",
+          "Keep sessions short and intense — 25 minutes of focus beats 60 minutes of distraction",
+          "Let them participate. Kid-sized dumbbells cost $10 and buy you infinite goodwill"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Real Lesson"
+      },
+      {
+        "type": "paragraph",
+        "text": "Working out with your kids around isn't a limitation — it's modeling behavior. They see you prioritizing your health. They see you pushing through something hard. They see you showing up even when it's not easy. That's a lesson no amount of talking can teach."
+      }
+    ]
+  },
+  {
+    "id": "zone-2-cardio-longevity",
+    "title": "Zone 2 Cardio: The Boring Workout That Adds Years",
+    "category": "longevity",
+    "emoji": "⏳",
+    "excerpt": "It doesn't look impressive. It won't get you likes. But zone 2 cardio might be the single best thing you can do for your health.",
+    "date": "2026-01-18",
+    "readTime": "7 min",
+    "featured": false,
+    "status": "published",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Zone 2 cardio is the most boring and most important type of exercise I do. It's not sexy. There's no before-and-after transformation. But the science behind it for longevity is overwhelming."
+      },
+      {
+        "type": "heading",
+        "text": "What Is Zone 2?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Zone 2 is the intensity where you can hold a conversation but it's slightly uncomfortable. You're breathing harder but you're not gasping. For most people, that's a brisk walk, an easy jog, or a moderate bike ride. Heart rate roughly 60-70% of your max."
+      },
+      {
+        "type": "heading",
+        "text": "Why It Matters"
+      },
+      {
+        "type": "paragraph",
+        "text": "Zone 2 training improves your mitochondrial function — basically, how efficiently your cells produce energy. It improves insulin sensitivity, cardiovascular health, and fat metabolism. Dr. Peter Attia calls it 'the most important exercise for longevity,' and after digging into the research, I agree."
+      },
+      {
+        "type": "heading",
+        "text": "How I Fit It In"
+      },
+      {
+        "type": "list",
+        "items": [
+          "3-4 times per week, 30-45 minutes each",
+          "Usually a walk with the dog or a bike ride on the weekend",
+          "Sometimes I just walk on an incline treadmill while watching a show",
+          "I wear a cheap heart rate monitor to stay in the right zone"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The beauty of zone 2 is that it doesn't beat you up. You can do it every day without affecting your recovery. It's the opposite of 'no pain, no gain' — and it's arguably more important for your long-term health than any heavy lifting session."
+      },
+      {
+        "type": "heading",
+        "text": "The Dad Walk"
+      },
+      {
+        "type": "paragraph",
+        "text": "My favorite zone 2 session? Walking the neighborhood with my kids on their bikes. They ride, I walk fast, we all get outside. Exercise that doubles as family time? That's the sweet spot."
+      }
+    ]
+  },
+  {
     "id": "5am-garage-gym-routine",
     "title": "The 5AM Garage Gym: How I Built a Routine That Actually Sticks",
     "category": "fitness",
@@ -8,6 +184,7 @@
     "date": "2026-01-15",
     "readTime": "8 min",
     "featured": true,
+    "status": "published",
     "body": [
       {
         "type": "paragraph",
@@ -78,184 +255,7 @@
         "type": "paragraph",
         "text": "If you're thinking about starting a morning routine — start smaller than you think. Even 15 minutes. The habit of showing up matters more than the workout itself."
       }
-    ],
-    "status": "published"
-  },
-  {
-    "id": "macro-tracking-lazy-guide",
-    "title": "Macro Tracking for People Who Hate Counting",
-    "category": "nutrition",
-    "emoji": "🥗",
-    "excerpt": "A lazy person's guide to getting your protein, carbs, and fats roughly right without losing your mind or your enjoyment of food.",
-    "date": "2026-01-28",
-    "readTime": "6 min",
-    "featured": false,
-    "body": [
-      {
-        "type": "paragraph",
-        "text": "I tried strict macro tracking for about three weeks before I wanted to throw my phone into a lake. Weighing every almond? Scanning every barcode? That's not sustainable when you're also packing lunches and negotiating with a 4-year-old about eating vegetables."
-      },
-      {
-        "type": "heading",
-        "text": "The 'Close Enough' Method"
-      },
-      {
-        "type": "paragraph",
-        "text": "Here's what I actually do: I track roughly. I know what a palm-sized portion of protein looks like. I know a fist of carbs. A thumb of fat. Is it accurate to the gram? No. Is it accurate enough to make progress? Absolutely."
-      },
-      {
-        "type": "heading",
-        "text": "My Daily Targets (Roughly)"
-      },
-      {
-        "type": "list",
-        "items": [
-          "Protein: 150-180g (I aim for 40g per meal, 4 times a day)",
-          "Carbs: 200-250g (more on training days, less on rest days)",
-          "Fats: 60-70g (this usually takes care of itself)",
-          "Total: ~2,200 calories"
-        ]
-      },
-      {
-        "type": "heading",
-        "text": "The Staples That Make It Easy"
-      },
-      {
-        "type": "paragraph",
-        "text": "I eat roughly the same things during the week. Not because I'm boring — because decision fatigue is real when you have kids. Here are my go-tos:"
-      },
-      {
-        "type": "list",
-        "items": [
-          "Breakfast: Eggs + toast or protein shake + banana",
-          "Lunch: Chicken + rice bowl or turkey wrap",
-          "Dinner: Whatever the family eats (I just adjust my portion)",
-          "Snacks: Greek yogurt, protein bar, apple + almond butter"
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "Weekends are more flexible. We eat out, we have pizza night, we live our lives. I don't track on weekends — I just make generally smart choices and enjoy the time with family."
-      },
-      {
-        "type": "heading",
-        "text": "The One Non-Negotiable"
-      },
-      {
-        "type": "paragraph",
-        "text": "If there's one thing I'd tell anyone to focus on, it's protein. Hit your protein target and everything else falls into place more easily. You're less hungry, you recover better, and you maintain muscle as you age. That's the whole game."
-      }
-    ],
-    "status": "published"
-  },
-  {
-    "id": "working-out-with-toddler",
-    "title": "Working Out With a Toddler in the Room",
-    "category": "family",
-    "emoji": "👨‍👧",
-    "excerpt": "Yes, it's chaos. Yes, you'll get interrupted. Here's how to get a solid workout in anyway — tiny humans included.",
-    "date": "2026-01-22",
-    "readTime": "5 min",
-    "featured": false,
-    "body": [
-      {
-        "type": "paragraph",
-        "text": "Let me paint you a picture: I'm mid-squat, barbell on my back, and my 3-year-old decides this is the perfect moment to show me her drawing. Of a cat. That needs a name. Right now."
-      },
-      {
-        "type": "paragraph",
-        "text": "If you're a parent who trains at home, you know exactly what I'm talking about. Here's how I've learned to make it work."
-      },
-      {
-        "type": "heading",
-        "text": "Accept the Chaos"
-      },
-      {
-        "type": "paragraph",
-        "text": "Step one: let go of the idea of an uninterrupted 45-minute session. It's not happening. Once I accepted that, I actually started enjoying the absurdity of it. My daughter does 'squats' next to me with a pool noodle. My son counts my reps (inaccurately). It's messy and kind of perfect."
-      },
-      {
-        "type": "heading",
-        "text": "Strategies That Actually Help"
-      },
-      {
-        "type": "list",
-        "items": [
-          "Use rest periods for kid stuff — answer the question, fix the snack, find the toy",
-          "Pick exercises that are safe to bail on (dumbbells > barbell when kids are around)",
-          "Set up a 'kid station' nearby with coloring books, blocks, or a tablet",
-          "Keep sessions short and intense — 25 minutes of focus beats 60 minutes of distraction",
-          "Let them participate. Kid-sized dumbbells cost $10 and buy you infinite goodwill"
-        ]
-      },
-      {
-        "type": "heading",
-        "text": "The Real Lesson"
-      },
-      {
-        "type": "paragraph",
-        "text": "Working out with your kids around isn't a limitation — it's modeling behavior. They see you prioritizing your health. They see you pushing through something hard. They see you showing up even when it's not easy. That's a lesson no amount of talking can teach."
-      }
-    ],
-    "status": "published"
-  },
-  {
-    "id": "zone-2-cardio-longevity",
-    "title": "Zone 2 Cardio: The Boring Workout That Adds Years",
-    "category": "longevity",
-    "emoji": "⏳",
-    "excerpt": "It doesn't look impressive. It won't get you likes. But zone 2 cardio might be the single best thing you can do for your health.",
-    "date": "2026-01-18",
-    "readTime": "7 min",
-    "featured": false,
-    "body": [
-      {
-        "type": "paragraph",
-        "text": "Zone 2 cardio is the most boring and most important type of exercise I do. It's not sexy. There's no before-and-after transformation. But the science behind it for longevity is overwhelming."
-      },
-      {
-        "type": "heading",
-        "text": "What Is Zone 2?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Zone 2 is the intensity where you can hold a conversation but it's slightly uncomfortable. You're breathing harder but you're not gasping. For most people, that's a brisk walk, an easy jog, or a moderate bike ride. Heart rate roughly 60-70% of your max."
-      },
-      {
-        "type": "heading",
-        "text": "Why It Matters"
-      },
-      {
-        "type": "paragraph",
-        "text": "Zone 2 training improves your mitochondrial function — basically, how efficiently your cells produce energy. It improves insulin sensitivity, cardiovascular health, and fat metabolism. Dr. Peter Attia calls it 'the most important exercise for longevity,' and after digging into the research, I agree."
-      },
-      {
-        "type": "heading",
-        "text": "How I Fit It In"
-      },
-      {
-        "type": "list",
-        "items": [
-          "3-4 times per week, 30-45 minutes each",
-          "Usually a walk with the dog or a bike ride on the weekend",
-          "Sometimes I just walk on an incline treadmill while watching a show",
-          "I wear a cheap heart rate monitor to stay in the right zone"
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "The beauty of zone 2 is that it doesn't beat you up. You can do it every day without affecting your recovery. It's the opposite of 'no pain, no gain' — and it's arguably more important for your long-term health than any heavy lifting session."
-      },
-      {
-        "type": "heading",
-        "text": "The Dad Walk"
-      },
-      {
-        "type": "paragraph",
-        "text": "My favorite zone 2 session? Walking the neighborhood with my kids on their bikes. They ride, I walk fast, we all get outside. Exercise that doubles as family time? That's the sweet spot."
-      }
-    ],
-    "status": "published"
+    ]
   },
   {
     "id": "why-good-enough-is-the-goal",
@@ -266,6 +266,7 @@
     "date": "2026-01-12",
     "readTime": "5 min",
     "featured": false,
+    "status": "published",
     "body": [
       {
         "type": "paragraph",
@@ -307,8 +308,7 @@
         "type": "paragraph",
         "text": "Give yourself permission to be imperfect. It's the most productive thing you'll ever do for your health."
       }
-    ],
-    "status": "published"
+    ]
   },
   {
     "id": "only-5-exercises-you-need",
@@ -319,6 +319,7 @@
     "date": "2026-01-08",
     "readTime": "6 min",
     "featured": false,
+    "status": "published",
     "body": [
       {
         "type": "paragraph",
@@ -372,8 +373,7 @@
         "type": "paragraph",
         "text": "Master these five movements and you're set. You don't need fancy equipment, a gym membership, or a complicated program. Just these five, done consistently, with gradual progress. That's the whole recipe."
       }
-    ],
-    "status": "published"
+    ]
   },
   {
     "id": "meal-prep-sunday-real-parent",
@@ -384,6 +384,7 @@
     "date": "2026-01-04",
     "readTime": "8 min",
     "featured": false,
+    "status": "published",
     "body": [
       {
         "type": "paragraph",
@@ -431,7 +432,6 @@
         "type": "paragraph",
         "text": "Don't try to be a meal prep influencer. You don't need 15 matching containers and a color-coded menu. Just cook some protein, cook some carbs, and cut some vegetables. That's 80% of the battle right there."
       }
-    ],
-    "status": "published"
+    ]
   }
 ]

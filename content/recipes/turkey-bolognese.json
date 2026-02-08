@@ -1,0 +1,40 @@
+{
+  "title": "Turkey Bolognese",
+  "mealType": "dinner",
+  "emoji": "🍝",
+  "description": "Ground turkey, crushed tomatoes, garlic, and whole wheat pasta. A family favorite that hits the macros right.",
+  "prepTime": "30 min",
+  "servings": 4,
+  "difficulty": "Easy",
+  "calories": 550,
+  "protein": 40,
+  "carbs": 55,
+  "fat": 14,
+  "tags": [
+    "family-friendly",
+    "meal-prep"
+  ],
+  "ingredients": [
+    "1.5 lbs ground turkey (93% lean)",
+    "1 can (28 oz) crushed tomatoes",
+    "4 cloves garlic, minced",
+    "1 small onion, diced",
+    "12 oz whole wheat spaghetti",
+    "1 tbsp olive oil",
+    "1 tsp Italian seasoning",
+    "1/2 tsp red pepper flakes (optional)",
+    "Salt and pepper to taste",
+    "Fresh basil for topping"
+  ],
+  "steps": [
+    "Cook pasta according to package directions. Drain and set aside.",
+    "Heat olive oil in a large skillet over medium-high heat.",
+    "Add diced onion and cook 3-4 minutes until softened.",
+    "Add garlic and cook 30 seconds until fragrant.",
+    "Add ground turkey, breaking it up with a spoon. Cook until browned, about 6-7 minutes.",
+    "Add crushed tomatoes, Italian seasoning, red pepper flakes, salt, and pepper.",
+    "Simmer on low for 10-15 minutes to let flavors develop.",
+    "Serve over pasta and top with fresh basil."
+  ],
+  "status": "published"
+}

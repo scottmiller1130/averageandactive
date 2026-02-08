@@ -1,0 +1,37 @@
+{
+  "title": "Sheet Pan Chicken & Veggies",
+  "mealType": "dinner",
+  "emoji": "🍗",
+  "description": "Everything on one pan. Chicken thighs, sweet potatoes, broccoli, olive oil. Minimal dishes, maximum flavor.",
+  "prepTime": "35 min",
+  "servings": 4,
+  "difficulty": "Easy",
+  "calories": 520,
+  "protein": 45,
+  "carbs": 40,
+  "fat": 18,
+  "tags": [
+    "meal-prep",
+    "family-friendly"
+  ],
+  "ingredients": [
+    "8 bone-in chicken thighs",
+    "2 large sweet potatoes, cubed",
+    "2 cups broccoli florets",
+    "2 tbsp olive oil",
+    "1 tsp paprika",
+    "1 tsp garlic powder",
+    "1 tsp onion powder",
+    "Salt and pepper to taste"
+  ],
+  "steps": [
+    "Preheat oven to 425°F (220°C).",
+    "Cube sweet potatoes and toss with 1 tbsp olive oil, salt, and pepper on a large sheet pan.",
+    "Season chicken thighs with paprika, garlic powder, onion powder, salt, and pepper.",
+    "Nestle chicken on the pan with the sweet potatoes.",
+    "Roast for 20 minutes.",
+    "Add broccoli florets to the pan, drizzle with remaining olive oil.",
+    "Roast for another 12-15 minutes until chicken reaches 165°F and vegetables are tender."
+  ],
+  "status": "published"
+}

@@ -1,0 +1,37 @@
+{
+  "title": "Protein Pancakes",
+  "mealType": "breakfast",
+  "emoji": "🥞",
+  "description": "Oats, banana, egg whites, and protein powder. The kids love these too — weekend breakfast that doesn't derail you.",
+  "prepTime": "15 min",
+  "servings": 2,
+  "difficulty": "Easy",
+  "calories": 380,
+  "protein": 28,
+  "carbs": 40,
+  "fat": 10,
+  "tags": [
+    "high-protein",
+    "family-friendly"
+  ],
+  "ingredients": [
+    "1 cup rolled oats",
+    "1 medium banana",
+    "4 egg whites (or 2 whole eggs)",
+    "1 scoop vanilla protein powder",
+    "1/2 cup milk",
+    "1 tsp baking powder",
+    "1 tsp vanilla extract",
+    "Cooking spray or butter for pan",
+    "Toppings: berries, maple syrup, peanut butter"
+  ],
+  "steps": [
+    "Blend oats, banana, egg whites, protein powder, milk, baking powder, and vanilla in a blender until smooth.",
+    "Heat a non-stick pan or griddle over medium heat and spray with cooking spray.",
+    "Pour about 1/4 cup batter per pancake.",
+    "Cook until bubbles form on surface, about 2-3 minutes, then flip.",
+    "Cook another 1-2 minutes until golden.",
+    "Serve with berries, a drizzle of maple syrup, or a tablespoon of peanut butter."
+  ],
+  "status": "published"
+}
