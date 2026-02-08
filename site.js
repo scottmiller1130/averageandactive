@@ -190,8 +190,7 @@ const Site = (() => {
       { href: 'about.html', label: 'About', key: 'about' },
       { href: 'blog.html', label: 'Blog', key: 'blog' },
       { href: 'recipes.html', label: 'Recipes', key: 'recipes' },
-      { href: 'index.html#community', label: 'Community', key: 'community' },
-      { href: 'index.html#videos', label: 'Videos', key: 'videos' }
+      { href: 'index.html#community', label: 'Community', key: 'community' }
     ];
     const isHome = activePage === 'home';
     const navItems = links.map(l => {
@@ -230,7 +229,6 @@ const Site = (() => {
             <li><a href="about.html">About</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="recipes.html">Recipes</a></li>
-            <li><a href="index.html#videos">Videos</a></li>
           </ul>
         </div>
         <div class="footer-col">

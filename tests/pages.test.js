@@ -91,7 +91,7 @@ describe('index.html specifics', () => {
     expect(html).toContain('id="community"');
   });
 
-  test('has video section', () => {
+  test('has video section (commented out for later)', () => {
     expect(html).toContain('id="videos"');
   });
 
