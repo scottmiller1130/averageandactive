@@ -18,6 +18,7 @@ Open `data/posts.json` and add a new object to the array:
   "date": "2026-02-15",
   "readTime": "6 min",
   "featured": false,
+  "status": "published",
   "body": [
     { "type": "paragraph", "text": "Your opening paragraph here." },
     { "type": "heading", "text": "Section Heading" },
@@ -39,6 +40,7 @@ Open `data/posts.json` and add a new object to the array:
 | `date` | Yes | Publish date in `YYYY-MM-DD` format. Posts sort by date (newest first) |
 | `readTime` | Yes | Estimated read time (e.g., `"6 min"`) |
 | `featured` | Yes | Set to `true` to make this the featured/hero post. Only one post should be `true` |
+| `status` | No | Set to `"draft"` to hide from the site. Omit or use `"published"` to show it |
 | `body` | Yes | Array of content blocks (see below) |
 
 ### Body Content Blocks
@@ -67,6 +69,7 @@ Open `data/recipes.json` and add a new object to the array:
   "protein": 42,
   "carbs": 35,
   "fat": 16,
+  "status": "published",
   "tags": ["high-protein", "meal-prep"],
   "ingredients": [
     "1.5 lbs chicken breast",
@@ -97,6 +100,7 @@ Open `data/recipes.json` and add a new object to the array:
 | `protein` | Yes | Grams of protein per serving (number) |
 | `carbs` | Yes | Grams of carbs per serving (number) |
 | `fat` | Yes | Grams of fat per serving (number) |
+| `status` | No | Set to `"draft"` to hide from the site. Omit or use `"published"` to show it |
 | `tags` | Yes | Array of tags: `"high-protein"`, `"quick"`, `"meal-prep"`, `"family-friendly"`, `"no-cook"`, `"post-workout"` |
 | `ingredients` | Yes | Array of ingredient strings |
 | `steps` | Yes | Array of instruction strings (numbered automatically) |
@@ -142,4 +146,5 @@ averageandactive/
 - **Dates control sort order.** Newest posts appear first on the blog
 - **Only one featured post.** Set `featured: true` on the one you want highlighted at the top of the blog
 - **Categories and meal types control the filter buttons.** Stick to the values listed above so filtering works
+- **Draft mode.** Add `"status": "draft"` to any post or recipe to hide it from the site. Remove it or change to `"published"` when ready to go live
 - **No HTML needed.** Just edit the JSON files and the pages update automatically

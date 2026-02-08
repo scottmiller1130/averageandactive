@@ -159,7 +159,7 @@
 
     Site.fetchJSON('data/recipes.json')
       .then(recipes => {
-        allRecipes = recipes.filter(Site.isValidRecipe);
+        allRecipes = recipes.filter(r => Site.isValidRecipe(r) && r.status !== 'draft');
         renderPage(1);
       })
       .catch(err => Site.showError('recipeGrid', err.message));

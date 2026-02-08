@@ -139,7 +139,7 @@
 
     Site.fetchJSON('data/posts.json')
       .then(posts => {
-        const valid = posts.filter(Site.isValidPost);
+        const valid = posts.filter(p => Site.isValidPost(p) && p.status !== 'draft');
         const sorted = valid.sort((a, b) => new Date(b.date) - new Date(a.date));
         const featured = sorted.find(p => p.featured) || sorted[0];
 
