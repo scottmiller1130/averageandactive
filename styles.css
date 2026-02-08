@@ -1217,6 +1217,107 @@ footer {
   justify-content: space-between;
 }
 
+/* Filter bar — shared between blog & recipes */
+.filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-search {
+  position: relative;
+  max-width: 360px;
+}
+
+.filter-search svg {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--warm-gray);
+  pointer-events: none;
+}
+
+.filter-search input {
+  width: 100%;
+  padding: 0.7rem 1rem 0.7rem 2.75rem;
+  border: 1.5px solid var(--sand);
+  border-radius: 100px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9rem;
+  color: var(--warm-black);
+  background: var(--off-white);
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.filter-search input::placeholder {
+  color: var(--warm-gray);
+}
+
+.filter-search input:focus {
+  border-color: var(--rust);
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.filter-tags {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.filter-tags-label {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--warm-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-right: 0.25rem;
+}
+
+.tag-btn {
+  padding: 0.35rem 0.9rem;
+  font-size: 0.78rem;
+  border-color: var(--sand);
+  background: var(--off-white);
+}
+
+.tag-btn:hover,
+.tag-btn.active {
+  border-color: var(--olive);
+  color: var(--olive);
+  background: rgba(90, 99, 64, 0.06);
+}
+
+.filter-results {
+  min-height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.result-count {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--warm-gray);
+}
+
+.filter-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--warm-gray);
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
 /* Blog filter tabs */
 .blog-filters {
   display: flex;
@@ -1347,7 +1448,7 @@ footer {
   gap: 0.3rem;
 }
 
-/* Recipe filter */
+/* Recipe filter (legacy — handled by .filter-tabs) */
 .recipe-filters {
   display: flex;
   gap: 0.75rem;
@@ -1716,5 +1817,9 @@ footer {
 
   .footer-inner {
     grid-template-columns: 1fr;
+  }
+
+  .filter-search {
+    max-width: 100%;
   }
 }
