@@ -6,7 +6,7 @@ excerpt: "Everyone talks about morning routines. Here's what mine actually looks
 date: "2026-01-15"
 readTime: "8 min"
 featured: true
-status: published
+status: draft
 ---
 
 I'm not going to pretend I wake up every morning fired up and ready to crush a workout. Some days, the alarm goes off at 4:55 AM and every part of me wants to stay in bed. But I get up anyway. And that's kind of the whole point.

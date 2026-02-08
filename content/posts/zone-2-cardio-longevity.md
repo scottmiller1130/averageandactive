@@ -6,7 +6,7 @@ excerpt: "It doesn't look impressive. It won't get you likes. But zone 2 cardio 
 date: "2026-01-18"
 readTime: "7 min"
 featured: false
-status: published
+status: draft
 ---
 
 Zone 2 cardio is the most boring and most important type of exercise I do. It's not sexy. There's no before-and-after transformation. But the science behind it for longevity is overwhelming.

@@ -6,7 +6,7 @@ excerpt: "Forget the complicated routines. If you can do these five movements co
 date: "2026-01-08"
 readTime: "6 min"
 featured: false
-status: published
+status: draft
 ---
 
 The fitness industry wants you to think you need 47 different exercises, a periodized program, and a PhD in kinesiology. You don't. If you're a parent just trying to stay healthy and functional, here are the only five movements that matter.

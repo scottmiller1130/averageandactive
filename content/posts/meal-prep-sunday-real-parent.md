@@ -6,7 +6,7 @@ excerpt: "I've got about 90 minutes on Sunday afternoon. Here's how I prep meals
 date: "2026-01-04"
 readTime: "8 min"
 featured: false
-status: published
+status: draft
 ---
 
 Every meal prep guide I've seen assumes you have 4 hours, 30 containers, and zero children. Here's my version — the one that actually works when you've got a 90-minute window while the kids are doing quiet time.
