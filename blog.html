@@ -28,14 +28,21 @@
   <section class="blog-section">
     <div class="section-inner">
       <div id="featuredPost"></div>
-      <div class="blog-filters" id="blogFilters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="fitness">Fitness</button>
-        <button class="filter-btn" data-filter="nutrition">Nutrition</button>
-        <button class="filter-btn" data-filter="family">Family Life</button>
-        <button class="filter-btn" data-filter="longevity">Longevity</button>
-        <button class="filter-btn" data-filter="mindset">Mindset</button>
+      <div class="filter-bar">
+        <div class="filter-search">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="5.5" stroke="currentColor" stroke-width="1.5"/><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <input type="text" id="blogSearch" placeholder="Search articles..." aria-label="Search blog posts">
+        </div>
+        <div class="filter-tabs" id="blogFilters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="fitness">Fitness</button>
+          <button class="filter-btn" data-filter="nutrition">Nutrition</button>
+          <button class="filter-btn" data-filter="family">Family Life</button>
+          <button class="filter-btn" data-filter="longevity">Longevity</button>
+          <button class="filter-btn" data-filter="mindset">Mindset</button>
+        </div>
       </div>
+      <div class="filter-results" id="blogResults"></div>
       <div class="blog-grid" id="blogGrid"></div>
       <div id="blogPagination"></div>
     </div>
@@ -66,7 +73,7 @@
     const POSTS_PER_PAGE = 6;
     let allPosts = [];
     let activeFilter = 'all';
-    let currentPage = 1;
+    let searchQuery = '';
 
     function renderFeatured(post) {
       const e = Site.esc;
@@ -105,18 +112,34 @@
         </a>`;
     }
 
+    function getFiltered() {
+      let posts = allPosts;
+      if (activeFilter !== 'all') posts = posts.filter(p => p.category === activeFilter);
+      if (searchQuery) {
+        const q = searchQuery.toLowerCase();
+        posts = posts.filter(p => p.title.toLowerCase().includes(q) || p.excerpt.toLowerCase().includes(q));
+      }
+      return posts;
+    }
+
     function renderPage(page) {
-      currentPage = page;
-      const filtered = activeFilter === 'all' ? allPosts : allPosts.filter(p => p.category === activeFilter);
+      const filtered = getFiltered();
       const result = Site.paginate(filtered, page, POSTS_PER_PAGE);
-      Site.setHTML('blogGrid', result.items.map(renderCard).join(''));
-      Site.renderPagination('blogPagination', result.page, result.totalPages, renderPage);
+      const total = filtered.length;
+      Site.setHTML('blogResults', total === allPosts.length ? '' : `<span class="result-count">${total} article${total !== 1 ? 's' : ''} found</span>`);
+      if (total === 0) {
+        Site.setHTML('blogGrid', '<p class="filter-empty">No articles match your filters. Try a different search or category.</p>');
+        Site.setHTML('blogPagination', '');
+      } else {
+        Site.setHTML('blogGrid', result.items.map(renderCard).join(''));
+        Site.renderPagination('blogPagination', result.page, result.totalPages, renderPage);
+      }
       Site.observeNew();
     }
 
     Site.fetchJSON('data/posts.json')
       .then(posts => {
-        const valid = posts.filter(Site.isValidPost);
+        const valid = posts.filter(p => Site.isValidPost(p) && p.status !== 'draft');
         const sorted = valid.sort((a, b) => new Date(b.date) - new Date(a.date));
         const featured = sorted.find(p => p.featured) || sorted[0];
 
@@ -130,6 +153,15 @@
     Site.initFilters('blogFilters', (filter) => {
       activeFilter = filter;
       renderPage(1);
+    });
+
+    let _searchTimer;
+    document.getElementById('blogSearch').addEventListener('input', (e) => {
+      clearTimeout(_searchTimer);
+      _searchTimer = setTimeout(() => {
+        searchQuery = e.target.value.trim();
+        renderPage(1);
+      }, 250);
     });
   </script>
 </body>

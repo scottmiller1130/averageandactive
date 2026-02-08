@@ -36,14 +36,31 @@
 
   <section class="recipe-section">
     <div class="section-inner">
-      <div class="recipe-filters" id="recipeFilters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="breakfast">Breakfast</button>
-        <button class="filter-btn" data-filter="lunch">Lunch</button>
-        <button class="filter-btn" data-filter="dinner">Dinner</button>
-        <button class="filter-btn" data-filter="snack">Snacks</button>
-        <button class="filter-btn" data-filter="smoothie">Smoothies</button>
+      <div class="filter-bar">
+        <div class="filter-search">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="5.5" stroke="currentColor" stroke-width="1.5"/><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <input type="text" id="recipeSearch" placeholder="Search recipes..." aria-label="Search recipes">
+        </div>
+        <div class="filter-tabs" id="recipeFilters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+          <button class="filter-btn" data-filter="lunch">Lunch</button>
+          <button class="filter-btn" data-filter="dinner">Dinner</button>
+          <button class="filter-btn" data-filter="snack">Snacks</button>
+          <button class="filter-btn" data-filter="smoothie">Smoothies</button>
+        </div>
       </div>
+      <div class="filter-tags" id="recipeTags">
+        <span class="filter-tags-label">Tags:</span>
+        <button class="filter-btn tag-btn active" data-filter="all">All</button>
+        <button class="filter-btn tag-btn" data-filter="high-protein">High Protein</button>
+        <button class="filter-btn tag-btn" data-filter="quick">Quick</button>
+        <button class="filter-btn tag-btn" data-filter="meal-prep">Meal Prep</button>
+        <button class="filter-btn tag-btn" data-filter="family-friendly">Family Friendly</button>
+        <button class="filter-btn tag-btn" data-filter="no-cook">No Cook</button>
+        <button class="filter-btn tag-btn" data-filter="post-workout">Post Workout</button>
+      </div>
+      <div class="filter-results" id="recipeResults"></div>
       <div class="recipe-grid" id="recipeGrid"></div>
       <div id="recipePagination"></div>
     </div>
@@ -85,6 +102,8 @@
     const RECIPES_PER_PAGE = 9;
     let allRecipes = [];
     let activeFilter = 'all';
+    let activeTag = 'all';
+    let searchQuery = '';
 
     function renderCard(r) {
       const e = Site.esc;
@@ -112,17 +131,35 @@
         </a>`;
     }
 
+    function getFiltered() {
+      let recipes = allRecipes;
+      if (activeFilter !== 'all') recipes = recipes.filter(r => r.mealType === activeFilter);
+      if (activeTag !== 'all') recipes = recipes.filter(r => Array.isArray(r.tags) && r.tags.includes(activeTag));
+      if (searchQuery) {
+        const q = searchQuery.toLowerCase();
+        recipes = recipes.filter(r => r.title.toLowerCase().includes(q) || r.description.toLowerCase().includes(q));
+      }
+      return recipes;
+    }
+
     function renderPage(page) {
-      const filtered = activeFilter === 'all' ? allRecipes : allRecipes.filter(r => r.mealType === activeFilter);
+      const filtered = getFiltered();
       const result = Site.paginate(filtered, page, RECIPES_PER_PAGE);
-      Site.setHTML('recipeGrid', result.items.map(renderCard).join(''));
-      Site.renderPagination('recipePagination', result.page, result.totalPages, renderPage);
+      const total = filtered.length;
+      Site.setHTML('recipeResults', total === allRecipes.length ? '' : `<span class="result-count">${total} recipe${total !== 1 ? 's' : ''} found</span>`);
+      if (total === 0) {
+        Site.setHTML('recipeGrid', '<p class="filter-empty">No recipes match your filters. Try a different search, meal type, or tag.</p>');
+        Site.setHTML('recipePagination', '');
+      } else {
+        Site.setHTML('recipeGrid', result.items.map(renderCard).join(''));
+        Site.renderPagination('recipePagination', result.page, result.totalPages, renderPage);
+      }
       Site.observeNew();
     }
 
     Site.fetchJSON('data/recipes.json')
       .then(recipes => {
-        allRecipes = recipes.filter(Site.isValidRecipe);
+        allRecipes = recipes.filter(r => Site.isValidRecipe(r) && r.status !== 'draft');
         renderPage(1);
       })
       .catch(err => Site.showError('recipeGrid', err.message));
@@ -130,6 +167,20 @@
     Site.initFilters('recipeFilters', (filter) => {
       activeFilter = filter;
       renderPage(1);
+    });
+
+    Site.initFilters('recipeTags', (filter) => {
+      activeTag = filter;
+      renderPage(1);
+    });
+
+    let _searchTimer;
+    document.getElementById('recipeSearch').addEventListener('input', (e) => {
+      clearTimeout(_searchTimer);
+      _searchTimer = setTimeout(() => {
+        searchQuery = e.target.value.trim();
+        renderPage(1);
+      }, 250);
     });
   </script>
 </body>
