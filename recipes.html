@@ -108,10 +108,13 @@
     function renderCard(r) {
       const e = Site.esc;
       const bgClass = Site.MEAL_BG[r.mealType] || '';
+      const imgInner = r.image
+        ? `<img src="${e(r.image)}" alt="${e(r.title)}" loading="lazy">`
+        : `<span>${e(r.emoji)}</span>`;
       return `
         <a href="recipe.html?id=${encodeURIComponent(r.id)}" class="recipe-card fade-in" data-meal="${e(r.mealType)}" style="text-decoration:none; color:inherit;">
-          <div class="recipe-card-img ${bgClass}">
-            <span>${e(r.emoji)}</span>
+          <div class="recipe-card-img ${bgClass}${r.image ? ' has-image' : ''}">
+            ${imgInner}
             <div class="recipe-macros">
               <span class="macro-tag">${e(r.calories)} cal</span>
               <span class="macro-tag">${e(r.protein)}g protein</span>

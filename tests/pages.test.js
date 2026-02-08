@@ -283,6 +283,12 @@ describe('styles.css', () => {
     expect(css).toContain('.cat-fitness');
     expect(css).toContain('.cat-nutrition');
   });
+
+  test('has image support styles', () => {
+    expect(css).toContain('.has-image');
+    expect(css).toContain('.post-hero-image');
+    expect(css).toContain('.recipe-hero-image');
+  });
 });
 
 // ─── Required supporting files ─────────────────────────
@@ -306,5 +312,9 @@ describe('Supporting files', () => {
 
   test('CONTENT-GUIDE.md exists', () => {
     expect(fs.existsSync(path.join(__dirname, '..', 'CONTENT-GUIDE.md'))).toBe(true);
+  });
+
+  test('images directory exists', () => {
+    expect(fs.existsSync(path.join(__dirname, '..', 'images'))).toBe(true);
   });
 });

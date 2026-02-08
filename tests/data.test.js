@@ -102,6 +102,15 @@ describe('posts.json', () => {
       }
     });
   });
+
+  test('image field is a valid relative path when present', () => {
+    posts.forEach(post => {
+      if (post.image) {
+        expect(typeof post.image).toBe('string');
+        expect(post.image).toMatch(/^images\/.+\.(jpg|jpeg|png|webp|avif)$/i);
+      }
+    });
+  });
 });
 
 // ─── recipes.json ──────────────────────────────────────
@@ -189,6 +198,15 @@ describe('recipes.json', () => {
     recipes.forEach(r => {
       if (r.status) {
         expect(['draft', 'published']).toContain(r.status);
+      }
+    });
+  });
+
+  test('image field is a valid relative path when present', () => {
+    recipes.forEach(r => {
+      if (r.image) {
+        expect(typeof r.image).toBe('string');
+        expect(r.image).toMatch(/^images\/.+\.(jpg|jpeg|png|webp|avif)$/i);
       }
     });
   });

@@ -14,6 +14,7 @@ Open `data/posts.json` and add a new object to the array:
   "title": "Your Post Title",
   "category": "fitness",
   "emoji": "🏋️",
+  "image": "images/your-post-image.jpg",
   "excerpt": "A 1-2 sentence preview shown on the blog listing page.",
   "date": "2026-02-15",
   "readTime": "6 min",
@@ -35,7 +36,8 @@ Open `data/posts.json` and add a new object to the array:
 | `id` | Yes | URL-friendly slug (lowercase, hyphens, no spaces). Used in the URL: `post.html?id=your-post-slug` |
 | `title` | Yes | Full title of the article |
 | `category` | Yes | One of: `fitness`, `nutrition`, `family`, `longevity`, `mindset` |
-| `emoji` | Yes | Single emoji shown as the card thumbnail |
+| `emoji` | Yes | Single emoji shown as the card thumbnail (used as fallback when no image) |
+| `image` | No | Path to a photo (e.g., `"images/my-post.jpg"`). Replaces the emoji on the card and adds a hero image on the article page |
 | `excerpt` | Yes | 1-2 sentence summary for the listing page |
 | `date` | Yes | Publish date in `YYYY-MM-DD` format. Posts sort by date (newest first) |
 | `readTime` | Yes | Estimated read time (e.g., `"6 min"`) |
@@ -61,6 +63,7 @@ Open `data/recipes.json` and add a new object to the array:
   "title": "Recipe Name",
   "mealType": "dinner",
   "emoji": "🍗",
+  "image": "images/your-recipe-image.jpg",
   "description": "Short description shown on the recipe card.",
   "prepTime": "25 min",
   "servings": 4,
@@ -91,7 +94,8 @@ Open `data/recipes.json` and add a new object to the array:
 | `id` | Yes | URL-friendly slug. Used in the URL: `recipe.html?id=your-recipe-slug` |
 | `title` | Yes | Recipe name |
 | `mealType` | Yes | One of: `breakfast`, `lunch`, `dinner`, `snack`, `smoothie` |
-| `emoji` | Yes | Single emoji for the card thumbnail |
+| `emoji` | Yes | Single emoji for the card thumbnail (used as fallback when no image) |
+| `image` | No | Path to a photo (e.g., `"images/my-recipe.jpg"`). Replaces the emoji on the card and adds a hero image on the recipe page |
 | `description` | Yes | 1-2 sentence description for the card |
 | `prepTime` | Yes | Total prep + cook time (e.g., `"25 min"`) |
 | `servings` | Yes | Number of servings (number) |
@@ -135,6 +139,9 @@ averageandactive/
 ├── recipes.html        — Recipe listing (reads from data/recipes.json)
 ├── recipe.html         — Individual recipe page (reads from data/recipes.json)
 ├── styles.css          — Shared stylesheet
+├── images/             — Photos for blog posts and recipes
+│   ├── my-post.jpg
+│   └── my-recipe.jpg
 └── data/
     ├── posts.json      — All blog post content
     └── recipes.json    — All recipe content
@@ -148,3 +155,4 @@ averageandactive/
 - **Categories and meal types control the filter buttons.** Stick to the values listed above so filtering works
 - **Draft mode.** Add `"status": "draft"` to any post or recipe to hide it from the site. Remove it or change to `"published"` when ready to go live
 - **No HTML needed.** Just edit the JSON files and the pages update automatically
+- **Adding photos.** Drop your image into the `images/` folder, then add `"image": "images/filename.jpg"` to the post or recipe JSON. The photo replaces the emoji on listing cards and shows as a hero image on the detail page. If no image is set, the emoji is used as the fallback. Recommended size: 1200x675px (16:9 ratio), keep files under 500KB for fast loading

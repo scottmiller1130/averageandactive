@@ -80,6 +80,10 @@
           document.getElementById('pageTitle').textContent = post.title + ' — Average & Active';
           document.getElementById('pageMeta').setAttribute('content', post.excerpt);
 
+          const heroImg = post.image
+            ? `<div class="post-hero-image"><img src="${e(post.image)}" alt="${e(post.title)}"></div>`
+            : '';
+
           Site.setHTML('postContent', `
             <div class="post-header">
               <span class="blog-category ${Site.catClass(post.category)}">${Site.catLabel(post.category)}</span>
@@ -89,6 +93,7 @@
                 <span>${e(post.readTime)} read</span>
               </div>
             </div>
+            ${heroImg}
             <div class="post-body">${renderBody(post.body)}</div>`);
         })
         .catch(err => Site.showError('postContent', err.message));
