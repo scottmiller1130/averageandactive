@@ -184,7 +184,7 @@ describe('recipes.json', () => {
   });
 
   test('tags are valid when present', () => {
-    const validTags = ['high-protein', 'quick', 'meal-prep', 'family-friendly', 'no-cook', 'post-workout'];
+    const validTags = ['high-protein', 'quick', 'meal-prep', 'family-friendly', 'no-cook', 'post-workout', 'sourdough', 'bread', 'homemade', 'fermented', 'high-altitude', 'dutch-oven', 'whole-food', 'dairy-free', 'vegan'];
     recipes.forEach(r => {
       if (Array.isArray(r.tags)) {
         r.tags.forEach(tag => {

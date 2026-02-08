@@ -69,6 +69,57 @@
     "id": "chicken-rice-power-bowl"
   },
   {
+    "title": "Classic Sourdough at Elevation",
+    "mealType": "breakfast",
+    "emoji": "🍞",
+    "image": "images/classic-sourdough-at-elevation.jpg",
+    "description": "A homemade sourdough recipe tuned for high altitude. 24-hour process, four simple ingredients, and a crackling crust that makes every slice worth the wait.",
+    "prepTime": "24 hrs",
+    "servings": 12,
+    "difficulty": "Medium",
+    "calories": 160,
+    "protein": 5,
+    "carbs": 32,
+    "fat": 1,
+    "tags": [
+      "sourdough",
+      "bread",
+      "homemade",
+      "fermented",
+      "high-altitude",
+      "dutch-oven",
+      "meal-prep",
+      "whole-food",
+      "dairy-free",
+      "vegan"
+    ],
+    "ingredients": [
+      "500g bread flour (or all-purpose flour)",
+      "400g water (room temperature)",
+      "125g active sourdough starter (fed and doubled)",
+      "13g fine sea salt",
+      "Rice flour for dusting the proofing basket"
+    ],
+    "steps": [
+      "Feed your starter first thing in the morning. Use a 1:1:1 ratio of starter, flour, and water. Let it sit at room temperature until it has at least doubled in size and looks domed and bubbly — this usually takes 4 to 6 hours depending on your kitchen temperature. A warm spot (75–80°F) speeds things up. The starter is ready when a small spoonful floats in water.",
+      "In a large mixing bowl, combine 500g flour and 400g water. Mix with your hands or a Danish dough whisk until no dry flour remains — the dough will look shaggy and rough, and that is exactly right. Cover the bowl with a damp towel or plastic wrap and let it rest (autolyse) for 45 minutes. This rest lets the flour fully hydrate and starts gluten development before you ever touch it again.",
+      "After the autolyse, add 125g of your peaked starter and 13g salt directly on top of the dough. Pinch and fold the starter and salt into the dough until fully incorporated — this takes about 3 to 4 minutes. The dough will feel shaggy at first but will start coming together. Squeeze it through your fingers rather than kneading to keep things even.",
+      "Perform a set of stretch and folds: wet your hand, grab one side of the dough, stretch it up and fold it over to the opposite side. Rotate the bowl 90 degrees and repeat. Do all four sides — that is one set. Repeat this every 15 to 30 minutes for a total of 4 sets. You will feel the dough tighten and become smoother with each round. This builds the gluten structure that gives sourdough its open crumb.",
+      "After the final stretch and fold, cover the bowl tightly with plastic wrap and leave it on the counter for bulk fermentation. At high altitude, fermentation can move faster due to lower air pressure, so start checking around 6 to 8 hours. The dough is ready when it has grown by roughly 50 percent, feels airy and jiggly, and you can see bubbles along the sides of the bowl.",
+      "Dust your countertop generously with rice flour. Gently turn the dough out — do not punch it down or deflate it. Use a bench scraper and your hands to pre-shape the dough into a round. Let it rest uncovered for 15 to 20 minutes to relax the gluten.",
+      "Shape the loaf by pulling the edges of the dough toward the center, then flipping it seam-side down. Using both hands, cup the dough and drag it gently toward you on the unfloured surface to build tension in the outer skin. The surface should feel taut and smooth — this tension is what gives you a good oven spring and that signature ear.",
+      "Dust a proofing basket (banneton) generously with rice flour. Place the shaped dough seam-side up into the basket. Cover tightly with plastic wrap so it does not dry out. Place the basket in the refrigerator for an overnight cold proof — 10 to 14 hours. The cold retard slows fermentation, develops deeper tangy flavor, and makes the dough much easier to score and handle the next morning.",
+      "The next morning, you have some flexibility on when to bake. Pulling it out anywhere between 10 and 14 hours works well. A shorter cold proof gives a milder flavor and more oven spring. A longer proof develops more sour tang and a slightly denser crumb. Find the window that matches the flavor and texture you prefer — this is where sourdough becomes your own.",
+      "Place your Dutch oven (lid on) into the oven and preheat to 500°F. Let it heat for at least 30 minutes so the pot is ripping hot — this is critical for the initial burst of steam that creates a crispy crust.",
+      "While the oven preheats, take the proofing basket out of the fridge. Invert the dough onto a sheet of parchment paper. Using a sharp razor blade or bread lame held at a 45-degree angle, score a single swift slash about a quarter-inch deep across the top of the loaf. A confident, quick motion works best — hesitation leads to dragging.",
+      "Carefully lift the dough (using the parchment as a sling) into the screaming-hot Dutch oven. Cover with the lid. Bake at 500°F for 25 minutes with the lid on. The trapped steam creates the blistered, crackly crust.",
+      "After 25 minutes, remove the lid and reduce the oven temperature to 475°F. Bake uncovered for another 10 to 15 minutes until the crust is deep golden brown — go darker than you think. A well-baked crust should sound hollow when you tap the bottom of the loaf.",
+      "Remove the loaf from the Dutch oven and place it on a wire cooling rack. This is the hardest part — let it cool for at least 1 to 2 hours before slicing. The inside is still cooking from residual heat, and cutting too early lets the steam escape, leaving you with a gummy interior. Trust the process."
+    ],
+    "status": "draft",
+    "id": "classic-sourdough-at-elevation"
+  },
+  {
     "title": "Lemon Herb Salmon & Asparagus",
     "mealType": "dinner",
     "emoji": "🐟",
