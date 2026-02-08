@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">Blog Post — Average & Active</title>
+  <meta name="description" id="pageMeta" content="Read this article on Average & Active.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .post-article { max-width: 720px; margin: 0 auto; padding: 8rem 2rem 6rem; }
+    .post-back { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; font-weight: 500; color: var(--slate); text-decoration: none; margin-bottom: 2.5rem; transition: color 0.3s; }
+    .post-back:hover { color: var(--rust); }
+    .post-header { margin-bottom: 3rem; }
+    .post-header h1 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; letter-spacing: -0.02em; margin: 1rem 0 1.25rem; }
+    .post-header-meta { display: flex; gap: 1.5rem; font-size: 0.88rem; color: var(--warm-gray); }
+    .post-body h2 { font-family: 'DM Serif Display', serif; font-size: 1.5rem; margin: 2.5rem 0 1rem; letter-spacing: -0.01em; }
+    .post-body p { font-size: 1.05rem; line-height: 1.85; color: var(--slate); font-weight: 300; margin-bottom: 1.25rem; }
+    .post-body ul { margin: 0.5rem 0 1.5rem 1.5rem; list-style: disc; }
+    .post-body li { font-size: 1rem; line-height: 1.8; color: var(--slate); font-weight: 300; margin-bottom: 0.5rem; }
+    .post-divider { border: none; border-top: 1px solid var(--sand); margin: 3rem 0; }
+    .post-footer-cta { background: var(--off-white); border-radius: 16px; padding: 2.5rem; text-align: center; }
+    .post-footer-cta h3 { font-family: 'DM Serif Display', serif; font-size: 1.4rem; margin-bottom: 0.75rem; }
+    .post-footer-cta p { font-size: 0.95rem; color: var(--warm-gray); font-weight: 300; margin-bottom: 1.5rem; }
+  </style>
+</head>
+<body>
+
+  <div id="site-nav"></div>
+
+  <article class="post-article">
+    <a href="blog.html" class="post-back">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Back to Blog
+    </a>
+    <div id="postContent"><p style="color: var(--warm-gray);">Loading article...</p></div>
+    <hr class="post-divider">
+    <div class="post-footer-cta">
+      <h3>Enjoyed this? There's more where it came from.</h3>
+      <p>Get new articles delivered to your inbox every week. No spam.</p>
+      <form class="email-form" id="emailForm">
+        <input type="email" placeholder="Your email address" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </article>
+
+  <div id="site-footer"></div>
+
+  <script src="site.js"></script>
+  <script>
+    Site.init('blog');
+
+    const postId = Site.getParam('id');
+
+    if (!postId) {
+      Site.setHTML('postContent', '<h1 style="font-family:DM Serif Display,serif;">Post not found</h1><p>Invalid or missing post ID. <a href="blog.html">Back to blog</a>.</p>');
+    } else {
+      function renderBody(body) {
+        const e = Site.esc;
+        return body.map(block => {
+          if (block.type === 'heading') return `<h2>${e(block.text)}</h2>`;
+          if (block.type === 'paragraph') return `<p>${e(block.text)}</p>`;
+          if (block.type === 'list' && Array.isArray(block.items)) return `<ul>${block.items.map(i => `<li>${e(i)}</li>`).join('')}</ul>`;
+          return '';
+        }).join('');
+      }
+
+      Site.fetchJSON('data/posts.json')
+        .then(posts => {
+          const post = posts.find(p => p.id === postId);
+          if (!post || !Site.isValidPost(post)) {
+            Site.setHTML('postContent', '<h1 style="font-family:DM Serif Display,serif;">Post not found</h1><p>This article doesn\'t exist. <a href="blog.html">Back to blog</a>.</p>');
+            return;
+          }
+
+          const e = Site.esc;
+          document.getElementById('pageTitle').textContent = post.title + ' — Average & Active';
+          document.getElementById('pageMeta').setAttribute('content', post.excerpt);
+
+          Site.setHTML('postContent', `
+            <div class="post-header">
+              <span class="blog-category ${Site.catClass(post.category)}">${Site.catLabel(post.category)}</span>
+              <h1>${e(post.title)}</h1>
+              <div class="post-header-meta">
+                <span>${Site.formatDate(post.date)}</span>
+                <span>${e(post.readTime)} read</span>
+              </div>
+            </div>
+            <div class="post-body">${renderBody(post.body)}</div>`);
+        })
+        .catch(err => Site.showError('postContent', err.message));
+    }
+  </script>
+</body>
+</html>

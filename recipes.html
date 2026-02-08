@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes — Average & Active</title>
+  <meta name="description" content="Simple, macro-friendly recipes for busy parents. Breakfast, lunch, dinner, and snacks that fuel your day without overcomplicating it.">
+  <link rel="canonical" href="https://averageandactive.com/recipes">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Recipes — Average & Active">
+  <meta property="og:description" content="Simple, macro-friendly recipes for busy parents. Real food, real easy.">
+  <meta property="og:url" content="https://averageandactive.com/recipes">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Average & Active Recipes",
+    "description": "Simple, macro-friendly recipes for busy parents.",
+    "url": "https://averageandactive.com/recipes"
+  }
+  </script>
+</head>
+<body>
+
+  <div id="site-nav"></div>
+
+  <section class="page-hero">
+    <div class="section-label">Recipes</div>
+    <h1>Fuel that fits <em>real life.</em></h1>
+    <p>Simple, macro-friendly recipes the whole family will eat. No exotic ingredients, no two-hour prep times. Just good food done right.</p>
+  </section>
+
+  <section class="recipe-section">
+    <div class="section-inner">
+      <div class="recipe-filters" id="recipeFilters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+        <button class="filter-btn" data-filter="lunch">Lunch</button>
+        <button class="filter-btn" data-filter="dinner">Dinner</button>
+        <button class="filter-btn" data-filter="snack">Snacks</button>
+        <button class="filter-btn" data-filter="smoothie">Smoothies</button>
+      </div>
+      <div class="recipe-grid" id="recipeGrid"></div>
+      <div id="recipePagination"></div>
+    </div>
+  </section>
+
+  <section class="manifesto">
+    <div class="manifesto-inner">
+      <div class="section-label" style="color: var(--rust-light); justify-content: center;">
+        <span style="display: inline-block; width: 24px; height: 2px; background: var(--rust-light);"></span>
+        Nutrition Philosophy
+      </div>
+      <h2>We don't do <em>diet culture.</em> We track, we learn, and we eat real food that <em>real families</em> actually enjoy.</h2>
+      <p>Every recipe here is something our family eats. The macros are tracked but the meals are flexible. Swap ingredients, adjust portions, and make it work for your life.</p>
+    </div>
+  </section>
+
+  <section class="cta-section" id="join">
+    <div class="cta-box">
+      <div class="section-label" style="justify-content: center;">
+        <span style="display: inline-block; width: 24px; height: 2px; background: var(--olive);"></span>
+        Get New Recipes
+      </div>
+      <h2>Fresh recipes, every week.</h2>
+      <p>New family-friendly, macro-tracked recipes delivered to your inbox. No spam — just food.</p>
+      <form class="email-form" id="emailForm">
+        <input type="email" placeholder="Your email address" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="cta-note">No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="site.js"></script>
+  <script>
+    Site.init('recipes');
+
+    const RECIPES_PER_PAGE = 9;
+    let allRecipes = [];
+    let activeFilter = 'all';
+
+    function renderCard(r) {
+      const e = Site.esc;
+      const bgClass = Site.MEAL_BG[r.mealType] || '';
+      return `
+        <a href="recipe.html?id=${encodeURIComponent(r.id)}" class="recipe-card fade-in" data-meal="${e(r.mealType)}" style="text-decoration:none; color:inherit;">
+          <div class="recipe-card-img ${bgClass}">
+            <span>${e(r.emoji)}</span>
+            <div class="recipe-macros">
+              <span class="macro-tag">${e(r.calories)} cal</span>
+              <span class="macro-tag">${e(r.protein)}g protein</span>
+              <span class="macro-tag">${e(r.carbs)}g carbs</span>
+            </div>
+          </div>
+          <div class="recipe-card-body">
+            <span class="recipe-meal-type">${e(r.mealType)}</span>
+            <h3>${e(r.title)}</h3>
+            <p>${e(r.description)}</p>
+            <div class="recipe-details">
+              <span>⏱ ${e(r.prepTime)}</span>
+              <span>👤 ${e(r.servings)} serving${r.servings > 1 ? 's' : ''}</span>
+              <span>📊 ${e(r.difficulty)}</span>
+            </div>
+          </div>
+        </a>`;
+    }
+
+    function renderPage(page) {
+      const filtered = activeFilter === 'all' ? allRecipes : allRecipes.filter(r => r.mealType === activeFilter);
+      const result = Site.paginate(filtered, page, RECIPES_PER_PAGE);
+      Site.setHTML('recipeGrid', result.items.map(renderCard).join(''));
+      Site.renderPagination('recipePagination', result.page, result.totalPages, renderPage);
+      Site.observeNew();
+    }
+
+    Site.fetchJSON('data/recipes.json')
+      .then(recipes => {
+        allRecipes = recipes.filter(Site.isValidRecipe);
+        renderPage(1);
+      })
+      .catch(err => Site.showError('recipeGrid', err.message));
+
+    Site.initFilters('recipeFilters', (filter) => {
+      activeFilter = filter;
+      renderPage(1);
+    });
+  </script>
+</body>
+</html>

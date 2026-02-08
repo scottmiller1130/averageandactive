@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Average & Active</title>
+  <meta name="description" content="Real talk about fitness, nutrition, family life, and longevity. Articles written by and for everyday people pursuing a healthier life.">
+  <link rel="canonical" href="https://averageandactive.com/blog">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog — Average & Active">
+  <meta property="og:description" content="Real talk about fitness, nutrition, family life, and longevity.">
+  <meta property="og:url" content="https://averageandactive.com/blog">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="site-nav"></div>
+
+  <section class="page-hero">
+    <div class="section-label">The Blog</div>
+    <h1>Honest words for <em>real journeys.</em></h1>
+    <p>No clickbait, no fluff. Just real articles about fitness, nutrition, family, and figuring it all out as we go.</p>
+  </section>
+
+  <section class="blog-section">
+    <div class="section-inner">
+      <div id="featuredPost"></div>
+      <div class="blog-filters" id="blogFilters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="fitness">Fitness</button>
+        <button class="filter-btn" data-filter="nutrition">Nutrition</button>
+        <button class="filter-btn" data-filter="family">Family Life</button>
+        <button class="filter-btn" data-filter="longevity">Longevity</button>
+        <button class="filter-btn" data-filter="mindset">Mindset</button>
+      </div>
+      <div class="blog-grid" id="blogGrid"></div>
+      <div id="blogPagination"></div>
+    </div>
+  </section>
+
+  <section class="cta-section" id="join">
+    <div class="cta-box">
+      <div class="section-label" style="justify-content: center;">
+        <span style="display: inline-block; width: 24px; height: 2px; background: var(--olive);"></span>
+        Never Miss a Post
+      </div>
+      <h2>Get new articles delivered.</h2>
+      <p>New articles every week. No spam, no courses to sell you. Just real content straight to your inbox.</p>
+      <form class="email-form" id="emailForm">
+        <input type="email" placeholder="Your email address" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="cta-note">No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="site.js"></script>
+  <script>
+    Site.init('blog');
+
+    const POSTS_PER_PAGE = 6;
+    let allPosts = [];
+    let activeFilter = 'all';
+    let currentPage = 1;
+
+    function renderFeatured(post) {
+      const e = Site.esc;
+      return `
+        <div class="blog-featured fade-in">
+          <div class="blog-featured-img">${e(post.emoji)}</div>
+          <div class="blog-featured-content">
+            <span class="blog-category ${Site.catClass(post.category)}">${Site.catLabel(post.category)}</span>
+            <h2>${e(post.title)}</h2>
+            <p>${e(post.excerpt)}</p>
+            <div class="blog-meta">
+              <span>${Site.formatDate(post.date)}</span>
+              <span>${e(post.readTime)} read</span>
+            </div>
+            <div style="margin-top: 1.5rem;">
+              <a href="post.html?id=${encodeURIComponent(post.id)}" class="btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">Read Article</a>
+            </div>
+          </div>
+        </div>`;
+    }
+
+    function renderCard(post) {
+      const e = Site.esc;
+      return `
+        <a href="post.html?id=${encodeURIComponent(post.id)}" class="blog-card fade-in" data-category="${e(post.category)}">
+          <div class="blog-card-img">${e(post.emoji)}</div>
+          <div class="blog-card-body">
+            <span class="blog-category ${Site.catClass(post.category)}">${Site.catLabel(post.category)}</span>
+            <h3>${e(post.title)}</h3>
+            <p>${e(post.excerpt)}</p>
+            <div class="blog-meta">
+              <span>${Site.formatDateShort(post.date)}</span>
+              <span>${e(post.readTime)}</span>
+            </div>
+          </div>
+        </a>`;
+    }
+
+    function renderPage(page) {
+      currentPage = page;
+      const filtered = activeFilter === 'all' ? allPosts : allPosts.filter(p => p.category === activeFilter);
+      const result = Site.paginate(filtered, page, POSTS_PER_PAGE);
+      Site.setHTML('blogGrid', result.items.map(renderCard).join(''));
+      Site.renderPagination('blogPagination', result.page, result.totalPages, renderPage);
+      Site.observeNew();
+    }
+
+    Site.fetchJSON('data/posts.json')
+      .then(posts => {
+        const valid = posts.filter(Site.isValidPost);
+        const sorted = valid.sort((a, b) => new Date(b.date) - new Date(a.date));
+        const featured = sorted.find(p => p.featured) || sorted[0];
+
+        Site.setHTML('featuredPost', renderFeatured(featured));
+        allPosts = sorted.filter(p => p.id !== featured.id);
+        renderPage(1);
+        Site.observeNew();
+      })
+      .catch(err => Site.showError('blogGrid', err.message));
+
+    Site.initFilters('blogFilters', (filter) => {
+      activeFilter = filter;
+      renderPage(1);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">Recipe — Average & Active</title>
+  <meta name="description" id="pageMeta" content="A simple, macro-friendly recipe from Average & Active.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .recipe-detail { max-width: 760px; margin: 0 auto; padding: 8rem 2rem 6rem; }
+    .recipe-back { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; font-weight: 500; color: var(--slate); text-decoration: none; margin-bottom: 2.5rem; transition: color 0.3s; }
+    .recipe-back:hover { color: var(--rust); }
+    .recipe-detail-header { margin-bottom: 2.5rem; }
+    .recipe-detail-header h1 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1.15; letter-spacing: -0.02em; margin: 0.75rem 0 1rem; }
+    .recipe-detail-header p.recipe-desc { font-size: 1.1rem; line-height: 1.7; color: var(--slate); font-weight: 300; margin-bottom: 1.5rem; }
+    .recipe-quick-info { display: flex; gap: 2rem; flex-wrap: wrap; font-size: 0.9rem; color: var(--warm-gray); margin-bottom: 1.5rem; }
+    .recipe-quick-info span { display: flex; align-items: center; gap: 0.4rem; }
+    .macro-bar { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
+    .macro-pill { background: var(--off-white); border: 1px solid var(--sand); border-radius: 10px; padding: 0.75rem 1.25rem; text-align: center; flex: 1; min-width: 100px; }
+    .macro-pill strong { display: block; font-size: 1.3rem; font-weight: 700; color: var(--rust); margin-bottom: 0.2rem; }
+    .macro-pill span { font-size: 0.75rem; color: var(--warm-gray); text-transform: uppercase; letter-spacing: 0.06em; }
+    .recipe-section-title { font-family: 'DM Serif Display', serif; font-size: 1.35rem; margin: 2.5rem 0 1rem; letter-spacing: -0.01em; }
+    .ingredient-list { list-style: none; padding: 0; }
+    .ingredient-list li { font-size: 1rem; line-height: 1.7; color: var(--slate); font-weight: 300; padding: 0.5rem 0; border-bottom: 1px solid rgba(26,24,20,0.06); display: flex; align-items: center; gap: 0.75rem; }
+    .ingredient-list li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--rust); opacity: 0.4; flex-shrink: 0; }
+    .steps-list { list-style: none; padding: 0; counter-reset: step; }
+    .steps-list li { font-size: 1.02rem; line-height: 1.8; color: var(--slate); font-weight: 300; padding: 1rem 0; border-bottom: 1px solid rgba(26,24,20,0.06); display: flex; gap: 1rem; counter-increment: step; }
+    .steps-list li::before { content: counter(step); font-family: 'DM Serif Display', serif; font-size: 1.3rem; color: var(--rust); opacity: 0.5; flex-shrink: 0; width: 2rem; text-align: center; line-height: 1.8; }
+    .recipe-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 2.5rem; }
+    .recipe-tag-pill { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.35rem 0.9rem; border-radius: 100px; background: var(--sand); color: var(--slate); }
+    .recipe-divider { border: none; border-top: 1px solid var(--sand); margin: 3rem 0; }
+    .recipe-footer-cta { background: var(--off-white); border-radius: 16px; padding: 2.5rem; text-align: center; }
+    .recipe-footer-cta h3 { font-family: 'DM Serif Display', serif; font-size: 1.4rem; margin-bottom: 0.75rem; }
+    .recipe-footer-cta p { font-size: 0.95rem; color: var(--warm-gray); font-weight: 300; margin-bottom: 1.5rem; }
+  </style>
+</head>
+<body>
+
+  <div id="site-nav"></div>
+
+  <div class="recipe-detail">
+    <a href="recipes.html" class="recipe-back">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Back to Recipes
+    </a>
+    <div id="recipeContent"><p style="color: var(--warm-gray);">Loading recipe...</p></div>
+    <hr class="recipe-divider">
+    <div class="recipe-footer-cta">
+      <h3>Want more recipes like this?</h3>
+      <p>New macro-friendly, family-tested recipes every week. Straight to your inbox.</p>
+      <form class="email-form" id="emailForm">
+        <input type="email" placeholder="Your email address" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+
+  <script src="site.js"></script>
+  <script>
+    Site.init('recipes');
+
+    const recipeId = Site.getParam('id');
+
+    if (!recipeId) {
+      Site.setHTML('recipeContent', '<h1 style="font-family:DM Serif Display,serif;">Recipe not found</h1><p>Invalid or missing recipe ID. <a href="recipes.html">Back to recipes</a>.</p>');
+    } else {
+      Site.fetchJSON('data/recipes.json')
+        .then(recipes => {
+          const r = recipes.find(x => x.id === recipeId);
+          if (!r || !Site.isValidRecipe(r)) {
+            Site.setHTML('recipeContent', '<h1 style="font-family:DM Serif Display,serif;">Recipe not found</h1><p>This recipe doesn\'t exist. <a href="recipes.html">Back to recipes</a>.</p>');
+            return;
+          }
+
+          const e = Site.esc;
+          document.getElementById('pageTitle').textContent = r.title + ' — Average & Active';
+          document.getElementById('pageMeta').setAttribute('content', r.description);
+
+          Site.setHTML('recipeContent', `
+            <div class="recipe-detail-header">
+              <span class="recipe-meal-type">${e(r.mealType)}</span>
+              <h1>${e(r.emoji)} ${e(r.title)}</h1>
+              <p class="recipe-desc">${e(r.description)}</p>
+              <div class="recipe-quick-info">
+                <span>⏱ ${e(r.prepTime)}</span>
+                <span>👤 ${e(r.servings)} serving${r.servings > 1 ? 's' : ''}</span>
+                <span>📊 ${e(r.difficulty)}</span>
+              </div>
+            </div>
+            <div class="macro-bar">
+              <div class="macro-pill"><strong>${e(r.calories)}</strong><span>Calories</span></div>
+              <div class="macro-pill"><strong>${e(r.protein)}g</strong><span>Protein</span></div>
+              <div class="macro-pill"><strong>${e(r.carbs)}g</strong><span>Carbs</span></div>
+              <div class="macro-pill"><strong>${e(r.fat)}g</strong><span>Fat</span></div>
+            </div>
+            <h2 class="recipe-section-title">Ingredients</h2>
+            <ul class="ingredient-list">${r.ingredients.map(i => `<li>${e(i)}</li>`).join('')}</ul>
+            <h2 class="recipe-section-title">Instructions</h2>
+            <ol class="steps-list">${r.steps.map(s => `<li>${e(s)}</li>`).join('')}</ol>
+            ${Array.isArray(r.tags) && r.tags.length ? `<div class="recipe-tags">${r.tags.map(t => `<span class="recipe-tag-pill">${e(t)}</span>`).join('')}</div>` : ''}`);
+        })
+        .catch(err => Site.showError('recipeContent', err.message));
+    }
+  </script>
+</body>
+</html>
