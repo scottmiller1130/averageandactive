@@ -13,7 +13,7 @@ Today kicks off another social platform around fitness, health, family, food, et
 
 ## 1. Not enough real
 
-I follow a lot of social influencers across multiple platforms. I have respect for each of them but have quickly found they are all peak level athletes in their youth. It is great to watch their journeys but I quickly feel defeated in my own journey.
+I follow a lot of fitness influencers across multiple platforms. I have respect for each of them but have quickly found they are all peak level athletes in their youth. It is great to watch their journeys but I quickly feel defeated in my own journey.
 
 ## 2. Unrelatable
 
