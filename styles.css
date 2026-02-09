@@ -1840,7 +1840,11 @@ footer {
   }
 
   .about-story-visual {
-    aspect-ratio: 16/9;
+    aspect-ratio: 3/4;
+  }
+
+  .about-story-visual img {
+    object-position: center;
   }
 
   .values-grid {
