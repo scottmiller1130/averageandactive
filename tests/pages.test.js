@@ -87,7 +87,7 @@ describe('index.html specifics', () => {
     expect(html).toContain('id="emailForm"');
   });
 
-  test('has community section', () => {
+  test('has community section (commented out for later)', () => {
     expect(html).toContain('id="community"');
   });
 
