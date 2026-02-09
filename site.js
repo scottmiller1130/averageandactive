@@ -189,8 +189,7 @@ const Site = (() => {
     const links = [
       { href: 'about.html', label: 'About', key: 'about' },
       { href: 'blog.html', label: 'Blog', key: 'blog' },
-      { href: 'recipes.html', label: 'Recipes', key: 'recipes' },
-      { href: 'index.html#community', label: 'Community', key: 'community' }
+      { href: 'recipes.html', label: 'Recipes', key: 'recipes' }
     ];
     const isHome = activePage === 'home';
     const navItems = links.map(l => {
@@ -221,7 +220,7 @@ const Site = (() => {
       <div class="footer-inner">
         <div class="footer-brand">
           <div class="logo">Average <span>&amp;</span> Active</div>
-          <p>Real fitness for real people. We're just parents trying to stay healthy, active, and present for the long haul.</p>
+          <p>Real fitness for real people. Just a dad trying to stay healthy, active, and present for the long haul.</p>
         </div>
         <div class="footer-col">
           <h4>Explore</h4>

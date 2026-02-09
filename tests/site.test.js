@@ -298,12 +298,12 @@ describe('renderNav()', () => {
 
   test('home page uses anchor links for on-page sections', () => {
     const html = Site.renderNav('home');
-    expect(html).toContain('href="#community"');
+    expect(html).toContain('href="#join"');
   });
 
   test('non-home pages use full paths for sections', () => {
     const html = Site.renderNav('blog');
-    expect(html).toContain('href="index.html#community"');
+    expect(html).toContain('href="index.html#join"');
   });
 });
 

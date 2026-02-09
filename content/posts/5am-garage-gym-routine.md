@@ -5,7 +5,7 @@ emoji: "🏃‍♂️"
 excerpt: "Everyone talks about morning routines. Here's what mine actually looks like — the good, the bad, and the days I hit snooze three times. How I went from zero consistency to never missing a weekday workout."
 date: "2026-01-15"
 readTime: "8 min"
-featured: true
+featured: false
 status: draft
 ---
 
