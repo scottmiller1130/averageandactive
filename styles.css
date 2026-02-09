@@ -1498,9 +1498,8 @@ footer {
 
 .post-hero-image img {
   width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
   display: block;
+  border-radius: 12px;
 }
 
 .recipe-hero-image {
