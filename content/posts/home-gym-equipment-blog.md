@@ -6,7 +6,7 @@ excerpt: "A real look at every piece of equipment in my home gym — what's wort
 date: "2026-01-08"
 readTime: "6 min"
 featured: false
-status: draft
+status: published
 ---
 
 # My Home Gym Setup: Everything I Use (And What's Actually Worth It)
