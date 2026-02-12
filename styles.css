@@ -1541,9 +1541,15 @@ footer {
   align-items: center;
   justify-content: center;
   font-size: 5rem;
-  opacity: 0.5;
   position: relative;
   overflow: hidden;
+}
+
+.about-story-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .about-story-visual::before {
@@ -1834,7 +1840,11 @@ footer {
   }
 
   .about-story-visual {
-    aspect-ratio: 16/9;
+    aspect-ratio: 3/4;
+  }
+
+  .about-story-visual img {
+    object-position: center;
   }
 
   .values-grid {
