@@ -244,7 +244,6 @@ const Site = (() => {
           <ul>
             <li><a href="https://instagram.com/averageandactive" target="_blank" rel="noopener">Instagram</a></li>
             <li><a href="https://youtube.com/@averageandactive" target="_blank" rel="noopener">YouTube</a></li>
-            <li><a href="https://tiktok.com/@averageandactive" target="_blank" rel="noopener">TikTok</a></li>
             <li><a href="index.html#join">Newsletter</a></li>
           </ul>
         </div>
@@ -261,11 +260,6 @@ const Site = (() => {
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
               <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
-            </svg>
-          </a>
-          <a href="https://tiktok.com/@averageandactive" target="_blank" rel="noopener" aria-label="TikTok">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.75a8.18 8.18 0 004.76 1.52V6.84a4.84 4.84 0 01-1-.15z"/>
             </svg>
           </a>
         </div>
