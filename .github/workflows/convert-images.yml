@@ -2,8 +2,12 @@ name: Convert iPhone Images to JPEG
 
 on:
   push:
+    branches: [main]
     paths:
       - 'images/**'
+
+  # Allow manual runs (handy for bulk re-conversion)
+  workflow_dispatch:
 
 jobs:
   convert:
@@ -21,6 +25,7 @@ jobs:
       - name: Detect and convert HEIF images
         run: |
           converted=false
+          count=0
           for img in images/*; do
             [ -f "$img" ] || continue
             mime=$(file --mime-type -b "$img")
@@ -29,9 +34,7 @@ jobs:
                 echo "Converting HEIF file: $img"
                 base="${img%.*}"
                 ext="${img##*.}"
-                # Convert to JPEG
                 heif-convert "$img" "${base}_converted.jpg"
-                # Replace the original file (keep original extension if .jpg/.jpeg)
                 rm "$img"
                 case "$ext" in
                   jpg|jpeg|JPG|JPEG)
@@ -42,10 +45,17 @@ jobs:
                     ;;
                 esac
                 converted=true
+                count=$((count + 1))
                 ;;
             esac
           done
           echo "converted=$converted" >> "$GITHUB_ENV"
+          echo "count=$count" >> "$GITHUB_ENV"
+          if [ "$converted" = "true" ]; then
+            echo "### Converted $count image(s) from HEIF to JPEG" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "### No HEIF images found — nothing to convert" >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       - name: Commit converted images
         if: env.converted == 'true'
@@ -53,5 +63,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add images/
-          git commit -m "Auto-convert iPhone HEIF images to JPEG format"
+          git commit -m "Auto-convert ${{ env.count }} iPhone HEIF image(s) to JPEG format"
           git push
