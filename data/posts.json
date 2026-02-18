@@ -49,6 +49,12 @@
         ]
       },
       {
+        "type": "image",
+        "src": "images/game-day-taco-dip-2.jpg",
+        "alt": "Game day taco dip loaded with toppings and ready to serve",
+        "caption": "Loaded up and ready for tip-off."
+      },
+      {
         "type": "heading",
         "text": "Make It Your Own"
       },
