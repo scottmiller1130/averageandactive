@@ -34,7 +34,20 @@ function markdownToBlocks(md) {
 
   for (const token of tokens) {
     if (token.type === 'paragraph') {
-      blocks.push({ type: 'paragraph', text: token.text });
+      // Check if this paragraph contains an inline image as its first token
+      const inlineTokens = token.tokens || [];
+      if (inlineTokens.length > 0 && inlineTokens[0].type === 'image') {
+        const img = inlineTokens[0];
+        const block = { type: 'image', src: img.href, alt: img.text };
+        // Look for an italic/em caption after the image
+        const emToken = inlineTokens.find(t => t.type === 'em');
+        if (emToken) {
+          block.caption = emToken.text;
+        }
+        blocks.push(block);
+      } else {
+        blocks.push({ type: 'paragraph', text: token.text });
+      }
     } else if (token.type === 'heading') {
       blocks.push({ type: 'heading', text: token.text });
     } else if (token.type === 'list') {

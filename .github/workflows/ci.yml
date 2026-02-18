@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    name: Build & Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build content
+        run: npm run build
+
+      - name: Verify data files are in sync
+        run: |
+          git diff --exit-code data/ || {
+            echo ""
+            echo "============================================"
+            echo "  Data files are out of sync!"
+            echo "  Run 'npm run build' locally and commit."
+            echo "============================================"
+            exit 1
+          }
+
+      - name: Run tests
+        run: npm test
+
+      - name: Check referenced images exist
+        run: |
+          node -e "
+            const fs = require('fs');
+            const posts = require('./data/posts.json');
+            const recipes = require('./data/recipes.json');
+            let missing = 0;
+
+            posts.forEach(p => {
+              if (p.image && !fs.existsSync(p.image)) {
+                console.error('Missing image: ' + p.image + ' (post: ' + p.id + ')');
+                missing++;
+              }
+              (p.body || []).forEach(b => {
+                if (b.type === 'image' && !fs.existsSync(b.src)) {
+                  console.error('Missing image: ' + b.src + ' (post: ' + p.id + ')');
+                  missing++;
+                }
+              });
+            });
+
+            recipes.forEach(r => {
+              if (r.image && !fs.existsSync(r.image)) {
+                console.error('Missing image: ' + r.image + ' (recipe: ' + r.id + ')');
+                missing++;
+              }
+            });
+
+            if (missing) {
+              console.error('\n' + missing + ' referenced image(s) not found.');
+              process.exit(1);
+            }
+            console.log('All referenced images exist.');
+          "
