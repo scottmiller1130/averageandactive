@@ -1,5 +1,51 @@
 [
   {
+    "title": "Game Day Taco Dip",
+    "mealType": "snack",
+    "emoji": "🏀",
+    "image": "images/game-day-taco-dip.jpg",
+    "description": "Layered taco dip on a big platter — refried beans, seasoned Greek yogurt, and all the toppings. The appetizer I grew up eating every time IU basketball was on. Serve it with chips and watch it disappear.",
+    "prepTime": "15 min",
+    "servings": 10,
+    "difficulty": "Easy",
+    "calories": 180,
+    "protein": 12,
+    "carbs": 17,
+    "fat": 8,
+    "tags": [
+      "no-cook",
+      "family-friendly",
+      "quick"
+    ],
+    "ingredients": [
+      "1 can (16 oz) refried beans",
+      "1 cup plain Greek yogurt",
+      "1 packet taco seasoning",
+      "1 1/2 cups shredded cheddar cheese (or Mexican blend)",
+      "2 medium tomatoes, diced",
+      "1 green bell pepper, diced",
+      "1/2 cup sliced black olives",
+      "1/2 medium white onion, diced",
+      "2 cups shredded iceberg lettuce",
+      "2-3 sliced jalapeños (optional, for heat)",
+      "2 green onions, sliced (optional)",
+      "Fresh cilantro for garnish (optional)",
+      "Hot sauce on the side (optional)",
+      "Tortilla chips for serving"
+    ],
+    "steps": [
+      "Grab a large platter or big baking dish — you want surface area here, not depth. This is a dip, not a casserole.",
+      "Open the can of refried beans and spread them across the bottom of the platter in a thin, even layer. Think of it as the foundation. Use the back of a spoon to smooth it out.",
+      "In a bowl, mix the Greek yogurt with the entire packet of taco seasoning until it's fully combined. This is the secret layer — it tastes like sour cream but with way better macros.",
+      "Spread the seasoned Greek yogurt over the bean layer in an even coat. Don't stress about making it perfect. It's game day, not a cooking show.",
+      "Now the fun part — pile on the toppings. Layer the shredded cheese, diced tomatoes, green peppers, onions, sliced black olives, and shredded lettuce across the top. Add jalapeños and green onions if you want some kick.",
+      "Garnish with fresh cilantro if you've got it. Set out your favorite tortilla chips around the platter or in a bowl on the side.",
+      "Serve immediately or cover and refrigerate for up to a couple hours before game time. Dig in with chips and don't overthink it."
+    ],
+    "status": "published",
+    "id": "game-day-taco-dip"
+  },
+  {
     "title": "Apple Slices & Almond Butter",
     "mealType": "snack",
     "emoji": "🍎",
