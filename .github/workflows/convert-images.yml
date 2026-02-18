@@ -1,0 +1,57 @@
+name: Convert iPhone Images to JPEG
+
+on:
+  push:
+    paths:
+      - 'images/**'
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install image tools
+        run: sudo apt-get update && sudo apt-get install -y libheif-examples imagemagick
+
+      - name: Detect and convert HEIF images
+        run: |
+          converted=false
+          for img in images/*; do
+            [ -f "$img" ] || continue
+            mime=$(file --mime-type -b "$img")
+            case "$mime" in
+              image/heif|image/heic|image/heif-sequence|image/heic-sequence)
+                echo "Converting HEIF file: $img"
+                base="${img%.*}"
+                ext="${img##*.}"
+                # Convert to JPEG
+                heif-convert "$img" "${base}_converted.jpg"
+                # Replace the original file (keep original extension if .jpg/.jpeg)
+                rm "$img"
+                case "$ext" in
+                  jpg|jpeg|JPG|JPEG)
+                    mv "${base}_converted.jpg" "${base}.${ext}"
+                    ;;
+                  *)
+                    mv "${base}_converted.jpg" "${base}.jpg"
+                    ;;
+                esac
+                converted=true
+                ;;
+            esac
+          done
+          echo "converted=$converted" >> "$GITHUB_ENV"
+
+      - name: Commit converted images
+        if: env.converted == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add images/
+          git commit -m "Auto-convert iPhone HEIF images to JPEG format"
+          git push
