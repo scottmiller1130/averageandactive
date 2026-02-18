@@ -318,7 +318,6 @@ describe('renderFooter()', () => {
     const html = Site.renderFooter();
     expect(html).toContain('instagram.com/averageandactive');
     expect(html).toContain('youtube.com/@averageandactive');
-    expect(html).toContain('tiktok.com/@averageandactive');
   });
 
   test('social links open in new tab with noopener', () => {

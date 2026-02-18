@@ -65,7 +65,7 @@ describe('posts.json', () => {
   });
 
   test('body blocks have valid types', () => {
-    const validTypes = ['paragraph', 'heading', 'list'];
+    const validTypes = ['paragraph', 'heading', 'list', 'image'];
     posts.forEach(post => {
       post.body.forEach(block => {
         expect(validTypes).toContain(block.type);
@@ -76,6 +76,10 @@ describe('posts.json', () => {
         if (block.type === 'list') {
           expect(Array.isArray(block.items)).toBe(true);
           expect(block.items.length).toBeGreaterThan(0);
+        }
+        if (block.type === 'image') {
+          expect(typeof block.src).toBe('string');
+          expect(block.src).toMatch(/^images\/.+\.(jpg|jpeg|png|webp|avif)$/i);
         }
       });
     });
