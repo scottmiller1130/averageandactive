@@ -4,7 +4,7 @@ category: longevity
 emoji: "🧊"
 excerpt: "Taking a week off to recover from nagging injuries. Here's every tool I'm using and the science that backs each one."
 date: "2026-02-19"
-readTime: "10 min"
+readTime: "12 min"
 featured: false
 status: published
 ---
@@ -46,6 +46,16 @@ I use the massage gun more during recovery weeks than any other time. The resear
 A 2025 study published in Frontiers showed that percussion massage therapy effectively reduces muscle tone and hardness after exercise-induced fatigue, and helps recover muscle strength within 48 hours. The key takeaway — one quick session isn't enough. The research shows better results when you use it immediately after exercise AND at 24, 48, and 72-hour intervals.
 
 I spend about 2 minutes per muscle group, focusing on whatever feels tight or restricted. Moderate pressure — let the gun do the work instead of digging in. I avoid bony areas and anything that feels sharp or inflamed.
+
+## Compression Boots
+
+The Hyperice Normatec boots are one of my favorite recovery tools this week. They use sequential pneumatic compression — inflating from your feet up to your hips in a wave pattern — to push blood and lymphatic fluid back through your system. Your lymphatic system has no pump of its own, so this mechanical assist does work your body can't do as efficiently on its own.
+
+The research backs up what you feel when you use them. A study found a 402% increase in popliteal artery blood flow during compression, and another showed a 42% increase in oxygenated hemoglobin in the Normatec group versus controls. That's significantly more oxygen and nutrients getting to damaged tissue. Research from the US Olympic Training Center by William Sands found that the boots increased pressure-to-pain thresholds in elite athletes after aggressive training and improved acute range of motion.
+
+The most comprehensive meta-analysis to date — Maia et al. in 2024, covering 17 studies and 319 athletes — found a consistent reduction in perceived muscle soreness, particularly at the 48-hour mark post-exercise. Where the science gets honest is on the objective side — the boots don't reliably reduce creatine kinase or other muscle damage markers, and they're roughly comparable to active recovery for clearing lactate. They won't replace sleep, nutrition, and time. But for reducing soreness and enhancing blood flow while you sit and recover, they're legit.
+
+I'm using them for 20-30 minutes daily, usually while I catch up on reading or a show. Pressure around 80-100 mmHg, which is what most of the research used. The best part about compression boots during a recovery week is that they work while you do nothing — passive recovery that's actually doing something under the surface.
 
 ## Band Work
 
