@@ -25,7 +25,7 @@ I spent a while looking at races and this one checked every box.
 
 **The timing works.** Race day is late September, which gives me a full training block starting April 1. That's roughly six months of focused preparation. Enough time to build properly without rushing it.
 
-**Family trip built in.** This was a big factor. Zion National Park is 30 minutes away. Bryce Canyon is a couple hours out. The Grand Canyon North Rim is within driving distance. Sand Hollow State Park itself has beaches, kayaking, paddleboarding, and even scuba diving over a submerged Volkswagen bus — the kids are going to lose their minds. This isn't just a race weekend, it's a family trip that happens to have a triathlon in the middle of it.
+**Family trip built in.** This was a big factor. Zion National Park is 30 minutes away. Bryce Canyon is a couple hours out. The Grand Canyon North Rim is within driving distance. Sand Hollow State Park itself has beaches and paddleboarding — the kids are going to lose their minds. This isn't just a race weekend, it's a family trip that happens to have a triathlon in the middle of it.
 
 **It's beautiful.** Sand Hollow Reservoir is turquoise water surrounded by red Navajo sandstone. The swim goes through crystal-clear water with red rock islands breaking the surface. The bike and run courses overlook the reservoir the entire way. If I'm going to suffer for a few hours, at least the views will be worth it.
 
