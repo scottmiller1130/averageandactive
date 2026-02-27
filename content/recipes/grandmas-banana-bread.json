@@ -1,0 +1,36 @@
+{
+  "title": "Grandma's Banana Bread",
+  "mealType": "snack",
+  "emoji": "🍌",
+  "description": "A handwritten recipe passed down from Grandma — four ripe bananas, a cup of chopped nuts, and an hour in the oven. The kind of banana bread that makes the whole house smell like home.",
+  "prepTime": "1 hr 15 min",
+  "servings": 16,
+  "difficulty": "Easy",
+  "calories": 330,
+  "protein": 5,
+  "carbs": 50,
+  "fat": 13,
+  "tags": ["family-friendly", "meal-prep"],
+  "ingredients": [
+    "4 ripe bananas, mashed",
+    "1/2 cup margarine or butter, softened",
+    "3 eggs, beaten",
+    "2 cups sugar",
+    "1 cup milk mixed with 2 tablespoons vinegar (buttermilk substitute)",
+    "3 cups flour, sifted with 1 teaspoon baking soda",
+    "1 cup chopped walnuts"
+  ],
+  "steps": [
+    "Preheat your oven to 350°F. Grease and flour two standard loaf pans.",
+    "Mash the bananas in a large bowl with a fork until mostly smooth — a few small chunks are fine.",
+    "Mix the milk and vinegar together in a small bowl or measuring cup and set it aside for a few minutes to curdle into a buttermilk substitute.",
+    "In a large mixing bowl, cream the softened butter and sugar together until combined.",
+    "Add the beaten eggs and mashed bananas to the butter-sugar mixture and stir until well mixed.",
+    "Sift the flour and baking soda together, then add to the wet ingredients alternately with the milk-vinegar mixture, stirring until just combined. Do not overmix.",
+    "Fold in the chopped walnuts. Or make it your own — skip the nuts entirely, swap in pecans, add a cup of chocolate chips, or mix in whatever sounds good to you. The batter handles it all.",
+    "Divide the batter evenly between the two prepared loaf pans.",
+    "Bake at 350°F for 1 hour, or until a toothpick inserted in the center comes out clean.",
+    "Let the loaves cool in the pans for 10 minutes, then turn out onto a wire rack to cool completely before slicing."
+  ],
+  "status": "published"
+}
