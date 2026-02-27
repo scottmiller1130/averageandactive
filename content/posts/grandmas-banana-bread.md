@@ -25,7 +25,7 @@ If you look at the ingredient list, you'll notice a few things. First — two cu
 
 Second — the milk mixed with two tablespoons of vinegar. That's an old-school move to make a buttermilk substitute. If you've never done it, you just stir the vinegar into the milk and let it sit for a few minutes. It curdles slightly, gets tangy, and does the same job as buttermilk in the batter. It makes the bread tender and gives it that subtle tang underneath all the sweetness.
 
-Third — the nuts. A cup of chopped nuts is non-negotiable in this recipe. My grandmother used walnuts. You could use pecans. But you don't skip them. They give every bite some texture and keep it from being one-note.
+Third — the nuts. The original card calls for a cup of chopped nuts, and my grandmother always used walnuts. But this is where you can truly make it your own. Swap in pecans if that's your thing. Not a nut person? Leave them out entirely — it's still great without them. Throw in a cup of chocolate chips instead and suddenly you've got something the kids will lose their minds over. Mini chocolate chips, dark chocolate chunks, a handful of both — all fair game. I've seen people do peanut butter swirl on top, toss in some shredded coconut, or fold in fresh blueberries. The base recipe is rock solid and forgiving enough to handle whatever you want to throw at it. Start with the original, then experiment.
 
 ## The Way I Make It
 
