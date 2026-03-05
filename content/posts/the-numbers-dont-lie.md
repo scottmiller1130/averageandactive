@@ -2,6 +2,7 @@
 title: "The Numbers Don't Lie: My Weight Through Every Phase"
 category: fitness
 emoji: "📊"
+image: "images/the-numbers-dont-lie.jpg"
 excerpt: "From bulking to racing to building back up — here's what the scale actually said through every phase, and what's coming next as I prep for tri season."
 date: "2026-03-05"
 readTime: "7 min"
