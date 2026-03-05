@@ -86,7 +86,7 @@
           document.getElementById('pageMeta').setAttribute('content', post.excerpt);
 
           const heroImg = post.image
-            ? `<div class="post-hero-image"><img src="${e(post.image)}" alt="${e(post.title)}"></div>`
+            ? `<div class="post-hero-image"><img src="${e(post.image)}" alt="${e(post.title)}" onload="if(this.naturalHeight>this.naturalWidth)this.parentElement.classList.add('portrait')"></div>`
             : '';
 
           Site.setHTML('postContent', `
