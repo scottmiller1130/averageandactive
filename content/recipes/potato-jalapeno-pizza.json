@@ -1,0 +1,51 @@
+{
+  "title": "Potato & Jalapeno Pizza",
+  "mealType": "dinner",
+  "emoji": "🍕",
+  "image": "images/potato-jalapeno-pizza.jpg",
+  "description": "Sourdough pizza with thinly sliced potatoes, jalapeno olive oil, and a Greek yogurt finish. Crispy, creamy, and a little bit spicy — this one always surprises people.",
+  "prepTime": "24 hrs",
+  "servings": 4,
+  "difficulty": "Medium",
+  "calories": 520,
+  "protein": 18,
+  "carbs": 72,
+  "fat": 18,
+  "tags": [
+    "sourdough",
+    "homemade",
+    "fermented",
+    "family-friendly",
+    "meal-prep"
+  ],
+  "ingredients": [
+    "1000g bread flour (or 75% bread flour + 25% Tipo 00)",
+    "700g water, room temperature (70% hydration)",
+    "200g active sourdough starter (100% hydration, fed and doubled)",
+    "20g fine sea salt",
+    "20g olive oil (optional — makes the dough more tender)",
+    "3–4 medium Yukon Gold potatoes, sliced paper-thin (use a mandoline)",
+    "Jalapeno olive oil, enough to generously coat each pie",
+    "Flaky sea salt for the potatoes",
+    "Fresh cracked black pepper",
+    "Plain Greek yogurt (full fat) for finishing",
+    "Fresh chives, finely snipped, for finishing"
+  ],
+  "steps": [
+    "Feed your sourdough starter in the morning using a 1:1:1 ratio of starter, flour, and water. Let it sit at room temperature until it has at least doubled and looks bubbly and domed — usually 4 to 6 hours. It is ready when a small spoonful floats in water.",
+    "In a large bowl, combine 1000g flour and 700g water. Mix until no dry flour remains — it will be shaggy and rough. Cover with a damp towel and let it autolyse for 45 minutes to 1 hour.",
+    "Add 200g of your peaked starter, 20g salt, and 20g olive oil on top of the dough. Pinch and squeeze everything together until fully incorporated, about 3 to 4 minutes. It will be sticky and messy at first — that is normal.",
+    "Perform stretch and folds every 20 to 30 minutes for a total of 4 sets. Wet your hand, grab one side, stretch it up, fold it over. Rotate the bowl 90 degrees and repeat for all four sides. That is one set. The dough will get noticeably smoother and tighter with each round.",
+    "After the last set of folds, cover the bowl tightly and let it bulk ferment on the counter. Check around 6 to 8 hours — you are looking for roughly 50 percent growth, visible bubbles on the sides, and a jiggly, airy feel when you shake the bowl.",
+    "Divide the dough into 4 equal pieces (about 480g each). Shape each piece into a tight ball by pulling the edges to the center and pinching the seam. Flip seam-side down and use your hands to drag the ball toward you on an unfloured surface to build tension. Place each ball into a lightly oiled container or onto a lightly oiled sheet pan. Cover tightly and cold proof in the fridge overnight — 12 to 24 hours.",
+    "While the dough cold proofs, prep your potatoes. Using a mandoline, slice Yukon Golds paper-thin — you want them almost translucent. Toss the slices in a bowl with a drizzle of regular olive oil, flaky salt, and black pepper. Keep them covered in the fridge until you are ready to build the pizzas.",
+    "When you are ready to bake, pull the dough balls out of the fridge 1 to 2 hours before you plan to fire. Let them come to room temperature — they will be much easier to stretch when they are not cold.",
+    "If using an Ooni or other outdoor pizza oven, fire it up and let it preheat for at least 20 to 30 minutes. You want the stone around 800 to 900°F. If using a home oven, crank it as high as it goes (usually 500 to 550°F) with a pizza steel or stone on the middle rack and let it preheat for at least 45 minutes to an hour. A pizza steel works better than a stone in a home oven because it transfers heat faster.",
+    "Stretch the dough. Flour your hands and the counter generously. Press the dough ball flat, leaving a small rim around the edge for the crust. Pick it up and use your knuckles and gravity to stretch it into a round — rotate as you go. Do not use a rolling pin. If it springs back, let it rest for a couple minutes and try again. You are going for about 12 to 14 inches.",
+    "Drizzle jalapeno olive oil generously over the stretched dough — this is your sauce. Use the back of a spoon to spread it evenly, leaving the outer crust bare. Do not be shy with it. The oil is doing all the heavy lifting for flavor on the base.",
+    "Shingle the potato slices over the entire surface of the pizza, overlapping slightly. You want a single thin layer that covers the dough. Hit them with one more small drizzle of jalapeno olive oil and a pinch of flaky salt.",
+    "Launch the pizza. In the Ooni, bake for 60 to 90 seconds, rotating every 15 to 20 seconds with a turning peel so it chars evenly. The potatoes should be tender and starting to crisp at the edges, and the crust should be blistered and leopard-spotted. In a home oven, bake for 6 to 8 minutes on the preheated steel or stone, rotating halfway through. Broil for the last 60 to 90 seconds if you want extra color on top.",
+    "Pull the pizza and immediately finish it. Drop spoonfuls of cold Greek yogurt across the top — do not spread it, just dollop it on in 5 or 6 spots. The contrast between the hot pizza and cold yogurt is the whole point. Snip fresh chives generously over the top. Slice and serve right away."
+  ],
+  "status": "published"
+}

@@ -1,5 +1,197 @@
 [
   {
+    "id": "potato-jalapeno-pizza",
+    "title": "Potato Pizza Sounds Weird Until You Try It",
+    "category": "nutrition",
+    "emoji": "🍕",
+    "image": "images/potato-jalapeno-pizza.jpg",
+    "excerpt": "Sourdough crust, thinly sliced potatoes, jalapeno olive oil, and a cold Greek yogurt finish. This is the pizza that makes people stop mid-bite and ask what just happened.",
+    "date": "2026-03-06",
+    "readTime": "6 min",
+    "featured": false,
+    "status": "published",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "I know what you're thinking. Potatoes on pizza? Carbs on carbs? Yes. And once you try it, you'll wonder why you ever put up with another mediocre pepperoni pie when this exists. This is not a gimmick pizza. This is the one my wife and I make when we actually want to enjoy dinner, and it delivers every single time."
+      },
+      {
+        "type": "paragraph",
+        "text": "The idea is simple — sourdough crust, paper-thin potatoes, jalapeno olive oil as the sauce, and then you finish it with cold Greek yogurt and fresh chives right when it comes out of the oven. The hot-and-cold contrast is the whole move. Crispy crust, tender potatoes, a little heat from the oil, and then that cool, tangy hit from the yogurt. It just works."
+      },
+      {
+        "type": "heading",
+        "text": "The Dough"
+      },
+      {
+        "type": "paragraph",
+        "text": "This starts with a sourdough pizza dough, and I'm going to give you the full recipe because the dough matters. You cannot fake this part. The recipe makes four pies — 1000g of bread flour (or a 75/25 split of bread flour and Tipo 00 if you want to get fancy), 700g of room temp water for 70% hydration, 200g of active sourdough starter, 20g of salt, and 20g of olive oil if you want a slightly more tender chew. That's it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Mix the flour and water, let it autolyse for 45 minutes, then add the starter, salt, and oil. Stretch and fold every 20 to 30 minutes for 4 sets, then let it bulk ferment for 6 to 8 hours until it's about 50% bigger and full of bubbles. Divide into four balls, shape them tight, and cold proof in the fridge for 12 to 24 hours. The cold proof develops flavor and makes the dough way easier to handle the next day."
+      },
+      {
+        "type": "paragraph",
+        "text": "Pull the dough balls out an hour or two before you're ready to bake. Cold dough fights back when you try to stretch it — give it time to relax."
+      },
+      {
+        "type": "heading",
+        "text": "The Potatoes"
+      },
+      {
+        "type": "paragraph",
+        "text": "Use a mandoline. I'm serious. You need the potatoes sliced so thin they're almost see-through. Yukon Golds are my go-to because they hold their shape, get tender fast, and have a buttery flavor that plays perfectly with everything else on this pizza. Toss the slices with a little regular olive oil, flaky salt, and black pepper while the dough comes to temperature. That's it for prep — dead simple."
+      },
+      {
+        "type": "heading",
+        "text": "The Build"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here's where it comes together. Stretch your dough out to about 12 to 14 inches — use your hands, not a rolling pin. Drizzle jalapeno olive oil generously across the surface. This is your sauce. There's no tomato, no white sauce, no pesto. Just the jalapeno oil doing its thing. Spread it around with the back of a spoon and don't be shy with it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Shingle the potato slices over the whole surface in a single layer, overlapping slightly. Hit them with one more small drizzle of the jalapeno oil and a pinch of flaky salt. That's a complete pizza — launch it."
+      },
+      {
+        "type": "heading",
+        "text": "Cooking It"
+      },
+      {
+        "type": "paragraph",
+        "text": "I use an Ooni Koda 16 and it's a game changer for pizza at home. Preheat for 20 to 30 minutes until the stone is around 800 to 900 degrees, then bake each pie for about 60 to 90 seconds, rotating every 15 to 20 seconds with a turning peel. You're looking for blistered, leopard-spotted crust and potatoes that are tender with crispy edges."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you don't have an outdoor pizza oven, you can absolutely do this in a home oven. Crank it to 500 or 550 — as hot as it goes. Put a pizza steel or stone on the middle rack and let it preheat for at least 45 minutes. A pizza steel is better than a stone here because it holds and transfers heat faster. Bake for 6 to 8 minutes, rotating halfway, and hit the broiler for the last 60 to 90 seconds if you want some extra char on top. It won't be identical to an outdoor oven, but it'll still be excellent."
+      },
+      {
+        "type": "paragraph",
+        "text": "Another option — a cast iron skillet. Heat the skillet on the stove over medium-high, place your stretched dough in it, add your toppings, then transfer to the oven under the broiler for 3 to 4 minutes. This gives you a great crispy bottom from the pan and blistered top from the broiler."
+      },
+      {
+        "type": "heading",
+        "text": "The Finish"
+      },
+      {
+        "type": "paragraph",
+        "text": "This is the part that takes this pizza from really good to something people remember. As soon as it comes out of the oven, dollop cold Greek yogurt across the top. Full fat, straight from the fridge. Don't spread it — just drop 5 or 6 spoonfuls randomly across the pizza. Then snip fresh chives all over the top."
+      },
+      {
+        "type": "paragraph",
+        "text": "The hot pizza against the cold yogurt is everything. The yogurt is tangy and cool, the potatoes are salty and crispy, the jalapeno oil has that slow creeping heat, and the sourdough crust ties it all together. Every bite is a little different depending on how much yogurt you hit, and that's part of what makes it fun."
+      },
+      {
+        "type": "heading",
+        "text": "Just Try It"
+      },
+      {
+        "type": "paragraph",
+        "text": "I know potato pizza sounds like something you'd scroll past. I get it. But this is the pizza I make when I actually want to impress someone — including myself. It's not complicated, it doesn't need a hundred toppings, and it proves that sometimes the best food is the stuff that sounds weird on paper but just works when you eat it. Make the dough tonight, bake tomorrow. You won't regret it."
+      }
+    ]
+  },
+  {
+    "id": "snow-ice-cream",
+    "title": "Snow Ice Cream: Grandma's Four-Ingredient Snow Day Classic",
+    "category": "nutrition",
+    "emoji": "🍦",
+    "image": "images/snow-ice-cream.jpg",
+    "excerpt": "Fresh snow, milk, sugar, and vanilla. My grandmother's recipe that turned every snow day into the best day of the year. Five minutes, four ingredients, and a lifetime of memories.",
+    "date": "2026-03-06",
+    "readTime": "4 min",
+    "featured": false,
+    "status": "published",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Every kid has that one snow day memory that sticks. For me, it was the moment my grandmother handed me a bowl of something cold and sweet and said \"go eat that before it melts.\" She had walked outside with a mixing bowl, scooped up a pile of fresh snow, and turned it into ice cream in about three minutes. No machine. No freezer. No recipe book. Just snow, milk, sugar, and vanilla. And it was the best thing I had ever tasted."
+      },
+      {
+        "type": "paragraph",
+        "text": "I was probably six or seven the first time she made it. I remember thinking it was actual magic — that she had somehow invented ice cream from the sky. I didn't know it was a thing that people did. I just knew that when it snowed at Grandma's house, something incredible was about to happen in the kitchen."
+      },
+      {
+        "type": "heading",
+        "text": "The Recipe That Isn't Really a Recipe"
+      },
+      {
+        "type": "paragraph",
+        "text": "That's the beauty of snow ice cream — there's nothing to it. You grab a big bowl of fresh snow, pour some milk over it, add sugar and vanilla, and fold it all together. That's it. Done. Five minutes from snow on the ground to a bowl in your hands."
+      },
+      {
+        "type": "paragraph",
+        "text": "My grandmother never measured anything. It was always \"about this much milk\" and \"a good pour of vanilla\" and \"sugar until it tastes right.\" And you know what? It worked every single time. The ratios don't need to be exact because snow is forgiving. Too soupy? Add more snow. Too dry? Splash in more milk. You really cannot mess this up."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you want numbers — 8 cups of snow, 1 cup of whole milk, half a cup of sugar, and a teaspoon of vanilla. But honestly, just taste it as you go and adjust. Grandma was right. You don't need a recipe card for this one."
+      },
+      {
+        "type": "heading",
+        "text": "The Snow Matters"
+      },
+      {
+        "type": "paragraph",
+        "text": "Not all snow is created equal. You want fresh, fluffy, just-fell-from-the-sky snow. The powdery stuff that's still sitting on top of everything. Don't grab the packed-down layer, don't scrape it off the car, and for the love of all things good, don't use the snow by the road or the driveway. Clean, fresh, untouched snow. That's the rule."
+      },
+      {
+        "type": "paragraph",
+        "text": "If it's been snowing for a while, brush off the very top layer and scoop from just underneath — that's the cleanest stuff. And bring it inside in a big bowl because it compresses fast. What looks like a mountain of snow outside turns into about half that once you get it to the kitchen."
+      },
+      {
+        "type": "paragraph",
+        "text": "Work quick once you're inside. Snow ice cream is a race against your kitchen temperature. You mix it, you scoop it, you eat it. There is no \"save some for later.\" This is a right-now dessert and that's part of what makes it special."
+      },
+      {
+        "type": "heading",
+        "text": "The Way I Make It Now"
+      },
+      {
+        "type": "paragraph",
+        "text": "I do it almost exactly the way my grandmother did, except I measure just enough to make sure I can tell other people how to do it too. Whole milk, granulated sugar, real vanilla extract. Nothing fancy. I stir the milk, sugar, and vanilla together first, then pour it over the snow and fold it gently — like you're folding egg whites into a batter. You're not stirring hard. You're turning it over slowly until it looks like soft serve. It happens fast, maybe 60 to 90 seconds."
+      },
+      {
+        "type": "paragraph",
+        "text": "The consistency you're after is thick, creamy, and light. It should hold its shape on a spoon but still feel fluffy. If it gets too dense, you've overmixed. If it's too thin, toss in another cup of snow. The sweet spot is right in between — and once you've made it twice, you'll nail it every time without thinking."
+      },
+      {
+        "type": "heading",
+        "text": "Making It Your Own"
+      },
+      {
+        "type": "paragraph",
+        "text": "The base recipe is perfect on its own. But if you want to play with it, go for it. Chocolate syrup drizzled on top is an easy win. Crushed Oreos make it feel like cookies and cream. A spoonful of peanut butter stirred in takes it to another level. You can mix cocoa powder into the milk before you pour it over the snow for a chocolate version that kids absolutely lose their minds over."
+      },
+      {
+        "type": "paragraph",
+        "text": "Sprinkles are always a good call if you've got little ones helping — let them decorate their own bowls. That's half the fun anyway."
+      },
+      {
+        "type": "paragraph",
+        "text": "But if I'm being honest, I still come back to the original every time. Vanilla snow ice cream, plain and simple. That's the one that tastes like being seven years old in my grandmother's kitchen."
+      },
+      {
+        "type": "heading",
+        "text": "Pass It Down"
+      },
+      {
+        "type": "paragraph",
+        "text": "The best part about snow ice cream is that it's not really about the ice cream. It's about the moment — looking outside, seeing the snow pile up, and knowing exactly what comes next. It's about handing your kid a bowl and watching their face light up the same way yours did when you were little."
+      },
+      {
+        "type": "paragraph",
+        "text": "My kids go absolutely nuts when it snows now. Not because of snowmen or sledding — because they know we're making ice cream. And every time I pour the milk over the snow and fold it together, I hear my grandmother's voice telling me to \"eat it before it melts.\" So that's exactly what we do."
+      },
+      {
+        "type": "paragraph",
+        "text": "Next time it snows, skip the store-bought ice cream in the freezer. Walk outside with a bowl. You already have everything else you need."
+      }
+    ]
+  },
+  {
     "id": "the-numbers-dont-lie",
     "title": "The Numbers Don't Lie: My Weight Through Every Phase",
     "category": "fitness",
